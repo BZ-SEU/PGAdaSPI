@@ -1,0 +1,14 @@
+extends: abl_offline_pca_fixed.yaml  # 同一离线PCA方法，补充两张512原生测试图
+config:  # 512训练图案资产，独立于256资产
+  offline_pca:  # 同一20,000张训练图放大至512后重新计算PCA
+    path: assets/offline_pca_512.pt  # 前2621个主成分经相同传播逆映射与8-bit量化
+    sha256: 8ac95d23780f23cce601adafb677717933f4a72b8a7b29caa9f883892ac9e661  # 冻结资产身份
+    prefix_qr_reuse: true  # 固定序列仅分解一次QR，精确复用前缀；不使用未来桶值
+run:  # 单卡执行两张图
+  template: SET11_512  # 512×512，前缀256，B32，终点2621
+  dataset_root: data/set11_proxunroll/native  # 原生Y通道，不缩放测试图
+  image_ids: [fingerprint, flinstones]  # 补齐完整11张Set11
+  split: test  # 仅评价，不按测试分数调参
+  device: cuda:2  # 本任务仅用该GPU，可通过命令行覆盖
+  output: outputs/ablation/offline_pca_fixed  # 与9张256结果合并，互不覆盖
+  ablation: full  # 保留offline_pca选择器

@@ -1,0 +1,136 @@
+{
+  "sources": [
+    {
+      "path": "/mnt/data/baojr/adaptive_SPI/outputs/prior_daps_v2/train_phase1_crop128.log",
+      "sha256": "aa4aae7de4bfc21c3b5b5321f1465dd6ff33128718f93c777beac90a2ab0a2b9"
+    },
+    {
+      "path": "/mnt/data/baojr/adaptive_SPI/outputs/prior_daps_v2/train_phase2.log",
+      "sha256": "a228a5324c92c5afbcd17a894145dbedf27b5e81f5ef920f0709ac1ad4706eae"
+    }
+  ],
+  "archive": "/mnt/data/baojr/adaptive_SPI_backups/finalize_20261012_034713/summaries_and_source.tar.gz",
+  "archive_sha256": "37aaf74b78ffe0b57bf0c63450f41500cfd5b8d159ba531f9615058316c28ab7",
+  "members": [
+    {
+      "member": "outputs/analysis/dev_daps_mean_v2_50k_outer200.json",
+      "sha256": "9a84694020c6295300634deb7bb3e98813e46357092ab68d81864a2b1e6d7658",
+      "prior_sha256": "5df4e0ee625749b3ac96925fadb6f1daf31739ec05d10baad413ec4ba5a3c0c0",
+      "sampling": {
+        "outer_steps": 200,
+        "ode_steps": 5,
+        "ode_solver": "heun",
+        "sigma_max": 20.0,
+        "sigma_min": 0.002,
+        "inner_sigma_min": 0.002,
+        "rho": 7.0,
+        "gpu_batch_size": 4,
+        "num_scenarios": 32,
+        "validation_scenarios": 4,
+        "projection_rtol": 1e-10,
+        "network_precision": "float32",
+        "solve_precision": "float64",
+        "image_shape": [
+          256,
+          256
+        ]
+      }
+    },
+    {
+      "member": "outputs/analysis/dev_daps_mean_v2_65k_outer200.json",
+      "sha256": "c3695e7efbaf09eff008736e606d97f31f5ea1aa98c2812aa695de65a49b465b",
+      "prior_sha256": "ad068d1da84b893416e08579a371b69c01fe1735d97e002796b3adabcf62dd93",
+      "sampling": {
+        "outer_steps": 200,
+        "ode_steps": 5,
+        "ode_solver": "heun",
+        "sigma_max": 20.0,
+        "sigma_min": 0.002,
+        "inner_sigma_min": 0.002,
+        "rho": 7.0,
+        "gpu_batch_size": 16,
+        "num_scenarios": 32,
+        "validation_scenarios": 4,
+        "projection_rtol": 1e-10,
+        "network_precision": "float32",
+        "solve_precision": "float64",
+        "image_shape": [
+          256,
+          256
+        ]
+      }
+    },
+    {
+      "member": "outputs/analysis/dev_daps_mean_v2_95k_outer200.json",
+      "sha256": "25fbf169957a99f279492c552cf49c3cd623b83ed6188282d269667fded8b92f",
+      "prior_sha256": "56ea009f1eb6aa36f570c7ce10e3b532e3389cdac67a43452e067cbff98bdb5c",
+      "sampling": {
+        "outer_steps": 200,
+        "ode_steps": 5,
+        "ode_solver": "heun",
+        "sigma_max": 20.0,
+        "sigma_min": 0.002,
+        "inner_sigma_min": 0.002,
+        "rho": 7.0,
+        "gpu_batch_size": 16,
+        "num_scenarios": 32,
+        "validation_scenarios": 4,
+        "projection_rtol": 1e-10,
+        "network_precision": "float32",
+        "solve_precision": "float64",
+        "image_shape": [
+          256,
+          256
+        ]
+      }
+    },
+    {
+      "member": "outputs/analysis/dev_daps_mean_v2_165k_outer200.json",
+      "sha256": "11fe3b21730e37fc43b0f5a97a5c1124cb2e3c9cc37091f46fcc8ba28cbbac5e",
+      "prior_sha256": "c5630edea5d893535a75ace26a4f9aa8909b16771225f6d6b8831bb933133387",
+      "sampling": {
+        "outer_steps": 200,
+        "ode_steps": 5,
+        "ode_solver": "heun",
+        "sigma_max": 20.0,
+        "sigma_min": 0.002,
+        "inner_sigma_min": 0.002,
+        "rho": 7.0,
+        "gpu_batch_size": 16,
+        "num_scenarios": 32,
+        "validation_scenarios": 4,
+        "projection_rtol": 1e-10,
+        "network_precision": "float32",
+        "solve_precision": "float64",
+        "image_shape": [
+          256,
+          256
+        ]
+      }
+    }
+  ],
+  "selected_step": 65000,
+  "denoising_dev_images": 64,
+  "denoising_noise_levels": 10,
+  "denoising_domain": "[-1,1]",
+  "posterior_dev_images": 8,
+  "posterior_protocol": "Historical checkpoint selection: DAPS, 200 outer steps, 32 chains, M=655",
+  "gain_definition": "per-image unclamped PSNR(posterior mean) minus PSNR(pseudoinverse), then image average",
+  "scope": "original checkpoint-selection experiment; not a DiffPIR checkpoint sweep",
+  "selected_denoising_mse": 0.0462336419548592,
+  "minimum_mse_step": 165000,
+  "posterior_gain_mean": [
+    0.7060493652031861,
+    0.7116436541043929,
+    0.6617077629334642,
+    0.5206635552878378
+  ],
+  "posterior_steps": [
+    50000,
+    65000,
+    95000,
+    165000
+  ],
+  "script_sha256": "42cb8e1506dc56138fe9a3f77874a124949717cb6a23d1ddc92cd794700d6df7",
+  "plotting_data_sha256": "8e3b41235e22e5af14abee6b5eb36152d38d10384972c1ccc1b5e272073c7557"
+}

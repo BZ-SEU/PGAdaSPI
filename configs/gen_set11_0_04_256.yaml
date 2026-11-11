@@ -1,0 +1,10 @@
+extends: final.yaml  # 继承冻结的 propagation-full-pseudoinverse 与 DiffPIR 选图配置
+sampling_ratio: 0.04  # 预算为 floor(0.04×256×256)=2621 次有效差分测量
+run:
+  template: SET11_256  # 原生 256×256 Y 通道画布
+  dataset_root: data/set11_proxunroll/native  # 与 HATNet/ProxUnroll 使用同一组原生图
+  image_ids: [Monarch, Parrots, barbara, boats, cameraman, foreman, house, lena256, peppers256]  # 排除两张512图
+  split: test  # 仅作冻结配置下的测试报告
+  device: cuda:0  # CUDA_VISIBLE_DEVICES 后的逻辑编号
+  output: outputs/generalization/set11_0_04_256  # 独立于0.01及0.1结果
+  ablation: full  # 正式 eigen_v1/O32/无V/DiffPIR50 策略

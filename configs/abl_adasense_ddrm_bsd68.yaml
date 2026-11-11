@@ -1,0 +1,11 @@
+# 复用 Set11 AdaSense-DDRM 消融：中心化 O 场景 PCA 选图，O43，DDRM25，最终 F32 均值
+extends: abl_adasense_ddrm.yaml  # 继承相同选图和采样设置，包含模板解析后恢复 O43 的覆盖项
+sampling_ratio: 0.01  # floor(321×481×0.01)=1544 次有效测量、3088 次互补曝光
+run:  # 完整替换父配置的 Set11 图像清单；每个任务仅用一张 GPU
+  template: BSD68_481x321_bsdv2  # 原生321×481；选图与最终解码均使用 BSD 同域 v2 先验
+  dataset_root: data/bsd68_proxunroll/native  # 标准 Y 通道；竖图顺时针旋转，不缩放、不补黑
+  count: 68  # 按固定清单运行全部 BSD68 测试图
+  split: test  # 仅测试，不用于选先验或调参
+  device: cuda:0  # 进程内 GPU 编号，可用 CUDA_VISIBLE_DEVICES 指定物理 GPU
+  output: outputs/ablation/adasense_ddrm_bsd68  # 每图保存一个 PT、JSON 和 PNG
+  ablation: adasense  # 中心化场景 PCA 方向；继承 DDRM 采样器，不采用默认 eigen_v1/DiffPIR

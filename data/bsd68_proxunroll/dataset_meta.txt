@@ -1,0 +1,9 @@
+dataset=BSD68
+count=68
+shape=321x481 (H x W)
+channels=Y
+dtype=uint8
+range=0..255
+orientation=landscape; portrait images rotate clockwise 90 degrees
+conversion=round(0.299R+0.587G+0.114B), full-range BT.601, no resize
+source=/mnt/polar/dataset/BSD68

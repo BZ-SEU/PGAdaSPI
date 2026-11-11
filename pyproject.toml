@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "daps-spi"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = ["torch", "numpy", "scipy", "Pillow", "PyYAML", "matplotlib", "scikit-image"]
+[project.scripts]
+daps-spi = "daps_spi.cli:main"
+[tool.setuptools.packages.find]
+where = ["src"]

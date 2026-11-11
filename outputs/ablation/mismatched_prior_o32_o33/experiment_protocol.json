@@ -1,0 +1,1754 @@
+{
+  "jobs": [
+    "abl_ood_celeba_check_bias_spread_o32",
+    "abl_ood_celeba_check_spread_only_o33",
+    "abl_ood_dtd_check_bias_spread_o32",
+    "abl_ood_dtd_check_spread_only_o33",
+    "abl_ood_celeba_test_bias_spread_o32",
+    "abl_ood_celeba_test_spread_only_o33",
+    "abl_ood_dtd_test_bias_spread_o32",
+    "abl_ood_dtd_test_spread_only_o33"
+  ],
+  "created_unix": 1793971760.1779518,
+  "gpu": "1",
+  "comparison": "Bias+Spread O32 vs Spread-only O33; unequal sample count explicitly reported DiffPIR50 F32; centred PCA vs residual second moment, spread=.25; no V/Adam",
+  "resolved": {
+    "abl_ood_celeba_check_bias_spread_o32": {
+      "method": "propagation-full-pseudoinverse",
+      "config": {
+        "seed": 20260921,
+        "device": "cuda:0",
+        "initial_measurements": 64,
+        "batch_size": 32,
+        "pool_size": 4096,
+        "pattern_pool": {
+          "name": "legacy_low_order"
+        },
+        "dmd_bit_depth": 8,
+        "measurement_convention": "incoherent_propagated_uint8_difference_div_sqrt_d",
+        "sensor_noise": {
+          "model": "dark_gaussian",
+          "sigma_rel": 0.0
+        },
+        "sampling": {
+          "sampler": "diffpir",
+          "diffpir_steps": 50,
+          "diffpir_lambda": 1.0,
+          "diffpir_zeta": 1.0,
+          "diffpir_eta": 0.0,
+          "diffpir_sigma_y": 0.0,
+          "outer_steps": 45,
+          "ode_steps": 5,
+          "ode_solver": "heun",
+          "sigma_max": 20.0,
+          "sigma_min": 0.002,
+          "inner_sigma_min": 0.002,
+          "rho": 7.0,
+          "gpu_batch_size": 4,
+          "num_scenarios": 32,
+          "projection_rtol": 1e-10,
+          "network_precision": "float32",
+          "solve_precision": "float64",
+          "image_shape": [
+            256,
+            256
+          ]
+        },
+        "optimization": {
+          "control_grid": 128,
+          "rms_bound": 2.0,
+          "adam_steps": 200,
+          "learning_rate": 0.1,
+          "scenario_chunk": 16
+        },
+        "final_decoder": "daps_mean",
+        "final_sampling": {
+          "chains": 32,
+          "diffpir_steps": 50,
+          "outer_steps": 200,
+          "gpu_batch_size": 16
+        },
+        "image_height": 256,
+        "image_width": 256,
+        "image_shape": [
+          256,
+          256
+        ],
+        "image_size": 256,
+        "orientation": "native",
+        "shared_factor": false,
+        "final_measurements": 655
+      },
+      "options": {
+        "candidate_design": {
+          "name": "eigen_v1",
+          "rows": 32,
+          "binary_threshold_mode": "zero",
+          "alignment_quantiles": [
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            0.6,
+            0.7,
+            0.8,
+            0.9
+          ]
+        },
+        "initializations": 3,
+        "pool_chunk": 128,
+        "spread_weight": 0.25,
+        "lightweight_eigen": false
+      },
+      "physics": {
+        "wavelength": 6.35e-07,
+        "image_pitch": 1.08e-05,
+        "dmd_pitch": 1.08e-05,
+        "object_distance": 0.0225,
+        "sensor_distance": 0.02,
+        "sensor_width": 0.0097,
+        "height": 256,
+        "width": 256
+      },
+      "rank_rtol": 1e-10,
+      "prior": "outputs/prior_daps_v2/final_65k.pt",
+      "mean": "assets/mean.pt",
+      "prior_spectrum": "assets/residual_spectrum.pt",
+      "manifest": "assets/split.json",
+      "templates": {
+        "SET11_256": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_v2/final_65k.pt",
+          "final_sampling": {
+            "gpu_batch_size": 16
+          },
+          "height": 256,
+          "width": 256,
+          "orientation": "native",
+          "mean": "assets/mean.pt",
+          "prior": "outputs/prior_daps_v2/final_65k.pt",
+          "pattern_pool": {
+            "name": "legacy_low_order"
+          },
+          "initial_measurements": 64,
+          "pool_size": 4096,
+          "shared_factor": false,
+          "lightweight_eigen": false
+        },
+        "SET11_512": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_v2/final_65k.pt",
+          "final_sampling": {
+            "gpu_batch_size": 4
+          },
+          "height": 512,
+          "width": 512,
+          "orientation": "native",
+          "mean": "assets/mean_512.pt",
+          "prior": "outputs/prior_daps_v2/final_65k.pt",
+          "initial_measurements": 256,
+          "pool_size": 4096,
+          "shared_factor": true,
+          "lightweight_eigen": true,
+          "batch_size": 32,
+          "gpu_batch_size": 2,
+          "pattern_pool": {
+            "name": "legacy_low_order"
+          }
+        },
+        "BSD68_481x321": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_bsd68_481x321/latest.pt",
+          "final_sampling": {
+            "gpu_batch_size": 2
+          },
+          "height": 321,
+          "width": 481,
+          "orientation": "landscape_clockwise90_for_portrait",
+          "mean": "assets/mean_bsd68_481x321.pt",
+          "prior": "outputs/prior_daps_bsd68_481x321/latest.pt",
+          "initial_measurements": 64,
+          "pool_size": 2048,
+          "shared_factor": false,
+          "lightweight_eigen": false,
+          "batch_size": 32,
+          "gpu_batch_size": 2,
+          "pattern_pool": {
+            "name": "rectangular_cosine_v1"
+          }
+        },
+        "BSD68_481x321_mirflickr": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_v2/final_65k.pt",
+          "final_sampling": {
+            "gpu_batch_size": 8
+          },
+          "height": 321,
+          "width": 481,
+          "orientation": "landscape_clockwise90_for_portrait",
+          "mean": "assets/mean_bsd68_481x321.pt",
+          "prior": "outputs/prior_daps_v2/final_65k.pt",
+          "initial_measurements": 64,
+          "pool_size": 2048,
+          "shared_factor": false,
+          "lightweight_eigen": false,
+          "batch_size": 32,
+          "gpu_batch_size": 4,
+          "pattern_pool": {
+            "name": "rectangular_cosine_v1"
+          }
+        },
+        "BSD68_481x321_bsdv2": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_bsd68_v2/final_60k.pt",
+          "final_sampling": {
+            "gpu_batch_size": 8
+          },
+          "height": 321,
+          "width": 481,
+          "orientation": "landscape_clockwise90_for_portrait",
+          "mean": "assets/mean_bsd68_481x321.pt",
+          "prior": "outputs/prior_daps_bsd68_v2/final_60k.pt",
+          "initial_measurements": 64,
+          "pool_size": 2048,
+          "shared_factor": false,
+          "lightweight_eigen": false,
+          "batch_size": 32,
+          "gpu_batch_size": 4,
+          "pattern_pool": {
+            "name": "rectangular_cosine_v1"
+          }
+        }
+      },
+      "sampling_ratio": 0.01,
+      "overrides": [
+        "config.sampling.num_scenarios=32"
+      ],
+      "final_prior": "outputs/prior_daps_v2/final_65k.pt",
+      "template": "SET11_256",
+      "measurement_rule": "floor(0.01*H*W)"
+    },
+    "abl_ood_celeba_check_spread_only_o33": {
+      "method": "propagation-full-pseudoinverse",
+      "config": {
+        "seed": 20260921,
+        "device": "cuda:0",
+        "initial_measurements": 64,
+        "batch_size": 32,
+        "pool_size": 4096,
+        "pattern_pool": {
+          "name": "legacy_low_order"
+        },
+        "dmd_bit_depth": 8,
+        "measurement_convention": "incoherent_propagated_uint8_difference_div_sqrt_d",
+        "sensor_noise": {
+          "model": "dark_gaussian",
+          "sigma_rel": 0.0
+        },
+        "sampling": {
+          "sampler": "diffpir",
+          "diffpir_steps": 50,
+          "diffpir_lambda": 1.0,
+          "diffpir_zeta": 1.0,
+          "diffpir_eta": 0.0,
+          "diffpir_sigma_y": 0.0,
+          "outer_steps": 45,
+          "ode_steps": 5,
+          "ode_solver": "heun",
+          "sigma_max": 20.0,
+          "sigma_min": 0.002,
+          "inner_sigma_min": 0.002,
+          "rho": 7.0,
+          "gpu_batch_size": 4,
+          "num_scenarios": 33,
+          "projection_rtol": 1e-10,
+          "network_precision": "float32",
+          "solve_precision": "float64",
+          "image_shape": [
+            256,
+            256
+          ]
+        },
+        "optimization": {
+          "control_grid": 128,
+          "rms_bound": 2.0,
+          "adam_steps": 200,
+          "learning_rate": 0.1,
+          "scenario_chunk": 16
+        },
+        "final_decoder": "daps_mean",
+        "final_sampling": {
+          "chains": 32,
+          "diffpir_steps": 50,
+          "outer_steps": 200,
+          "gpu_batch_size": 16
+        },
+        "image_height": 256,
+        "image_width": 256,
+        "image_shape": [
+          256,
+          256
+        ],
+        "image_size": 256,
+        "orientation": "native",
+        "shared_factor": false,
+        "final_measurements": 655
+      },
+      "options": {
+        "candidate_design": {
+          "name": "adasense_pca",
+          "rows": 32,
+          "binary_threshold_mode": "zero",
+          "alignment_quantiles": [
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            0.6,
+            0.7,
+            0.8,
+            0.9
+          ]
+        },
+        "initializations": 3,
+        "pool_chunk": 128,
+        "spread_weight": 0.25,
+        "lightweight_eigen": false
+      },
+      "physics": {
+        "wavelength": 6.35e-07,
+        "image_pitch": 1.08e-05,
+        "dmd_pitch": 1.08e-05,
+        "object_distance": 0.0225,
+        "sensor_distance": 0.02,
+        "sensor_width": 0.0097,
+        "height": 256,
+        "width": 256
+      },
+      "rank_rtol": 1e-10,
+      "prior": "outputs/prior_daps_v2/final_65k.pt",
+      "mean": "assets/mean.pt",
+      "prior_spectrum": "assets/residual_spectrum.pt",
+      "manifest": "assets/split.json",
+      "templates": {
+        "SET11_256": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_v2/final_65k.pt",
+          "final_sampling": {
+            "gpu_batch_size": 16
+          },
+          "height": 256,
+          "width": 256,
+          "orientation": "native",
+          "mean": "assets/mean.pt",
+          "prior": "outputs/prior_daps_v2/final_65k.pt",
+          "pattern_pool": {
+            "name": "legacy_low_order"
+          },
+          "initial_measurements": 64,
+          "pool_size": 4096,
+          "shared_factor": false,
+          "lightweight_eigen": false
+        },
+        "SET11_512": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_v2/final_65k.pt",
+          "final_sampling": {
+            "gpu_batch_size": 4
+          },
+          "height": 512,
+          "width": 512,
+          "orientation": "native",
+          "mean": "assets/mean_512.pt",
+          "prior": "outputs/prior_daps_v2/final_65k.pt",
+          "initial_measurements": 256,
+          "pool_size": 4096,
+          "shared_factor": true,
+          "lightweight_eigen": true,
+          "batch_size": 32,
+          "gpu_batch_size": 2,
+          "pattern_pool": {
+            "name": "legacy_low_order"
+          }
+        },
+        "BSD68_481x321": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_bsd68_481x321/latest.pt",
+          "final_sampling": {
+            "gpu_batch_size": 2
+          },
+          "height": 321,
+          "width": 481,
+          "orientation": "landscape_clockwise90_for_portrait",
+          "mean": "assets/mean_bsd68_481x321.pt",
+          "prior": "outputs/prior_daps_bsd68_481x321/latest.pt",
+          "initial_measurements": 64,
+          "pool_size": 2048,
+          "shared_factor": false,
+          "lightweight_eigen": false,
+          "batch_size": 32,
+          "gpu_batch_size": 2,
+          "pattern_pool": {
+            "name": "rectangular_cosine_v1"
+          }
+        },
+        "BSD68_481x321_mirflickr": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_v2/final_65k.pt",
+          "final_sampling": {
+            "gpu_batch_size": 8
+          },
+          "height": 321,
+          "width": 481,
+          "orientation": "landscape_clockwise90_for_portrait",
+          "mean": "assets/mean_bsd68_481x321.pt",
+          "prior": "outputs/prior_daps_v2/final_65k.pt",
+          "initial_measurements": 64,
+          "pool_size": 2048,
+          "shared_factor": false,
+          "lightweight_eigen": false,
+          "batch_size": 32,
+          "gpu_batch_size": 4,
+          "pattern_pool": {
+            "name": "rectangular_cosine_v1"
+          }
+        },
+        "BSD68_481x321_bsdv2": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_bsd68_v2/final_60k.pt",
+          "final_sampling": {
+            "gpu_batch_size": 8
+          },
+          "height": 321,
+          "width": 481,
+          "orientation": "landscape_clockwise90_for_portrait",
+          "mean": "assets/mean_bsd68_481x321.pt",
+          "prior": "outputs/prior_daps_bsd68_v2/final_60k.pt",
+          "initial_measurements": 64,
+          "pool_size": 2048,
+          "shared_factor": false,
+          "lightweight_eigen": false,
+          "batch_size": 32,
+          "gpu_batch_size": 4,
+          "pattern_pool": {
+            "name": "rectangular_cosine_v1"
+          }
+        }
+      },
+      "sampling_ratio": 0.01,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=33"
+      ],
+      "final_prior": "outputs/prior_daps_v2/final_65k.pt",
+      "template": "SET11_256",
+      "measurement_rule": "floor(0.01*H*W)"
+    },
+    "abl_ood_dtd_check_bias_spread_o32": {
+      "method": "propagation-full-pseudoinverse",
+      "config": {
+        "seed": 20260921,
+        "device": "cuda:0",
+        "initial_measurements": 64,
+        "batch_size": 32,
+        "pool_size": 4096,
+        "pattern_pool": {
+          "name": "legacy_low_order"
+        },
+        "dmd_bit_depth": 8,
+        "measurement_convention": "incoherent_propagated_uint8_difference_div_sqrt_d",
+        "sensor_noise": {
+          "model": "dark_gaussian",
+          "sigma_rel": 0.0
+        },
+        "sampling": {
+          "sampler": "diffpir",
+          "diffpir_steps": 50,
+          "diffpir_lambda": 1.0,
+          "diffpir_zeta": 1.0,
+          "diffpir_eta": 0.0,
+          "diffpir_sigma_y": 0.0,
+          "outer_steps": 45,
+          "ode_steps": 5,
+          "ode_solver": "heun",
+          "sigma_max": 20.0,
+          "sigma_min": 0.002,
+          "inner_sigma_min": 0.002,
+          "rho": 7.0,
+          "gpu_batch_size": 4,
+          "num_scenarios": 32,
+          "projection_rtol": 1e-10,
+          "network_precision": "float32",
+          "solve_precision": "float64",
+          "image_shape": [
+            256,
+            256
+          ]
+        },
+        "optimization": {
+          "control_grid": 128,
+          "rms_bound": 2.0,
+          "adam_steps": 200,
+          "learning_rate": 0.1,
+          "scenario_chunk": 16
+        },
+        "final_decoder": "daps_mean",
+        "final_sampling": {
+          "chains": 32,
+          "diffpir_steps": 50,
+          "outer_steps": 200,
+          "gpu_batch_size": 16
+        },
+        "image_height": 256,
+        "image_width": 256,
+        "image_shape": [
+          256,
+          256
+        ],
+        "image_size": 256,
+        "orientation": "native",
+        "shared_factor": false,
+        "final_measurements": 655
+      },
+      "options": {
+        "candidate_design": {
+          "name": "eigen_v1",
+          "rows": 32,
+          "binary_threshold_mode": "zero",
+          "alignment_quantiles": [
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            0.6,
+            0.7,
+            0.8,
+            0.9
+          ]
+        },
+        "initializations": 3,
+        "pool_chunk": 128,
+        "spread_weight": 0.25,
+        "lightweight_eigen": false
+      },
+      "physics": {
+        "wavelength": 6.35e-07,
+        "image_pitch": 1.08e-05,
+        "dmd_pitch": 1.08e-05,
+        "object_distance": 0.0225,
+        "sensor_distance": 0.02,
+        "sensor_width": 0.0097,
+        "height": 256,
+        "width": 256
+      },
+      "rank_rtol": 1e-10,
+      "prior": "outputs/prior_daps_v2/final_65k.pt",
+      "mean": "assets/mean.pt",
+      "prior_spectrum": "assets/residual_spectrum.pt",
+      "manifest": "assets/split.json",
+      "templates": {
+        "SET11_256": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_v2/final_65k.pt",
+          "final_sampling": {
+            "gpu_batch_size": 16
+          },
+          "height": 256,
+          "width": 256,
+          "orientation": "native",
+          "mean": "assets/mean.pt",
+          "prior": "outputs/prior_daps_v2/final_65k.pt",
+          "pattern_pool": {
+            "name": "legacy_low_order"
+          },
+          "initial_measurements": 64,
+          "pool_size": 4096,
+          "shared_factor": false,
+          "lightweight_eigen": false
+        },
+        "SET11_512": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_v2/final_65k.pt",
+          "final_sampling": {
+            "gpu_batch_size": 4
+          },
+          "height": 512,
+          "width": 512,
+          "orientation": "native",
+          "mean": "assets/mean_512.pt",
+          "prior": "outputs/prior_daps_v2/final_65k.pt",
+          "initial_measurements": 256,
+          "pool_size": 4096,
+          "shared_factor": true,
+          "lightweight_eigen": true,
+          "batch_size": 32,
+          "gpu_batch_size": 2,
+          "pattern_pool": {
+            "name": "legacy_low_order"
+          }
+        },
+        "BSD68_481x321": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_bsd68_481x321/latest.pt",
+          "final_sampling": {
+            "gpu_batch_size": 2
+          },
+          "height": 321,
+          "width": 481,
+          "orientation": "landscape_clockwise90_for_portrait",
+          "mean": "assets/mean_bsd68_481x321.pt",
+          "prior": "outputs/prior_daps_bsd68_481x321/latest.pt",
+          "initial_measurements": 64,
+          "pool_size": 2048,
+          "shared_factor": false,
+          "lightweight_eigen": false,
+          "batch_size": 32,
+          "gpu_batch_size": 2,
+          "pattern_pool": {
+            "name": "rectangular_cosine_v1"
+          }
+        },
+        "BSD68_481x321_mirflickr": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_v2/final_65k.pt",
+          "final_sampling": {
+            "gpu_batch_size": 8
+          },
+          "height": 321,
+          "width": 481,
+          "orientation": "landscape_clockwise90_for_portrait",
+          "mean": "assets/mean_bsd68_481x321.pt",
+          "prior": "outputs/prior_daps_v2/final_65k.pt",
+          "initial_measurements": 64,
+          "pool_size": 2048,
+          "shared_factor": false,
+          "lightweight_eigen": false,
+          "batch_size": 32,
+          "gpu_batch_size": 4,
+          "pattern_pool": {
+            "name": "rectangular_cosine_v1"
+          }
+        },
+        "BSD68_481x321_bsdv2": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_bsd68_v2/final_60k.pt",
+          "final_sampling": {
+            "gpu_batch_size": 8
+          },
+          "height": 321,
+          "width": 481,
+          "orientation": "landscape_clockwise90_for_portrait",
+          "mean": "assets/mean_bsd68_481x321.pt",
+          "prior": "outputs/prior_daps_bsd68_v2/final_60k.pt",
+          "initial_measurements": 64,
+          "pool_size": 2048,
+          "shared_factor": false,
+          "lightweight_eigen": false,
+          "batch_size": 32,
+          "gpu_batch_size": 4,
+          "pattern_pool": {
+            "name": "rectangular_cosine_v1"
+          }
+        }
+      },
+      "sampling_ratio": 0.01,
+      "overrides": [
+        "config.sampling.num_scenarios=32"
+      ],
+      "final_prior": "outputs/prior_daps_v2/final_65k.pt",
+      "template": "SET11_256",
+      "measurement_rule": "floor(0.01*H*W)"
+    },
+    "abl_ood_dtd_check_spread_only_o33": {
+      "method": "propagation-full-pseudoinverse",
+      "config": {
+        "seed": 20260921,
+        "device": "cuda:0",
+        "initial_measurements": 64,
+        "batch_size": 32,
+        "pool_size": 4096,
+        "pattern_pool": {
+          "name": "legacy_low_order"
+        },
+        "dmd_bit_depth": 8,
+        "measurement_convention": "incoherent_propagated_uint8_difference_div_sqrt_d",
+        "sensor_noise": {
+          "model": "dark_gaussian",
+          "sigma_rel": 0.0
+        },
+        "sampling": {
+          "sampler": "diffpir",
+          "diffpir_steps": 50,
+          "diffpir_lambda": 1.0,
+          "diffpir_zeta": 1.0,
+          "diffpir_eta": 0.0,
+          "diffpir_sigma_y": 0.0,
+          "outer_steps": 45,
+          "ode_steps": 5,
+          "ode_solver": "heun",
+          "sigma_max": 20.0,
+          "sigma_min": 0.002,
+          "inner_sigma_min": 0.002,
+          "rho": 7.0,
+          "gpu_batch_size": 4,
+          "num_scenarios": 33,
+          "projection_rtol": 1e-10,
+          "network_precision": "float32",
+          "solve_precision": "float64",
+          "image_shape": [
+            256,
+            256
+          ]
+        },
+        "optimization": {
+          "control_grid": 128,
+          "rms_bound": 2.0,
+          "adam_steps": 200,
+          "learning_rate": 0.1,
+          "scenario_chunk": 16
+        },
+        "final_decoder": "daps_mean",
+        "final_sampling": {
+          "chains": 32,
+          "diffpir_steps": 50,
+          "outer_steps": 200,
+          "gpu_batch_size": 16
+        },
+        "image_height": 256,
+        "image_width": 256,
+        "image_shape": [
+          256,
+          256
+        ],
+        "image_size": 256,
+        "orientation": "native",
+        "shared_factor": false,
+        "final_measurements": 655
+      },
+      "options": {
+        "candidate_design": {
+          "name": "adasense_pca",
+          "rows": 32,
+          "binary_threshold_mode": "zero",
+          "alignment_quantiles": [
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            0.6,
+            0.7,
+            0.8,
+            0.9
+          ]
+        },
+        "initializations": 3,
+        "pool_chunk": 128,
+        "spread_weight": 0.25,
+        "lightweight_eigen": false
+      },
+      "physics": {
+        "wavelength": 6.35e-07,
+        "image_pitch": 1.08e-05,
+        "dmd_pitch": 1.08e-05,
+        "object_distance": 0.0225,
+        "sensor_distance": 0.02,
+        "sensor_width": 0.0097,
+        "height": 256,
+        "width": 256
+      },
+      "rank_rtol": 1e-10,
+      "prior": "outputs/prior_daps_v2/final_65k.pt",
+      "mean": "assets/mean.pt",
+      "prior_spectrum": "assets/residual_spectrum.pt",
+      "manifest": "assets/split.json",
+      "templates": {
+        "SET11_256": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_v2/final_65k.pt",
+          "final_sampling": {
+            "gpu_batch_size": 16
+          },
+          "height": 256,
+          "width": 256,
+          "orientation": "native",
+          "mean": "assets/mean.pt",
+          "prior": "outputs/prior_daps_v2/final_65k.pt",
+          "pattern_pool": {
+            "name": "legacy_low_order"
+          },
+          "initial_measurements": 64,
+          "pool_size": 4096,
+          "shared_factor": false,
+          "lightweight_eigen": false
+        },
+        "SET11_512": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_v2/final_65k.pt",
+          "final_sampling": {
+            "gpu_batch_size": 4
+          },
+          "height": 512,
+          "width": 512,
+          "orientation": "native",
+          "mean": "assets/mean_512.pt",
+          "prior": "outputs/prior_daps_v2/final_65k.pt",
+          "initial_measurements": 256,
+          "pool_size": 4096,
+          "shared_factor": true,
+          "lightweight_eigen": true,
+          "batch_size": 32,
+          "gpu_batch_size": 2,
+          "pattern_pool": {
+            "name": "legacy_low_order"
+          }
+        },
+        "BSD68_481x321": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_bsd68_481x321/latest.pt",
+          "final_sampling": {
+            "gpu_batch_size": 2
+          },
+          "height": 321,
+          "width": 481,
+          "orientation": "landscape_clockwise90_for_portrait",
+          "mean": "assets/mean_bsd68_481x321.pt",
+          "prior": "outputs/prior_daps_bsd68_481x321/latest.pt",
+          "initial_measurements": 64,
+          "pool_size": 2048,
+          "shared_factor": false,
+          "lightweight_eigen": false,
+          "batch_size": 32,
+          "gpu_batch_size": 2,
+          "pattern_pool": {
+            "name": "rectangular_cosine_v1"
+          }
+        },
+        "BSD68_481x321_mirflickr": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_v2/final_65k.pt",
+          "final_sampling": {
+            "gpu_batch_size": 8
+          },
+          "height": 321,
+          "width": 481,
+          "orientation": "landscape_clockwise90_for_portrait",
+          "mean": "assets/mean_bsd68_481x321.pt",
+          "prior": "outputs/prior_daps_v2/final_65k.pt",
+          "initial_measurements": 64,
+          "pool_size": 2048,
+          "shared_factor": false,
+          "lightweight_eigen": false,
+          "batch_size": 32,
+          "gpu_batch_size": 4,
+          "pattern_pool": {
+            "name": "rectangular_cosine_v1"
+          }
+        },
+        "BSD68_481x321_bsdv2": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_bsd68_v2/final_60k.pt",
+          "final_sampling": {
+            "gpu_batch_size": 8
+          },
+          "height": 321,
+          "width": 481,
+          "orientation": "landscape_clockwise90_for_portrait",
+          "mean": "assets/mean_bsd68_481x321.pt",
+          "prior": "outputs/prior_daps_bsd68_v2/final_60k.pt",
+          "initial_measurements": 64,
+          "pool_size": 2048,
+          "shared_factor": false,
+          "lightweight_eigen": false,
+          "batch_size": 32,
+          "gpu_batch_size": 4,
+          "pattern_pool": {
+            "name": "rectangular_cosine_v1"
+          }
+        }
+      },
+      "sampling_ratio": 0.01,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=33"
+      ],
+      "final_prior": "outputs/prior_daps_v2/final_65k.pt",
+      "template": "SET11_256",
+      "measurement_rule": "floor(0.01*H*W)"
+    },
+    "abl_ood_celeba_test_bias_spread_o32": {
+      "method": "propagation-full-pseudoinverse",
+      "config": {
+        "seed": 20260921,
+        "device": "cuda:0",
+        "initial_measurements": 64,
+        "batch_size": 32,
+        "pool_size": 4096,
+        "pattern_pool": {
+          "name": "legacy_low_order"
+        },
+        "dmd_bit_depth": 8,
+        "measurement_convention": "incoherent_propagated_uint8_difference_div_sqrt_d",
+        "sensor_noise": {
+          "model": "dark_gaussian",
+          "sigma_rel": 0.0
+        },
+        "sampling": {
+          "sampler": "diffpir",
+          "diffpir_steps": 50,
+          "diffpir_lambda": 1.0,
+          "diffpir_zeta": 1.0,
+          "diffpir_eta": 0.0,
+          "diffpir_sigma_y": 0.0,
+          "outer_steps": 45,
+          "ode_steps": 5,
+          "ode_solver": "heun",
+          "sigma_max": 20.0,
+          "sigma_min": 0.002,
+          "inner_sigma_min": 0.002,
+          "rho": 7.0,
+          "gpu_batch_size": 4,
+          "num_scenarios": 32,
+          "projection_rtol": 1e-10,
+          "network_precision": "float32",
+          "solve_precision": "float64",
+          "image_shape": [
+            256,
+            256
+          ]
+        },
+        "optimization": {
+          "control_grid": 128,
+          "rms_bound": 2.0,
+          "adam_steps": 200,
+          "learning_rate": 0.1,
+          "scenario_chunk": 16
+        },
+        "final_decoder": "daps_mean",
+        "final_sampling": {
+          "chains": 32,
+          "diffpir_steps": 50,
+          "outer_steps": 200,
+          "gpu_batch_size": 16
+        },
+        "image_height": 256,
+        "image_width": 256,
+        "image_shape": [
+          256,
+          256
+        ],
+        "image_size": 256,
+        "orientation": "native",
+        "shared_factor": false,
+        "final_measurements": 655
+      },
+      "options": {
+        "candidate_design": {
+          "name": "eigen_v1",
+          "rows": 32,
+          "binary_threshold_mode": "zero",
+          "alignment_quantiles": [
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            0.6,
+            0.7,
+            0.8,
+            0.9
+          ]
+        },
+        "initializations": 3,
+        "pool_chunk": 128,
+        "spread_weight": 0.25,
+        "lightweight_eigen": false
+      },
+      "physics": {
+        "wavelength": 6.35e-07,
+        "image_pitch": 1.08e-05,
+        "dmd_pitch": 1.08e-05,
+        "object_distance": 0.0225,
+        "sensor_distance": 0.02,
+        "sensor_width": 0.0097,
+        "height": 256,
+        "width": 256
+      },
+      "rank_rtol": 1e-10,
+      "prior": "outputs/prior_daps_v2/final_65k.pt",
+      "mean": "assets/mean.pt",
+      "prior_spectrum": "assets/residual_spectrum.pt",
+      "manifest": "assets/split.json",
+      "templates": {
+        "SET11_256": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_v2/final_65k.pt",
+          "final_sampling": {
+            "gpu_batch_size": 16
+          },
+          "height": 256,
+          "width": 256,
+          "orientation": "native",
+          "mean": "assets/mean.pt",
+          "prior": "outputs/prior_daps_v2/final_65k.pt",
+          "pattern_pool": {
+            "name": "legacy_low_order"
+          },
+          "initial_measurements": 64,
+          "pool_size": 4096,
+          "shared_factor": false,
+          "lightweight_eigen": false
+        },
+        "SET11_512": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_v2/final_65k.pt",
+          "final_sampling": {
+            "gpu_batch_size": 4
+          },
+          "height": 512,
+          "width": 512,
+          "orientation": "native",
+          "mean": "assets/mean_512.pt",
+          "prior": "outputs/prior_daps_v2/final_65k.pt",
+          "initial_measurements": 256,
+          "pool_size": 4096,
+          "shared_factor": true,
+          "lightweight_eigen": true,
+          "batch_size": 32,
+          "gpu_batch_size": 2,
+          "pattern_pool": {
+            "name": "legacy_low_order"
+          }
+        },
+        "BSD68_481x321": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_bsd68_481x321/latest.pt",
+          "final_sampling": {
+            "gpu_batch_size": 2
+          },
+          "height": 321,
+          "width": 481,
+          "orientation": "landscape_clockwise90_for_portrait",
+          "mean": "assets/mean_bsd68_481x321.pt",
+          "prior": "outputs/prior_daps_bsd68_481x321/latest.pt",
+          "initial_measurements": 64,
+          "pool_size": 2048,
+          "shared_factor": false,
+          "lightweight_eigen": false,
+          "batch_size": 32,
+          "gpu_batch_size": 2,
+          "pattern_pool": {
+            "name": "rectangular_cosine_v1"
+          }
+        },
+        "BSD68_481x321_mirflickr": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_v2/final_65k.pt",
+          "final_sampling": {
+            "gpu_batch_size": 8
+          },
+          "height": 321,
+          "width": 481,
+          "orientation": "landscape_clockwise90_for_portrait",
+          "mean": "assets/mean_bsd68_481x321.pt",
+          "prior": "outputs/prior_daps_v2/final_65k.pt",
+          "initial_measurements": 64,
+          "pool_size": 2048,
+          "shared_factor": false,
+          "lightweight_eigen": false,
+          "batch_size": 32,
+          "gpu_batch_size": 4,
+          "pattern_pool": {
+            "name": "rectangular_cosine_v1"
+          }
+        },
+        "BSD68_481x321_bsdv2": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_bsd68_v2/final_60k.pt",
+          "final_sampling": {
+            "gpu_batch_size": 8
+          },
+          "height": 321,
+          "width": 481,
+          "orientation": "landscape_clockwise90_for_portrait",
+          "mean": "assets/mean_bsd68_481x321.pt",
+          "prior": "outputs/prior_daps_bsd68_v2/final_60k.pt",
+          "initial_measurements": 64,
+          "pool_size": 2048,
+          "shared_factor": false,
+          "lightweight_eigen": false,
+          "batch_size": 32,
+          "gpu_batch_size": 4,
+          "pattern_pool": {
+            "name": "rectangular_cosine_v1"
+          }
+        }
+      },
+      "sampling_ratio": 0.01,
+      "overrides": [
+        "config.sampling.num_scenarios=32"
+      ],
+      "final_prior": "outputs/prior_daps_v2/final_65k.pt",
+      "template": "SET11_256",
+      "measurement_rule": "floor(0.01*H*W)"
+    },
+    "abl_ood_celeba_test_spread_only_o33": {
+      "method": "propagation-full-pseudoinverse",
+      "config": {
+        "seed": 20260921,
+        "device": "cuda:0",
+        "initial_measurements": 64,
+        "batch_size": 32,
+        "pool_size": 4096,
+        "pattern_pool": {
+          "name": "legacy_low_order"
+        },
+        "dmd_bit_depth": 8,
+        "measurement_convention": "incoherent_propagated_uint8_difference_div_sqrt_d",
+        "sensor_noise": {
+          "model": "dark_gaussian",
+          "sigma_rel": 0.0
+        },
+        "sampling": {
+          "sampler": "diffpir",
+          "diffpir_steps": 50,
+          "diffpir_lambda": 1.0,
+          "diffpir_zeta": 1.0,
+          "diffpir_eta": 0.0,
+          "diffpir_sigma_y": 0.0,
+          "outer_steps": 45,
+          "ode_steps": 5,
+          "ode_solver": "heun",
+          "sigma_max": 20.0,
+          "sigma_min": 0.002,
+          "inner_sigma_min": 0.002,
+          "rho": 7.0,
+          "gpu_batch_size": 4,
+          "num_scenarios": 33,
+          "projection_rtol": 1e-10,
+          "network_precision": "float32",
+          "solve_precision": "float64",
+          "image_shape": [
+            256,
+            256
+          ]
+        },
+        "optimization": {
+          "control_grid": 128,
+          "rms_bound": 2.0,
+          "adam_steps": 200,
+          "learning_rate": 0.1,
+          "scenario_chunk": 16
+        },
+        "final_decoder": "daps_mean",
+        "final_sampling": {
+          "chains": 32,
+          "diffpir_steps": 50,
+          "outer_steps": 200,
+          "gpu_batch_size": 16
+        },
+        "image_height": 256,
+        "image_width": 256,
+        "image_shape": [
+          256,
+          256
+        ],
+        "image_size": 256,
+        "orientation": "native",
+        "shared_factor": false,
+        "final_measurements": 655
+      },
+      "options": {
+        "candidate_design": {
+          "name": "adasense_pca",
+          "rows": 32,
+          "binary_threshold_mode": "zero",
+          "alignment_quantiles": [
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            0.6,
+            0.7,
+            0.8,
+            0.9
+          ]
+        },
+        "initializations": 3,
+        "pool_chunk": 128,
+        "spread_weight": 0.25,
+        "lightweight_eigen": false
+      },
+      "physics": {
+        "wavelength": 6.35e-07,
+        "image_pitch": 1.08e-05,
+        "dmd_pitch": 1.08e-05,
+        "object_distance": 0.0225,
+        "sensor_distance": 0.02,
+        "sensor_width": 0.0097,
+        "height": 256,
+        "width": 256
+      },
+      "rank_rtol": 1e-10,
+      "prior": "outputs/prior_daps_v2/final_65k.pt",
+      "mean": "assets/mean.pt",
+      "prior_spectrum": "assets/residual_spectrum.pt",
+      "manifest": "assets/split.json",
+      "templates": {
+        "SET11_256": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_v2/final_65k.pt",
+          "final_sampling": {
+            "gpu_batch_size": 16
+          },
+          "height": 256,
+          "width": 256,
+          "orientation": "native",
+          "mean": "assets/mean.pt",
+          "prior": "outputs/prior_daps_v2/final_65k.pt",
+          "pattern_pool": {
+            "name": "legacy_low_order"
+          },
+          "initial_measurements": 64,
+          "pool_size": 4096,
+          "shared_factor": false,
+          "lightweight_eigen": false
+        },
+        "SET11_512": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_v2/final_65k.pt",
+          "final_sampling": {
+            "gpu_batch_size": 4
+          },
+          "height": 512,
+          "width": 512,
+          "orientation": "native",
+          "mean": "assets/mean_512.pt",
+          "prior": "outputs/prior_daps_v2/final_65k.pt",
+          "initial_measurements": 256,
+          "pool_size": 4096,
+          "shared_factor": true,
+          "lightweight_eigen": true,
+          "batch_size": 32,
+          "gpu_batch_size": 2,
+          "pattern_pool": {
+            "name": "legacy_low_order"
+          }
+        },
+        "BSD68_481x321": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_bsd68_481x321/latest.pt",
+          "final_sampling": {
+            "gpu_batch_size": 2
+          },
+          "height": 321,
+          "width": 481,
+          "orientation": "landscape_clockwise90_for_portrait",
+          "mean": "assets/mean_bsd68_481x321.pt",
+          "prior": "outputs/prior_daps_bsd68_481x321/latest.pt",
+          "initial_measurements": 64,
+          "pool_size": 2048,
+          "shared_factor": false,
+          "lightweight_eigen": false,
+          "batch_size": 32,
+          "gpu_batch_size": 2,
+          "pattern_pool": {
+            "name": "rectangular_cosine_v1"
+          }
+        },
+        "BSD68_481x321_mirflickr": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_v2/final_65k.pt",
+          "final_sampling": {
+            "gpu_batch_size": 8
+          },
+          "height": 321,
+          "width": 481,
+          "orientation": "landscape_clockwise90_for_portrait",
+          "mean": "assets/mean_bsd68_481x321.pt",
+          "prior": "outputs/prior_daps_v2/final_65k.pt",
+          "initial_measurements": 64,
+          "pool_size": 2048,
+          "shared_factor": false,
+          "lightweight_eigen": false,
+          "batch_size": 32,
+          "gpu_batch_size": 4,
+          "pattern_pool": {
+            "name": "rectangular_cosine_v1"
+          }
+        },
+        "BSD68_481x321_bsdv2": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_bsd68_v2/final_60k.pt",
+          "final_sampling": {
+            "gpu_batch_size": 8
+          },
+          "height": 321,
+          "width": 481,
+          "orientation": "landscape_clockwise90_for_portrait",
+          "mean": "assets/mean_bsd68_481x321.pt",
+          "prior": "outputs/prior_daps_bsd68_v2/final_60k.pt",
+          "initial_measurements": 64,
+          "pool_size": 2048,
+          "shared_factor": false,
+          "lightweight_eigen": false,
+          "batch_size": 32,
+          "gpu_batch_size": 4,
+          "pattern_pool": {
+            "name": "rectangular_cosine_v1"
+          }
+        }
+      },
+      "sampling_ratio": 0.01,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=33"
+      ],
+      "final_prior": "outputs/prior_daps_v2/final_65k.pt",
+      "template": "SET11_256",
+      "measurement_rule": "floor(0.01*H*W)"
+    },
+    "abl_ood_dtd_test_bias_spread_o32": {
+      "method": "propagation-full-pseudoinverse",
+      "config": {
+        "seed": 20260921,
+        "device": "cuda:0",
+        "initial_measurements": 64,
+        "batch_size": 32,
+        "pool_size": 4096,
+        "pattern_pool": {
+          "name": "legacy_low_order"
+        },
+        "dmd_bit_depth": 8,
+        "measurement_convention": "incoherent_propagated_uint8_difference_div_sqrt_d",
+        "sensor_noise": {
+          "model": "dark_gaussian",
+          "sigma_rel": 0.0
+        },
+        "sampling": {
+          "sampler": "diffpir",
+          "diffpir_steps": 50,
+          "diffpir_lambda": 1.0,
+          "diffpir_zeta": 1.0,
+          "diffpir_eta": 0.0,
+          "diffpir_sigma_y": 0.0,
+          "outer_steps": 45,
+          "ode_steps": 5,
+          "ode_solver": "heun",
+          "sigma_max": 20.0,
+          "sigma_min": 0.002,
+          "inner_sigma_min": 0.002,
+          "rho": 7.0,
+          "gpu_batch_size": 4,
+          "num_scenarios": 32,
+          "projection_rtol": 1e-10,
+          "network_precision": "float32",
+          "solve_precision": "float64",
+          "image_shape": [
+            256,
+            256
+          ]
+        },
+        "optimization": {
+          "control_grid": 128,
+          "rms_bound": 2.0,
+          "adam_steps": 200,
+          "learning_rate": 0.1,
+          "scenario_chunk": 16
+        },
+        "final_decoder": "daps_mean",
+        "final_sampling": {
+          "chains": 32,
+          "diffpir_steps": 50,
+          "outer_steps": 200,
+          "gpu_batch_size": 16
+        },
+        "image_height": 256,
+        "image_width": 256,
+        "image_shape": [
+          256,
+          256
+        ],
+        "image_size": 256,
+        "orientation": "native",
+        "shared_factor": false,
+        "final_measurements": 655
+      },
+      "options": {
+        "candidate_design": {
+          "name": "eigen_v1",
+          "rows": 32,
+          "binary_threshold_mode": "zero",
+          "alignment_quantiles": [
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            0.6,
+            0.7,
+            0.8,
+            0.9
+          ]
+        },
+        "initializations": 3,
+        "pool_chunk": 128,
+        "spread_weight": 0.25,
+        "lightweight_eigen": false
+      },
+      "physics": {
+        "wavelength": 6.35e-07,
+        "image_pitch": 1.08e-05,
+        "dmd_pitch": 1.08e-05,
+        "object_distance": 0.0225,
+        "sensor_distance": 0.02,
+        "sensor_width": 0.0097,
+        "height": 256,
+        "width": 256
+      },
+      "rank_rtol": 1e-10,
+      "prior": "outputs/prior_daps_v2/final_65k.pt",
+      "mean": "assets/mean.pt",
+      "prior_spectrum": "assets/residual_spectrum.pt",
+      "manifest": "assets/split.json",
+      "templates": {
+        "SET11_256": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_v2/final_65k.pt",
+          "final_sampling": {
+            "gpu_batch_size": 16
+          },
+          "height": 256,
+          "width": 256,
+          "orientation": "native",
+          "mean": "assets/mean.pt",
+          "prior": "outputs/prior_daps_v2/final_65k.pt",
+          "pattern_pool": {
+            "name": "legacy_low_order"
+          },
+          "initial_measurements": 64,
+          "pool_size": 4096,
+          "shared_factor": false,
+          "lightweight_eigen": false
+        },
+        "SET11_512": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_v2/final_65k.pt",
+          "final_sampling": {
+            "gpu_batch_size": 4
+          },
+          "height": 512,
+          "width": 512,
+          "orientation": "native",
+          "mean": "assets/mean_512.pt",
+          "prior": "outputs/prior_daps_v2/final_65k.pt",
+          "initial_measurements": 256,
+          "pool_size": 4096,
+          "shared_factor": true,
+          "lightweight_eigen": true,
+          "batch_size": 32,
+          "gpu_batch_size": 2,
+          "pattern_pool": {
+            "name": "legacy_low_order"
+          }
+        },
+        "BSD68_481x321": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_bsd68_481x321/latest.pt",
+          "final_sampling": {
+            "gpu_batch_size": 2
+          },
+          "height": 321,
+          "width": 481,
+          "orientation": "landscape_clockwise90_for_portrait",
+          "mean": "assets/mean_bsd68_481x321.pt",
+          "prior": "outputs/prior_daps_bsd68_481x321/latest.pt",
+          "initial_measurements": 64,
+          "pool_size": 2048,
+          "shared_factor": false,
+          "lightweight_eigen": false,
+          "batch_size": 32,
+          "gpu_batch_size": 2,
+          "pattern_pool": {
+            "name": "rectangular_cosine_v1"
+          }
+        },
+        "BSD68_481x321_mirflickr": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_v2/final_65k.pt",
+          "final_sampling": {
+            "gpu_batch_size": 8
+          },
+          "height": 321,
+          "width": 481,
+          "orientation": "landscape_clockwise90_for_portrait",
+          "mean": "assets/mean_bsd68_481x321.pt",
+          "prior": "outputs/prior_daps_v2/final_65k.pt",
+          "initial_measurements": 64,
+          "pool_size": 2048,
+          "shared_factor": false,
+          "lightweight_eigen": false,
+          "batch_size": 32,
+          "gpu_batch_size": 4,
+          "pattern_pool": {
+            "name": "rectangular_cosine_v1"
+          }
+        },
+        "BSD68_481x321_bsdv2": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_bsd68_v2/final_60k.pt",
+          "final_sampling": {
+            "gpu_batch_size": 8
+          },
+          "height": 321,
+          "width": 481,
+          "orientation": "landscape_clockwise90_for_portrait",
+          "mean": "assets/mean_bsd68_481x321.pt",
+          "prior": "outputs/prior_daps_bsd68_v2/final_60k.pt",
+          "initial_measurements": 64,
+          "pool_size": 2048,
+          "shared_factor": false,
+          "lightweight_eigen": false,
+          "batch_size": 32,
+          "gpu_batch_size": 4,
+          "pattern_pool": {
+            "name": "rectangular_cosine_v1"
+          }
+        }
+      },
+      "sampling_ratio": 0.01,
+      "overrides": [
+        "config.sampling.num_scenarios=32"
+      ],
+      "final_prior": "outputs/prior_daps_v2/final_65k.pt",
+      "template": "SET11_256",
+      "measurement_rule": "floor(0.01*H*W)"
+    },
+    "abl_ood_dtd_test_spread_only_o33": {
+      "method": "propagation-full-pseudoinverse",
+      "config": {
+        "seed": 20260921,
+        "device": "cuda:0",
+        "initial_measurements": 64,
+        "batch_size": 32,
+        "pool_size": 4096,
+        "pattern_pool": {
+          "name": "legacy_low_order"
+        },
+        "dmd_bit_depth": 8,
+        "measurement_convention": "incoherent_propagated_uint8_difference_div_sqrt_d",
+        "sensor_noise": {
+          "model": "dark_gaussian",
+          "sigma_rel": 0.0
+        },
+        "sampling": {
+          "sampler": "diffpir",
+          "diffpir_steps": 50,
+          "diffpir_lambda": 1.0,
+          "diffpir_zeta": 1.0,
+          "diffpir_eta": 0.0,
+          "diffpir_sigma_y": 0.0,
+          "outer_steps": 45,
+          "ode_steps": 5,
+          "ode_solver": "heun",
+          "sigma_max": 20.0,
+          "sigma_min": 0.002,
+          "inner_sigma_min": 0.002,
+          "rho": 7.0,
+          "gpu_batch_size": 4,
+          "num_scenarios": 33,
+          "projection_rtol": 1e-10,
+          "network_precision": "float32",
+          "solve_precision": "float64",
+          "image_shape": [
+            256,
+            256
+          ]
+        },
+        "optimization": {
+          "control_grid": 128,
+          "rms_bound": 2.0,
+          "adam_steps": 200,
+          "learning_rate": 0.1,
+          "scenario_chunk": 16
+        },
+        "final_decoder": "daps_mean",
+        "final_sampling": {
+          "chains": 32,
+          "diffpir_steps": 50,
+          "outer_steps": 200,
+          "gpu_batch_size": 16
+        },
+        "image_height": 256,
+        "image_width": 256,
+        "image_shape": [
+          256,
+          256
+        ],
+        "image_size": 256,
+        "orientation": "native",
+        "shared_factor": false,
+        "final_measurements": 655
+      },
+      "options": {
+        "candidate_design": {
+          "name": "adasense_pca",
+          "rows": 32,
+          "binary_threshold_mode": "zero",
+          "alignment_quantiles": [
+            0.1,
+            0.2,
+            0.3,
+            0.4,
+            0.5,
+            0.6,
+            0.7,
+            0.8,
+            0.9
+          ]
+        },
+        "initializations": 3,
+        "pool_chunk": 128,
+        "spread_weight": 0.25,
+        "lightweight_eigen": false
+      },
+      "physics": {
+        "wavelength": 6.35e-07,
+        "image_pitch": 1.08e-05,
+        "dmd_pitch": 1.08e-05,
+        "object_distance": 0.0225,
+        "sensor_distance": 0.02,
+        "sensor_width": 0.0097,
+        "height": 256,
+        "width": 256
+      },
+      "rank_rtol": 1e-10,
+      "prior": "outputs/prior_daps_v2/final_65k.pt",
+      "mean": "assets/mean.pt",
+      "prior_spectrum": "assets/residual_spectrum.pt",
+      "manifest": "assets/split.json",
+      "templates": {
+        "SET11_256": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_v2/final_65k.pt",
+          "final_sampling": {
+            "gpu_batch_size": 16
+          },
+          "height": 256,
+          "width": 256,
+          "orientation": "native",
+          "mean": "assets/mean.pt",
+          "prior": "outputs/prior_daps_v2/final_65k.pt",
+          "pattern_pool": {
+            "name": "legacy_low_order"
+          },
+          "initial_measurements": 64,
+          "pool_size": 4096,
+          "shared_factor": false,
+          "lightweight_eigen": false
+        },
+        "SET11_512": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_v2/final_65k.pt",
+          "final_sampling": {
+            "gpu_batch_size": 4
+          },
+          "height": 512,
+          "width": 512,
+          "orientation": "native",
+          "mean": "assets/mean_512.pt",
+          "prior": "outputs/prior_daps_v2/final_65k.pt",
+          "initial_measurements": 256,
+          "pool_size": 4096,
+          "shared_factor": true,
+          "lightweight_eigen": true,
+          "batch_size": 32,
+          "gpu_batch_size": 2,
+          "pattern_pool": {
+            "name": "legacy_low_order"
+          }
+        },
+        "BSD68_481x321": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_bsd68_481x321/latest.pt",
+          "final_sampling": {
+            "gpu_batch_size": 2
+          },
+          "height": 321,
+          "width": 481,
+          "orientation": "landscape_clockwise90_for_portrait",
+          "mean": "assets/mean_bsd68_481x321.pt",
+          "prior": "outputs/prior_daps_bsd68_481x321/latest.pt",
+          "initial_measurements": 64,
+          "pool_size": 2048,
+          "shared_factor": false,
+          "lightweight_eigen": false,
+          "batch_size": 32,
+          "gpu_batch_size": 2,
+          "pattern_pool": {
+            "name": "rectangular_cosine_v1"
+          }
+        },
+        "BSD68_481x321_mirflickr": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_v2/final_65k.pt",
+          "final_sampling": {
+            "gpu_batch_size": 8
+          },
+          "height": 321,
+          "width": 481,
+          "orientation": "landscape_clockwise90_for_portrait",
+          "mean": "assets/mean_bsd68_481x321.pt",
+          "prior": "outputs/prior_daps_v2/final_65k.pt",
+          "initial_measurements": 64,
+          "pool_size": 2048,
+          "shared_factor": false,
+          "lightweight_eigen": false,
+          "batch_size": 32,
+          "gpu_batch_size": 4,
+          "pattern_pool": {
+            "name": "rectangular_cosine_v1"
+          }
+        },
+        "BSD68_481x321_bsdv2": {
+          "final_decoder": "daps_mean",
+          "final_prior": "outputs/prior_daps_bsd68_v2/final_60k.pt",
+          "final_sampling": {
+            "gpu_batch_size": 8
+          },
+          "height": 321,
+          "width": 481,
+          "orientation": "landscape_clockwise90_for_portrait",
+          "mean": "assets/mean_bsd68_481x321.pt",
+          "prior": "outputs/prior_daps_bsd68_v2/final_60k.pt",
+          "initial_measurements": 64,
+          "pool_size": 2048,
+          "shared_factor": false,
+          "lightweight_eigen": false,
+          "batch_size": 32,
+          "gpu_batch_size": 4,
+          "pattern_pool": {
+            "name": "rectangular_cosine_v1"
+          }
+        }
+      },
+      "sampling_ratio": 0.01,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=33"
+      ],
+      "final_prior": "outputs/prior_daps_v2/final_65k.pt",
+      "template": "SET11_256",
+      "measurement_rule": "floor(0.01*H*W)"
+    }
+  },
+  "assets": {
+    "outputs/prior_daps_v2/final_65k.pt": "ad068d1da84b893416e08579a371b69c01fe1735d97e002796b3adabcf62dd93",
+    "assets/mean.pt": "23d3ac4aa293e7c3582e75a18809dce4a0bdb69d9ff284f9dfd3a1c86a8a42ba"
+  },
+  "manifest_sha256": "d5d4927911ae83db169a452c27a85dda24b01f9b97644befd4322a4e8cf07f09"
+}

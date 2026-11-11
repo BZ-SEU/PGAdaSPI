@@ -1,0 +1,15 @@
+# 1-bit DMD 对齐消融：只用O残差方向和已知物理算子，为每个连续eigen图案选择二值阈值。
+extends: final.yaml  # 继承冻结物理传播、先验、最终解码与基础预算
+sampling_ratio: 0.01  # 有效测量预算为 floor(0.01×256×256)=655
+run:  # 单 GPU 顺序执行标准 Set11 的九张 256×256 图
+  template: SET11_256  # 使用原生256模板（M64起始、B32、终点M655）
+  dataset_root: data/set11_proxunroll/native  # 与可比方法一致的原生Y通道图像目录
+  image_ids: [Monarch, Parrots, barbara, boats, cameraman, foreman, house, lena256, peppers256]  # 九张256测试图
+  split: test  # 仅用于冻结消融报告，不据此调参
+  device: cuda:0  # 单任务使用一张GPU
+  output: outputs/ablation/dmd_1bit_alignment  # 与其他消融隔离的三文件结果目录
+  ablation: full  # 保持正式 eigen_v1 自适应设计，不切换其他消融策略
+overrides:  # 模板解析后的明确参数覆盖
+- config.dmd_bit_depth=1  # 正曝光码严格限制为0或255，负曝光恒为255减正曝光
+- options.candidate_design.binary_threshold_mode=alignment  # 从固定阈值分位数中选物理残差行与对应O方向最对齐的阈值
+- options.candidate_design.alignment_quantiles=[0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9]  # 无GT的固定候选阈值分位数

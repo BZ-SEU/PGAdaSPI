@@ -1,0 +1,21 @@
+extends: final.yaml  # 继承公共配置，相对当前 YAML 路径
+sampling_ratio: 0.01  # 有效差分测量数占像素数的比例，预算向下取整
+run:  # 单个任务的运行参数
+  template: SET11_256  # 使用的原生尺寸模板
+  dataset_root: data/set11_proxunroll/native  # 原生 Y 通道数据目录，相对项目根目录
+  image_ids:  # 本任务显式图像清单
+  - Monarch  # 列表成员：图像编号或解析后的参数覆盖
+  - Parrots  # 列表成员：图像编号或解析后的参数覆盖
+  - barbara  # 列表成员：图像编号或解析后的参数覆盖
+  - boats  # 列表成员：图像编号或解析后的参数覆盖
+  - cameraman  # 列表成员：图像编号或解析后的参数覆盖
+  - foreman  # 列表成员：图像编号或解析后的参数覆盖
+  - house  # 列表成员：图像编号或解析后的参数覆盖
+  - lena256  # 列表成员：图像编号或解析后的参数覆盖
+  - peppers256  # 列表成员：图像编号或解析后的参数覆盖
+  split: test  # 数据划分，测试数据不得用于调参
+  device: cuda:0  # 单任务仅使用这张 GPU
+  output: outputs/ablation/F_steps20  # 本实验独立结果目录
+  ablation: full  # 模板解析后应用的预设消融
+overrides:  # 模板解析后的明确参数覆盖
+- config.final_sampling.diffpir_steps=20  # 列表成员：图像编号或解析后的参数覆盖

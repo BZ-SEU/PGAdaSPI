@@ -1,0 +1,23 @@
+{
+  "image_id": "cameraman",
+  "before_m": 224,
+  "after_m": 256,
+  "round_t": 6,
+  "rows": [
+    1,
+    2,
+    8,
+    32
+  ],
+  "source": "/mnt/data/baojr/adaptive_SPI/outputs/paper_figures/fig2/fig2_cameraman_M224_data.npz",
+  "source_sha256": "86f28f43ddc8008ff9b633491a4284084acb1a46e690705ee69536ad635c086d",
+  "source_json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/cameraman/cameraman.json",
+  "source_json_sha256": "c130df1aac3e79f8f390dc96d4994dae199ec2cc40aa4650e70117d8c4ef8a4c",
+  "code_agreement": 1.0,
+  "sampler": "diffpir",
+  "direction_sign": "oriented toward the archived executed effective row",
+  "pattern_definition": "signed quantized pattern p=(2*positive_uint8-255)/255",
+  "effective_row_definition": "actual physical row a, without null-space projection",
+  "script_sha256": "b4eb4df3d163a27f919ed989f1887060b0c0b2a0133fc9e12d3a3e288dcdbd5e",
+  "plotting_data_sha256": "b2b9cebd5973c1dc2e1d4a7584987a2657e1d4cfb5e20c4ab481b4d274f22288"
+}

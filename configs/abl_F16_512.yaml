@@ -1,0 +1,12 @@
+extends: abl_F16.yaml  # 继承同名256消融及公共配置
+sampling_ratio: 0.01  # 有效差分测量预算为floor(0.01×512×512)=2621
+run:  # 本任务单卡依次运行两张512原生图
+  template: SET11_512  # 原生512模板，初始256条，批大小32，末批29条
+  dataset_root: data/set11_proxunroll/native  # 已准备的原生Y通道，不缩放
+  image_ids: [fingerprint, flinstones]  # 两张512图，与256消融合计完整Set11
+  split: test  # 仅用于冻结消融报告，不调参
+  device: cuda:0  # 一个任务仅使用一张GPU
+  output: outputs/ablation/F16  # 与同名256任务合并为11个互不覆盖的图像子目录
+  ablation: full  # 与同名256实验相同的消融预设
+overrides:  # 模板解析后应用；保留原消融覆盖并补充512兼容项
+- config.final_sampling.chains=16  # 与256消融相同的参数覆盖

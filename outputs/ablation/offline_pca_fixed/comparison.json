@@ -1,0 +1,296 @@
+{
+  "protocol_check": "passed: identical image hashes, mean, optics, budget, final prior, sampler, F seeds/count/NFE and settings",
+  "metric": "unclipped PSNR, SSIM after [0,1] clamp, equal weight per image",
+  "groups": {
+    "Set11_256": {
+      "count": 9,
+      "means": {
+        "Walsh Fixed": {
+          "psnr": 22.9447951335352,
+          "ssim": 0.6475236810683644,
+          "mse": 0.005765132530373926,
+          "pinv_psnr": 21.03016087504956,
+          "pinv_ssim": 0.4950090501760735,
+          "eta": 0.8197608504153331,
+          "seconds": 47.48907017145151
+        },
+        "Offline-PCA Fixed": {
+          "psnr": 23.098162359480636,
+          "ssim": 0.6494717487606486,
+          "mse": 0.00557079334325677,
+          "pinv_psnr": 21.574179906759245,
+          "pinv_ssim": 0.5092989262606457,
+          "eta": 0.8371766066797205,
+          "seconds": 45.778102384052346
+        },
+        "Online Adaptive": {
+          "psnr": 25.686334367049827,
+          "ssim": 0.7333835998098823,
+          "mse": 0.003402603728759576,
+          "pinv_psnr": 25.601294949156642,
+          "pinv_ssim": 0.7204920051088385,
+          "eta": 0.9272290008298262,
+          "seconds": 353.17960448299226
+        }
+      },
+      "paired_differences": {
+        "Offline-PCA Fixed minus Walsh Fixed": {
+          "mean_db": 0.1533672259454334,
+          "wins": 6,
+          "ties": 0,
+          "losses": 3,
+          "image_bootstrap_95ci_db": [
+            -0.06901074946825345,
+            0.4140069378668214
+          ],
+          "per_image_db": {
+            "Monarch": 0.15101485122825764,
+            "Parrots": 0.108756750658074,
+            "barbara": 0.02144687461414918,
+            "boats": -0.2089423658663243,
+            "cameraman": -0.14002848126615675,
+            "foreman": -0.20958058970250093,
+            "house": 0.7388424520427037,
+            "lena256": 0.03183022110041023,
+            "peppers256": 0.8869653207002877
+          }
+        },
+        "Online Adaptive minus Offline-PCA Fixed": {
+          "mean_db": 2.5881720075691934,
+          "wins": 9,
+          "ties": 0,
+          "losses": 0,
+          "image_bootstrap_95ci_db": [
+            1.8554224798102135,
+            3.3480304748211407
+          ],
+          "per_image_db": {
+            "Monarch": 1.9014986790308264,
+            "Parrots": 3.012656871372407,
+            "barbara": 0.7173099309933662,
+            "boats": 1.9965157233244675,
+            "cameraman": 2.6132519521120443,
+            "foreman": 4.305639368478712,
+            "house": 4.389335829571703,
+            "lena256": 2.818995732189329,
+            "peppers256": 1.5383439810498842
+          }
+        },
+        "Online Adaptive minus Walsh Fixed": {
+          "mean_db": 2.7415392335146267,
+          "wins": 9,
+          "ties": 0,
+          "losses": 0,
+          "image_bootstrap_95ci_db": [
+            1.9806409859527019,
+            3.5636241983645442
+          ],
+          "per_image_db": {
+            "Monarch": 2.052513530259084,
+            "Parrots": 3.121413622030481,
+            "barbara": 0.7387568056075153,
+            "boats": 1.7875733574581432,
+            "cameraman": 2.4732234708458876,
+            "foreman": 4.096058778776211,
+            "house": 5.128178281614407,
+            "lena256": 2.850825953289739,
+            "peppers256": 2.425309301750172
+          }
+        }
+      }
+    },
+    "Set11_512": {
+      "count": 2,
+      "means": {
+        "Walsh Fixed": {
+          "psnr": 16.614795904259886,
+          "ssim": 0.27606360169499783,
+          "mse": 0.021879682047773484,
+          "pinv_psnr": 16.233824815014543,
+          "pinv_ssim": 0.2332421600171727,
+          "eta": 0.6657472351952498,
+          "seconds": 2292.8322265904862
+        },
+        "Offline-PCA Fixed": {
+          "psnr": 16.747446261031705,
+          "ssim": 0.29782818836778746,
+          "mse": 0.021193239813413388,
+          "pinv_psnr": 16.235774176621007,
+          "pinv_ssim": 0.2297749384593168,
+          "eta": 0.6680161136578544,
+          "seconds": 144.0811153918039
+        },
+        "Online Adaptive": {
+          "psnr": 18.208522201253857,
+          "ssim": 0.428208074285028,
+          "mse": 0.01552805131391724,
+          "pinv_psnr": 18.17936308803008,
+          "pinv_ssim": 0.4217478951973901,
+          "eta": 0.7652744832022789,
+          "seconds": 8224.01787895651
+        }
+      },
+      "paired_differences": {
+        "Offline-PCA Fixed minus Walsh Fixed": {
+          "mean_db": 0.1326503567718209,
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "image_bootstrap_95ci_db": [
+            0.05515772560515941,
+            0.2101429879384824
+          ],
+          "per_image_db": {
+            "fingerprint": 0.2101429879384824,
+            "flinstones": 0.05515772560515941
+          }
+        },
+        "Online Adaptive minus Offline-PCA Fixed": {
+          "mean_db": 1.4610759402221536,
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "image_bootstrap_95ci_db": [
+            0.7229078116213934,
+            2.199244068822914
+          ],
+          "per_image_db": {
+            "fingerprint": 0.7229078116213934,
+            "flinstones": 2.199244068822914
+          }
+        },
+        "Online Adaptive minus Walsh Fixed": {
+          "mean_db": 1.5937262969939745,
+          "wins": 2,
+          "ties": 0,
+          "losses": 0,
+          "image_bootstrap_95ci_db": [
+            0.9330507995598758,
+            2.254401794428073
+          ],
+          "per_image_db": {
+            "fingerprint": 0.9330507995598758,
+            "flinstones": 2.254401794428073
+          }
+        }
+      }
+    },
+    "Set11_all": {
+      "count": 11,
+      "means": {
+        "Walsh Fixed": {
+          "psnr": 21.79388618275787,
+          "ssim": 0.5799854848186614,
+          "mse": 0.008695050624446574,
+          "pinv_psnr": 20.15809977322501,
+          "pinv_ssim": 0.44741507014718246,
+          "eta": 0.7917583749207725,
+          "seconds": 455.7332804294578
+        },
+        "Offline-PCA Fixed": {
+          "psnr": 21.943486705217193,
+          "ssim": 0.5855365559619466,
+          "mse": 0.008411238156012519,
+          "pinv_psnr": 20.603560683097747,
+          "pinv_ssim": 0.4584763830240404,
+          "eta": 0.8064201534030175,
+          "seconds": 63.65137747637081
+        },
+        "Online Adaptive": {
+          "psnr": 24.326732155086926,
+          "ssim": 0.6778971406235452,
+          "mse": 0.0056072305624246055,
+          "pinv_psnr": 24.251852792588178,
+          "pinv_ssim": 0.6661748942158479,
+          "eta": 0.8977827248975448,
+          "seconds": 1784.241108932723
+        }
+      },
+      "paired_differences": {
+        "Offline-PCA Fixed minus Walsh Fixed": {
+          "mean_db": 0.149600522459322,
+          "wins": 8,
+          "ties": 0,
+          "losses": 3,
+          "image_bootstrap_95ci_db": [
+            -0.031881140653056694,
+            0.365491876146468
+          ],
+          "per_image_db": {
+            "Monarch": 0.15101485122825764,
+            "Parrots": 0.108756750658074,
+            "barbara": 0.02144687461414918,
+            "boats": -0.2089423658663243,
+            "cameraman": -0.14002848126615675,
+            "fingerprint": 0.2101429879384824,
+            "flinstones": 0.05515772560515941,
+            "foreman": -0.20958058970250093,
+            "house": 0.7388424520427037,
+            "lena256": 0.03183022110041023,
+            "peppers256": 0.8869653207002877
+          }
+        },
+        "Online Adaptive minus Offline-PCA Fixed": {
+          "mean_db": 2.3832454498697313,
+          "wins": 11,
+          "ties": 0,
+          "losses": 0,
+          "image_bootstrap_95ci_db": [
+            1.7092552613406113,
+            3.0890215748630045
+          ],
+          "per_image_db": {
+            "Monarch": 1.9014986790308264,
+            "Parrots": 3.012656871372407,
+            "barbara": 0.7173099309933662,
+            "boats": 1.9965157233244675,
+            "cameraman": 2.6132519521120443,
+            "fingerprint": 0.7229078116213934,
+            "flinstones": 2.199244068822914,
+            "foreman": 4.305639368478712,
+            "house": 4.389335829571703,
+            "lena256": 2.818995732189329,
+            "peppers256": 1.5383439810498842
+          }
+        },
+        "Online Adaptive minus Walsh Fixed": {
+          "mean_db": 2.5328459723290533,
+          "wins": 11,
+          "ties": 0,
+          "losses": 0,
+          "image_bootstrap_95ci_db": [
+            1.8475510632004466,
+            3.2823761756857923
+          ],
+          "per_image_db": {
+            "Monarch": 2.052513530259084,
+            "Parrots": 3.121413622030481,
+            "barbara": 0.7387568056075153,
+            "boats": 1.7875733574581432,
+            "cameraman": 2.4732234708458876,
+            "fingerprint": 0.9330507995598758,
+            "flinstones": 2.254401794428073,
+            "foreman": 4.096058778776211,
+            "house": 5.128178281614407,
+            "lena256": 2.850825953289739,
+            "peppers256": 2.425309301750172
+          }
+        }
+      }
+    }
+  },
+  "bootstrap": {
+    "seed": 20261104,
+    "resamples": 100000,
+    "unit": "image",
+    "interval": "percentile 2.5 to 97.5"
+  },
+  "limitations": [
+    "Finite offline PCA baseline, not the optimum over all fixed designs.",
+    "512 training uses fixed LANCZOS upsampling of the available MIRFLICKR-256 train images.",
+    "PCA uses randomized truncated SVD; eigenpair residuals are recorded in bank metadata.",
+    "Test image bootstrap is descriptive; n=2 for the 512 subgroup is too small for generalization claims.",
+    "Online policy and static PCA differ in both global versus conditional directions and their history; not an exact causal decomposition.",
+    "Fixed-bank QR reuse changes evaluation overhead, so stored timings are not hardware acquisition-speed comparisons."
+  ]
+}

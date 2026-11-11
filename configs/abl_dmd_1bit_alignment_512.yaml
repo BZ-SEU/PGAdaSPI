@@ -1,0 +1,11 @@
+# 1-bit DMD 对齐消融（512部分）：与256配置相同，只切换至原生512模板与两张512 Set11图。
+extends: abl_dmd_1bit_alignment.yaml  # 继承1-bit物理对齐阈值、冻结物理传播、先验与算法设置
+sampling_ratio: 0.01  # 有效测量预算为 floor(0.01×512×512)=2621
+run:  # 单 GPU 顺序执行两张原生512×512图
+  template: SET11_512  # 原生512模板（M256起始、B32、终点M2621）
+  dataset_root: data/set11_proxunroll/native  # 与可比方法一致的原生Y通道图像目录
+  image_ids: [fingerprint, flinstones]  # Set11 的两张512图；与256任务合并构成完整11张
+  split: test  # 仅用于冻结消融报告，不据此调参
+  device: cuda:0  # 单任务使用一张GPU
+  output: outputs/ablation/dmd_1bit_alignment  # 与同名256配置写入同一实验目录、图像子目录不重叠
+  ablation: full  # 保持正式 eigen_v1 自适应设计，不切换其他消融策略

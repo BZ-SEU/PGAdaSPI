@@ -1,0 +1,18 @@
+extends: final.yaml  # 继承冻结的物理模型与DiffPIR最终解码
+sampling_ratio: 0.01  # floor(321×481×0.01)=1544个有效测量
+config:  # 离线训练图案，不访问测试图像构造动作
+  offline_pca:  # MIRFLICKR train 20000张，中心裁剪与缩放至321×481
+    path: assets/offline_pca_bsd68_321x481.pt  # 按方差降序的1544个PCA方向，经维纳逆映射和8bit量化
+    sha256: e24ecb5abba46a9ea4fe9c5411c1d841cc8a403e336b0b5dfa5d6d925ee977c9  # 冻结图案资产的SHA256
+    prefix_qr_reuse: true  # 固定序列复用精确QR前缀，不将未来读数用于当前重建
+options:  # 与在线方法隔离的固定图案策略
+  candidate_design:  # 不生成O，不执行在线优化
+    name: offline_pca  # 从第一张图案开始采用冻结PCA顺序
+run:  # 每个进程仅用一张GPU
+  template: BSD68_481x321_bsdv2  # 原生321×481，不补黑；BSD同域v2解码先验
+  dataset_root: data/bsd68_proxunroll/native  # 与对比工作同定义的原生Y通道
+  count: 68  # 全部68张；不用于挑选图案或调参
+  split: test  # 仅测试
+  device: cuda:1  # 可通过命令行覆盖
+  output: outputs/ablation/offline_pca_fixed_bsd68  # 每图仅PT、JSON、PNG
+  ablation: full  # 保留offline_pca选择器

@@ -1,0 +1,10 @@
+{
+  "assets/mean.pt": "23d3ac4aa293e7c3582e75a18809dce4a0bdb69d9ff284f9dfd3a1c86a8a42ba",
+  "assets/residual_spectrum.pt": "97107471a7cac51ccb06e25e8f77a1f8a335c9d8693986630db423d7c3820d1e",
+  "assets/split.json": "3818d1926342898065868e216dd742a4cf88296794c6ec04fccf032e599e2650",
+  "assets/mean_bsd68_481x321.pt": "3b39104744ed907f760c5ab9100ef6b7b4999c9c277dae1a9563d7a96662edf1",
+  "outputs/prior_daps_v2/final_65k.pt": "ad068d1da84b893416e08579a371b69c01fe1735d97e002796b3adabcf62dd93",
+  "outputs/prior_daps_bsd68_v2/final_60k.pt": "0e329440735c3e0458f791000e9afc100f37030d7ca655c1807e915410dc8f55",
+  "assets/mean_512.pt": "e2d3b2328e184713f44d8b34618a09051b5e497339b3187d50501988d936f4ae",
+  "assets/residual_spectrum_512_interpolated.pt": "20005fb35168d5b51ddefcb4a8ae66283c8502913ad2aedf4fd87b7b9bd2e4d3"
+}

@@ -1,0 +1,12 @@
+extends: final.yaml  # 冻结现有物理模型和MIRFLICKR先验
+sampling_ratio: 0.01  # 256平方像素，向下取整到655
+run:  # 单进程单GPU
+  template: SET11_256  # 使用256几何与MIRFLICKR v2先验，不代表使用Set11数据
+  dataset_root: data/ood_mismatched_prior/celeba/test  # 已冻结Y通道数据
+  count: 20  # 独立流程检查或封存测试
+  split: test  # 不参与先验训练
+  device: cuda:0  # 由CUDA_VISIBLE_DEVICES指定物理GPU
+  output: outputs/ablation/ood_celeba_test_spread_only_o33  # 两种方法独立输出
+  ablation: adasense  # 只比较是否保留残差均值外积
+overrides:  # 模板解析后固定相同样本数
+- config.sampling.num_scenarios=33  # 中心化后最多32个非零方向

@@ -1,0 +1,21 @@
+# 原生 AdaSense：PCA 选图 + DDRM 25 NFE，s=43>r=32，最终 32 条 DDRM 链均值（512 两张）
+extends: abl_adasense_ddrm.yaml  # 继承同名256消融及公共配置
+sampling_ratio: 0.01  # 有效差分测量预算为floor(0.01×512×512)=2621
+run:  # 本任务单卡依次运行两张512原生图
+  template: SET11_512  # 原生512模板，初始256条，批大小32，末批29条
+  dataset_root: data/set11_proxunroll/native  # 已准备的原生Y通道，不缩放
+  image_ids: [fingerprint, flinstones]  # 两张512图，与256消融合计完整Set11
+  split: test  # 仅用于冻结消融报告，不调参
+  device: cuda:0  # 一个任务仅使用一张GPU
+  output: outputs/ablation/adasense_ddrm  # 与同名256任务合并为11个互不覆盖的图像子目录
+  ablation: adasense  # 与同名256实验相同的消融预设
+overrides:  # 模板解析后的明确参数覆盖
+- config.sampling.num_scenarios=43  # s=43>r=32
+config:  # DDRM 采样器（AdaSense 原文设置），选图 O 与最终 F 均使用
+  sampling:  # 选图阶段采样
+    sampler: ddrm  # 无噪声 DDRM（AdaSense efficient_generalized_steps），替代默认 DiffPIR
+    ddrm_steps: 25  # 每链网络调用次数，AdaSense --timesteps 默认 25
+    ddrm_eta: 1.0  # AdaSense main.py 固定 eta=etaB=1.0
+    ddrm_schedule: ddpm_linear  # 1000 步线性 beta[1e-4,0.02]，均匀取 25 点；超出 sigma_max=20 的 5 级截断
+  final_sampling:  # 最终均值解码同样用 DDRM（K=32 链，与 full 的 F 链数相同）
+    sampler: ddrm  # 与选图同一采样器

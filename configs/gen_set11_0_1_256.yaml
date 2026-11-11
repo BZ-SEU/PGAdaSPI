@@ -1,0 +1,21 @@
+extends: final.yaml  # 继承冻结公共算法、物理模型及先验配置
+sampling_ratio: 0.1  # 有效差分测量预算=floor(0.1×256×256)=6553
+overrides:
+  - config.pool_size=8192  # 模板展开后设置；必须覆盖 M6553 个已测/预约中心 ID
+run:
+  template: SET11_256  # 原生 256×256 Y 通道模板
+  dataset_root: data/set11_proxunroll/native  # 标准 Set11 原生数据目录
+  image_ids:
+  - Monarch
+  - Parrots
+  - barbara
+  - boats
+  - cameraman
+  - foreman
+  - house
+  - lena256
+  - peppers256
+  split: test  # 测试集，仅用于冻结配置后的报告
+  device: cuda:0  # 单 GPU；CUDA_VISIBLE_DEVICES 后使用逻辑编号 cuda:0
+  output: outputs/generalization/set11_0_1_256  # 与 0.01 结果严格分开保存
+  ablation: full  # 正式 DiffPIR/E32/daps_mean 设置

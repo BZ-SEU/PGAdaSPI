@@ -1,0 +1,1188 @@
+{
+  "completed_images": 68,
+  "incomplete_directories": [],
+  "mean": {
+    "psnr": 24.42691525806887,
+    "psnr_clamped": 24.427055348060293,
+    "mse": 0.0053311470125571,
+    "ssim": 0.5851693684349116,
+    "pinv_psnr": 23.06835741675245,
+    "pinv_ssim": 0.5002273695689425,
+    "seconds": 3629.3618072800214
+  },
+  "information_capture": {
+    "definition": "eta = ||P_A(x-mu)||^2 / ||x-mu||^2; P_A is the actual effective-row space projector",
+    "association": "offline GT-only centered PInv quantity; not a final DiffPIR reconstruction metric and never used for selection",
+    "available_images": 68,
+    "missing_images": [],
+    "eta": {
+      "count": 68,
+      "mean": 0.8546377683210898,
+      "std": 0.1147848588515417,
+      "median": 0.8818671105259528,
+      "minimum": 0.42838979450353865,
+      "maximum": 0.9883661876888025
+    },
+    "per_image": {
+      "101085": 0.8520064699267134,
+      "101087": 0.9611242861650235,
+      "102061": 0.9046875438528236,
+      "103070": 0.8824796250869356,
+      "105025": 0.9529619141648155,
+      "106024": 0.9858772587281139,
+      "108005": 0.8000724870713803,
+      "108070": 0.7812010499227365,
+      "108082": 0.9209647536646217,
+      "109053": 0.8414190073614619,
+      "119082": 0.858186283040643,
+      "12084": 0.7191129220329285,
+      "123074": 0.8812545959649699,
+      "126007": 0.8961609669520816,
+      "130026": 0.8791887830536302,
+      "134035": 0.6928074194810953,
+      "14037": 0.9804044627360929,
+      "143090": 0.9612948260573368,
+      "145086": 0.8776073008067099,
+      "147091": 0.9136335396236632,
+      "148026": 0.8002374586610888,
+      "148089": 0.807037001906882,
+      "157055": 0.9144861903513124,
+      "159008": 0.9005473864116368,
+      "160068": 0.8729675214029123,
+      "16077": 0.8896235029742666,
+      "163085": 0.8765434175719807,
+      "167062": 0.9797115709383029,
+      "167083": 0.6832943396588894,
+      "170057": 0.8331680492232834,
+      "175032": 0.42838979450353865,
+      "175043": 0.5348992553021747,
+      "182053": 0.8421488745313293,
+      "189080": 0.9805052992740425,
+      "19021": 0.8525624580495991,
+      "196073": 0.7853997424939799,
+      "197017": 0.9428443451873227,
+      "208001": 0.9016911372344832,
+      "210088": 0.885442073557266,
+      "21077": 0.8723657942590403,
+      "216081": 0.894366797833778,
+      "219090": 0.8725549689862178,
+      "220075": 0.8649969045286311,
+      "223061": 0.8833017648876047,
+      "227092": 0.9385795456816429,
+      "229036": 0.7716764876096631,
+      "236037": 0.5944255974567316,
+      "24077": 0.8929981731714816,
+      "241004": 0.976545479735824,
+      "241048": 0.9216506375113991,
+      "253027": 0.5519657849315586,
+      "253055": 0.9883661876888025,
+      "260058": 0.9755018756813442,
+      "271035": 0.8889846289196212,
+      "285079": 0.8164112672210515,
+      "291000": 0.7590244273763121,
+      "295087": 0.8802451199855111,
+      "296007": 0.9308405662329301,
+      "296059": 0.9261166740960399,
+      "299086": 0.817969372655083,
+      "300091": 0.9149702863492816,
+      "302008": 0.9560720227743155,
+      "304034": 0.735226514895516,
+      "304074": 0.8383187311820673,
+      "306005": 0.9397513482871515,
+      "3096": 0.9622763835490868,
+      "33039": 0.5883258416757264,
+      "351093": 0.9075941457426248
+    }
+  },
+  "per_image": [
+    {
+      "image_id": "101085",
+      "M": 1544,
+      "mse": 0.008170224269970178,
+      "psnr": 20.87766022063214,
+      "psnr_clamped": 20.8779283042252,
+      "ssim": 0.3773786375100638,
+      "pinv_psnr": 20.090338703996427,
+      "pinv_ssim": 0.32500816368946817,
+      "seconds": 2055.142893641256,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.8520064699267134
+    },
+    {
+      "image_id": "101087",
+      "M": 1544,
+      "mse": 0.002449362209316906,
+      "psnr": 26.10946987077834,
+      "psnr_clamped": 26.11100772752374,
+      "ssim": 0.7252711168435032,
+      "pinv_psnr": 23.51066248157558,
+      "pinv_ssim": 0.5976089212833572,
+      "seconds": 2061.3724223589525,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.9611242861650235
+    },
+    {
+      "image_id": "102061",
+      "M": 1544,
+      "mse": 0.003590517906159456,
+      "psnr": 24.44842903074995,
+      "psnr_clamped": 24.44859409149666,
+      "ssim": 0.7147580954584992,
+      "pinv_psnr": 23.403134492480127,
+      "pinv_ssim": 0.6142688732945594,
+      "seconds": 79158.79679516703,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.9046875438528236
+    },
+    {
+      "image_id": "103070",
+      "M": 1544,
+      "mse": 0.0023208559501897985,
+      "psnr": 26.343518142959663,
+      "psnr_clamped": 26.343518142959663,
+      "ssim": 0.6560290455599982,
+      "pinv_psnr": 25.401810690363003,
+      "pinv_ssim": 0.5828985644786335,
+      "seconds": 5219.596284426749,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.8824796250869356
+    },
+    {
+      "image_id": "105025",
+      "M": 1544,
+      "mse": 0.00538097213258835,
+      "psnr": 22.691392571069056,
+      "psnr_clamped": 22.691507575332107,
+      "ssim": 0.5335250610669996,
+      "pinv_psnr": 22.027454260097702,
+      "pinv_ssim": 0.4859744173988003,
+      "seconds": 5508.024336596951,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.9529619141648155
+    },
+    {
+      "image_id": "106024",
+      "M": 1544,
+      "mse": 0.000774359277696877,
+      "psnr": 31.110574939441797,
+      "psnr_clamped": 31.11083576673488,
+      "ssim": 0.8362269475461347,
+      "pinv_psnr": 28.138816346671113,
+      "pinv_ssim": 0.7087473041264416,
+      "seconds": 5150.46146040177,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.9858772587281139
+    },
+    {
+      "image_id": "108005",
+      "M": 1544,
+      "mse": 0.006335494613956392,
+      "psnr": 21.98219473957075,
+      "psnr_clamped": 21.98223529882963,
+      "ssim": 0.46715718412025536,
+      "pinv_psnr": 21.433593895161476,
+      "pinv_ssim": 0.4219127210756616,
+      "seconds": 4422.518424042966,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.8000724870713803
+    },
+    {
+      "image_id": "108070",
+      "M": 1544,
+      "mse": 0.009826559257363914,
+      "psnr": 20.07598522566817,
+      "psnr_clamped": 20.075990905251256,
+      "ssim": 0.33888407685007427,
+      "pinv_psnr": 19.853771321870713,
+      "pinv_ssim": 0.3162008482316531,
+      "seconds": 3558.981530947145,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.7812010499227365
+    },
+    {
+      "image_id": "108082",
+      "M": 1544,
+      "mse": 0.004165785755890447,
+      "psnr": 23.80303069344381,
+      "psnr_clamped": 23.803033286707933,
+      "ssim": 0.6052766301601494,
+      "pinv_psnr": 22.94762315771873,
+      "pinv_ssim": 0.5268952784598709,
+      "seconds": 2600.588770885952,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.9209647536646217
+    },
+    {
+      "image_id": "109053",
+      "M": 1544,
+      "mse": 0.003016713139925235,
+      "psnr": 25.204659850423194,
+      "psnr_clamped": 25.204659850423194,
+      "ssim": 0.6106400698068969,
+      "pinv_psnr": 24.651563534881184,
+      "pinv_ssim": 0.5591467324853739,
+      "seconds": 2772.620396259241,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.8414190073614619
+    },
+    {
+      "image_id": "119082",
+      "M": 1544,
+      "mse": 0.006168091105978251,
+      "psnr": 22.098492201498022,
+      "psnr_clamped": 22.09850297210221,
+      "ssim": 0.5547268799008525,
+      "pinv_psnr": 19.537518203813434,
+      "pinv_ssim": 0.397184095729846,
+      "seconds": 2839.7465833877213,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.858186283040643
+    },
+    {
+      "image_id": "12084",
+      "M": 1544,
+      "mse": 0.005839727310584231,
+      "psnr": 22.33607432044025,
+      "psnr_clamped": 22.33607432044025,
+      "ssim": 0.40962186020270974,
+      "pinv_psnr": 22.187268599689077,
+      "pinv_ssim": 0.3926381086568049,
+      "seconds": 3057.3643819121644,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.7191129220329285
+    },
+    {
+      "image_id": "123074",
+      "M": 1544,
+      "mse": 0.002990350715511862,
+      "psnr": 25.242778735888464,
+      "psnr_clamped": 25.242778735888464,
+      "ssim": 0.5700489379114545,
+      "pinv_psnr": 24.650877610125434,
+      "pinv_ssim": 0.5236849215163312,
+      "seconds": 3093.9544500466436,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.8812545959649699
+    },
+    {
+      "image_id": "126007",
+      "M": 1544,
+      "mse": 0.0022045322870135513,
+      "psnr": 26.566835362256647,
+      "psnr_clamped": 26.567092518079306,
+      "ssim": 0.7152788136120267,
+      "pinv_psnr": 25.118676496084408,
+      "pinv_ssim": 0.6160066964879289,
+      "seconds": 2954.136658489704,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.8961609669520816
+    },
+    {
+      "image_id": "130026",
+      "M": 1544,
+      "mse": 0.0063378292808795,
+      "psnr": 21.98059463373953,
+      "psnr_clamped": 21.98064310445869,
+      "ssim": 0.4941991337261898,
+      "pinv_psnr": 21.42952863692758,
+      "pinv_ssim": 0.43911690091345507,
+      "seconds": 2873.580160981044,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.8791887830536302
+    },
+    {
+      "image_id": "134035",
+      "M": 1544,
+      "mse": 0.011838069805385671,
+      "psnr": 19.267191034582332,
+      "psnr_clamped": 19.267191034582332,
+      "ssim": 0.4364816037869682,
+      "pinv_psnr": 18.63578667270633,
+      "pinv_ssim": 0.36790902164019024,
+      "seconds": 3052.348003888037,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.6928074194810953
+    },
+    {
+      "image_id": "14037",
+      "M": 1544,
+      "mse": 0.0006646366025491697,
+      "psnr": 31.774157451406605,
+      "psnr_clamped": 31.774157451406605,
+      "ssim": 0.8227797413788788,
+      "pinv_psnr": 29.463420882777797,
+      "pinv_ssim": 0.7216174512642454,
+      "seconds": 3307.822990526911,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.9804044627360929
+    },
+    {
+      "image_id": "143090",
+      "M": 1544,
+      "mse": 0.0007288578867700567,
+      "psnr": 31.373571424751464,
+      "psnr_clamped": 31.373571424751464,
+      "ssim": 0.8497001268351666,
+      "pinv_psnr": 28.904165484420137,
+      "pinv_ssim": 0.7479173315759072,
+      "seconds": 3403.606861156877,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.9612948260573368
+    },
+    {
+      "image_id": "145086",
+      "M": 1544,
+      "mse": 0.004074298526947963,
+      "psnr": 23.89947153083435,
+      "psnr_clamped": 23.89947153083435,
+      "ssim": 0.6119870702125141,
+      "pinv_psnr": 21.56613232893684,
+      "pinv_ssim": 0.4461547728687563,
+      "seconds": 3410.167004633229,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.8776073008067099
+    },
+    {
+      "image_id": "147091",
+      "M": 1544,
+      "mse": 0.004167061658182766,
+      "psnr": 23.801700734303083,
+      "psnr_clamped": 23.80170246566359,
+      "ssim": 0.6955769420985969,
+      "pinv_psnr": 22.69689170745884,
+      "pinv_ssim": 0.5811214898498691,
+      "seconds": 3405.3799285129644,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.9136335396236632
+    },
+    {
+      "image_id": "148026",
+      "M": 1544,
+      "mse": 0.015236589393922556,
+      "psnr": 18.171122359600712,
+      "psnr_clamped": 18.171122359600712,
+      "ssim": 0.4365074960795556,
+      "pinv_psnr": 17.243260520708994,
+      "pinv_ssim": 0.31254241338845423,
+      "seconds": 3076.6173152001575,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.8002374586610888
+    },
+    {
+      "image_id": "148089",
+      "M": 1544,
+      "mse": 0.009753453321449092,
+      "psnr": 20.108415901563408,
+      "psnr_clamped": 20.108415901563408,
+      "ssim": 0.4002482875758172,
+      "pinv_psnr": 19.495074103831627,
+      "pinv_ssim": 0.34743256321308025,
+      "seconds": 2727.5428150920197,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.807037001906882
+    },
+    {
+      "image_id": "157055",
+      "M": 1544,
+      "mse": 0.005375828031014593,
+      "psnr": 22.695546325092852,
+      "psnr_clamped": 22.695546325092852,
+      "ssim": 0.593211895404336,
+      "pinv_psnr": 21.533690879689175,
+      "pinv_ssim": 0.4866159404397165,
+      "seconds": 2384.3382525122724,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.9144861903513124
+    },
+    {
+      "image_id": "159008",
+      "M": 1544,
+      "mse": 0.0068344147350071355,
+      "psnr": 21.65298670304612,
+      "psnr_clamped": 21.65298670304612,
+      "ssim": 0.5686730290114024,
+      "pinv_psnr": 20.765790460305034,
+      "pinv_ssim": 0.4620453620951121,
+      "seconds": 2190.52763467934,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.9005473864116368
+    },
+    {
+      "image_id": "160068",
+      "M": 1544,
+      "mse": 0.00437100723252827,
+      "psnr": 23.594184749003,
+      "psnr_clamped": 23.594184749003,
+      "ssim": 0.7435118247035396,
+      "pinv_psnr": 22.74892121368568,
+      "pinv_ssim": 0.6379001353695054,
+      "seconds": 2123.360605243128,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.8729675214029123
+    },
+    {
+      "image_id": "16077",
+      "M": 1544,
+      "mse": 0.004280098548142421,
+      "psnr": 23.685462313555817,
+      "psnr_clamped": 23.685462313555817,
+      "ssim": 0.5501695174420309,
+      "pinv_psnr": 22.65778073496422,
+      "pinv_ssim": 0.46868629808402856,
+      "seconds": 2053.85508231679,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.8896235029742666
+    },
+    {
+      "image_id": "163085",
+      "M": 1544,
+      "mse": 0.0027088788053831114,
+      "psnr": 25.672104247677744,
+      "psnr_clamped": 25.672104247677744,
+      "ssim": 0.6396258599327252,
+      "pinv_psnr": 25.117622767406434,
+      "pinv_ssim": 0.5923837695480334,
+      "seconds": 2060.073263045866,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.8765434175719807
+    },
+    {
+      "image_id": "167062",
+      "M": 1544,
+      "mse": 0.0008737223138664454,
+      "psnr": 30.586265727633215,
+      "psnr_clamped": 30.59009782626861,
+      "ssim": 0.8208684796151305,
+      "pinv_psnr": 23.725343413938997,
+      "pinv_ssim": 0.5317262211590618,
+      "seconds": 2075.8707141419873,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.9797115709383029
+    },
+    {
+      "image_id": "167083",
+      "M": 1544,
+      "mse": 0.018085908550448632,
+      "psnr": 17.426596694550113,
+      "psnr_clamped": 17.426596694550113,
+      "ssim": 0.36363755090543187,
+      "pinv_psnr": 17.057885115080587,
+      "pinv_ssim": 0.3090897428696548,
+      "seconds": 2117.3758748513646,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.6832943396588894
+    },
+    {
+      "image_id": "170057",
+      "M": 1544,
+      "mse": 0.002900325527316458,
+      "psnr": 25.37553254934448,
+      "psnr_clamped": 25.37553254934448,
+      "ssim": 0.5649602108026504,
+      "pinv_psnr": 24.862256151158274,
+      "pinv_ssim": 0.532150475984977,
+      "seconds": 2203.0656198449433,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.8331680492232834
+    },
+    {
+      "image_id": "175032",
+      "M": 1544,
+      "mse": 0.01508754227622173,
+      "psnr": 18.21381499973031,
+      "psnr_clamped": 18.21381499973031,
+      "ssim": 0.2038905515639157,
+      "pinv_psnr": 18.11714650615899,
+      "pinv_ssim": 0.19253552763406112,
+      "seconds": 2185.2549415542744,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.42838979450353865
+    },
+    {
+      "image_id": "175043",
+      "M": 1544,
+      "mse": 0.009858965622722163,
+      "psnr": 20.061686477270317,
+      "psnr_clamped": 20.061686477270317,
+      "ssim": 0.3161589949848711,
+      "pinv_psnr": 19.8353213493997,
+      "pinv_ssim": 0.29778440835103215,
+      "seconds": 2130.171706006862,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.5348992553021747
+    },
+    {
+      "image_id": "182053",
+      "M": 1544,
+      "mse": 0.005914110587253466,
+      "psnr": 22.281105589128913,
+      "psnr_clamped": 22.281105589128913,
+      "ssim": 0.6956317949146019,
+      "pinv_psnr": 21.23323681291628,
+      "pinv_ssim": 0.5922765359415488,
+      "seconds": 2156.8363470318727,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.8421488745313293
+    },
+    {
+      "image_id": "189080",
+      "M": 1544,
+      "mse": 0.0006161702194049804,
+      "psnr": 32.10299295731234,
+      "psnr_clamped": 32.10302913986154,
+      "ssim": 0.8314983563927255,
+      "pinv_psnr": 27.472535084701974,
+      "pinv_ssim": 0.685876049443334,
+      "seconds": 2154.7152130980976,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.9805052992740425
+    },
+    {
+      "image_id": "19021",
+      "M": 1544,
+      "mse": 0.005022320005345083,
+      "psnr": 22.990956189572472,
+      "psnr_clamped": 22.990956189572472,
+      "ssim": 0.5494979561647473,
+      "pinv_psnr": 22.062797564799,
+      "pinv_ssim": 0.46150161078217783,
+      "seconds": 2189.930021943059,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.8525624580495991
+    },
+    {
+      "image_id": "196073",
+      "M": 1544,
+      "mse": 0.0022894653052138694,
+      "psnr": 26.40265933428416,
+      "psnr_clamped": 26.40265933428416,
+      "ssim": 0.38806823807549606,
+      "pinv_psnr": 26.125571574249552,
+      "pinv_ssim": 0.37550269062949915,
+      "seconds": 2165.3144404916093,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.7853997424939799
+    },
+    {
+      "image_id": "197017",
+      "M": 1544,
+      "mse": 0.002672723433442326,
+      "psnr": 25.730459785962758,
+      "psnr_clamped": 25.730466509333404,
+      "ssim": 0.5992790834555606,
+      "pinv_psnr": 24.453751767806725,
+      "pinv_ssim": 0.5196637880318379,
+      "seconds": 2097.2814385360107,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.9428443451873227
+    },
+    {
+      "image_id": "208001",
+      "M": 1544,
+      "mse": 0.0035016685653253905,
+      "psnr": 24.557249624964584,
+      "psnr_clamped": 24.557251564125735,
+      "ssim": 0.5089585500402432,
+      "pinv_psnr": 23.819852561588732,
+      "pinv_ssim": 0.4489542248701799,
+      "seconds": 2126.740962374024,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.9016911372344832
+    },
+    {
+      "image_id": "210088",
+      "M": 1544,
+      "mse": 0.001537882462924124,
+      "psnr": 28.13076855467019,
+      "psnr_clamped": 28.13076855467019,
+      "ssim": 0.7815213017725586,
+      "pinv_psnr": 25.215226927466993,
+      "pinv_ssim": 0.6271827727963276,
+      "seconds": 2087.354716225993,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.885442073557266
+    },
+    {
+      "image_id": "21077",
+      "M": 1544,
+      "mse": 0.003742418009491472,
+      "psnr": 24.268477055915838,
+      "psnr_clamped": 24.268601850632923,
+      "ssim": 0.6143034303349867,
+      "pinv_psnr": 22.259522465997232,
+      "pinv_ssim": 0.49091881390663394,
+      "seconds": 2077.9155295030214,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.8723657942590403
+    },
+    {
+      "image_id": "216081",
+      "M": 1544,
+      "mse": 0.005497847497322838,
+      "psnr": 22.598073110530702,
+      "psnr_clamped": 22.598073110530702,
+      "ssim": 0.5622804150064553,
+      "pinv_psnr": 21.628183741943378,
+      "pinv_ssim": 0.4526279741367226,
+      "seconds": 2086.531077890191,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.894366797833778
+    },
+    {
+      "image_id": "219090",
+      "M": 1544,
+      "mse": 0.0037762819952605197,
+      "psnr": 24.229355820612714,
+      "psnr_clamped": 24.229355820612714,
+      "ssim": 0.65411256819529,
+      "pinv_psnr": 23.19189687923727,
+      "pinv_ssim": 0.5617954304629107,
+      "seconds": 2113.8511481150053,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.8725549689862178
+    },
+    {
+      "image_id": "220075",
+      "M": 1544,
+      "mse": 0.004861610648212388,
+      "psnr": 23.13219825439986,
+      "psnr_clamped": 23.132200592189506,
+      "ssim": 0.6788542291685479,
+      "pinv_psnr": 21.760320197498494,
+      "pinv_ssim": 0.553456175603307,
+      "seconds": 2139.9976005521603,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.8649969045286311
+    },
+    {
+      "image_id": "223061",
+      "M": 1544,
+      "mse": 0.006214739978075361,
+      "psnr": 22.06577037327952,
+      "psnr_clamped": 22.065776736582187,
+      "ssim": 0.5325143688062725,
+      "pinv_psnr": 21.55944113287204,
+      "pinv_ssim": 0.46283619448514535,
+      "seconds": 2091.660471701063,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.8833017648876047
+    },
+    {
+      "image_id": "227092",
+      "M": 1544,
+      "mse": 0.0005677251942988287,
+      "psnr": 32.45861832386937,
+      "psnr_clamped": 32.45861832386937,
+      "ssim": 0.8168847229357641,
+      "pinv_psnr": 31.035981275208275,
+      "pinv_ssim": 0.7560005571150679,
+      "seconds": 2103.9852032200433,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.9385795456816429
+    },
+    {
+      "image_id": "229036",
+      "M": 1544,
+      "mse": 0.011876958109675293,
+      "psnr": 19.252947752927998,
+      "psnr_clamped": 19.253151198182664,
+      "ssim": 0.3552475218537296,
+      "pinv_psnr": 18.767442727103713,
+      "pinv_ssim": 0.31078325935406437,
+      "seconds": 2103.2922093179077,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.7716764876096631
+    },
+    {
+      "image_id": "236037",
+      "M": 1544,
+      "mse": 0.007794213724198819,
+      "psnr": 21.08227689643201,
+      "psnr_clamped": 21.08227689643201,
+      "ssim": 0.3456846015698378,
+      "pinv_psnr": 20.886049808124234,
+      "pinv_ssim": 0.3272461951783548,
+      "seconds": 2100.5086256861687,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.5944255974567316
+    },
+    {
+      "image_id": "24077",
+      "M": 1544,
+      "mse": 0.006150197213495485,
+      "psnr": 22.111109578246456,
+      "psnr_clamped": 22.11117989351456,
+      "ssim": 0.6875510686973018,
+      "pinv_psnr": 20.0307253375539,
+      "pinv_ssim": 0.5043668250838146,
+      "seconds": 2100.5392439560965,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.8929981731714816
+    },
+    {
+      "image_id": "241004",
+      "M": 1544,
+      "mse": 0.001034919140891889,
+      "psnr": 29.850935806768952,
+      "psnr_clamped": 29.851347074166288,
+      "ssim": 0.7569124516634523,
+      "pinv_psnr": 27.149182338182328,
+      "pinv_ssim": 0.6488703584346261,
+      "seconds": 2104.622322148178,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.976545479735824
+    },
+    {
+      "image_id": "241048",
+      "M": 1544,
+      "mse": 0.005738611920530652,
+      "psnr": 22.411931438661835,
+      "psnr_clamped": 22.412239571664593,
+      "ssim": 0.4875531932083794,
+      "pinv_psnr": 21.5559252353839,
+      "pinv_ssim": 0.42819561751357144,
+      "seconds": 2105.945108045824,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.9216506375113991
+    },
+    {
+      "image_id": "253027",
+      "M": 1544,
+      "mse": 0.010270554893562779,
+      "psnr": 19.88406091874751,
+      "psnr_clamped": 19.8841474733482,
+      "ssim": 0.5178251406878528,
+      "pinv_psnr": 19.258806506695862,
+      "pinv_ssim": 0.4388843775025513,
+      "seconds": 2095.515500098001,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.5519657849315586
+    },
+    {
+      "image_id": "253055",
+      "M": 1544,
+      "mse": 0.0008649633553602911,
+      "psnr": 30.630022912657367,
+      "psnr_clamped": 30.630196006937112,
+      "ssim": 0.7774715885407798,
+      "pinv_psnr": 28.657816841668613,
+      "pinv_ssim": 0.6945654547680168,
+      "seconds": 2100.9500193940476,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.9883661876888025
+    },
+    {
+      "image_id": "260058",
+      "M": 1544,
+      "mse": 0.0012212495466448156,
+      "psnr": 29.13195584492979,
+      "psnr_clamped": 29.13195584492979,
+      "ssim": 0.663134781541793,
+      "pinv_psnr": 28.50422821484247,
+      "pinv_ssim": 0.619902076987781,
+      "seconds": 2098.146300579887,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.9755018756813442
+    },
+    {
+      "image_id": "271035",
+      "M": 1544,
+      "mse": 0.0048052681422150485,
+      "psnr": 23.182823729412902,
+      "psnr_clamped": 23.182823729412902,
+      "ssim": 0.5603986985163626,
+      "pinv_psnr": 22.284110260878403,
+      "pinv_ssim": 0.4871557234471158,
+      "seconds": 2087.942417162936,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.8889846289196212
+    },
+    {
+      "image_id": "285079",
+      "M": 1544,
+      "mse": 0.006837125876569007,
+      "psnr": 21.651264243421615,
+      "psnr_clamped": 21.651287064056078,
+      "ssim": 0.4584532928209059,
+      "pinv_psnr": 20.722823614173905,
+      "pinv_ssim": 0.38741097070323305,
+      "seconds": 2082.546191792935,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.8164112672210515
+    },
+    {
+      "image_id": "291000",
+      "M": 1544,
+      "mse": 0.013394731498263346,
+      "psnr": 18.73065987542247,
+      "psnr_clamped": 18.730663048860766,
+      "ssim": 0.23816659428622283,
+      "pinv_psnr": 18.518748511949926,
+      "pinv_ssim": 0.22012423829785702,
+      "seconds": 2073.798072411213,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.7590244273763121
+    },
+    {
+      "image_id": "295087",
+      "M": 1544,
+      "mse": 0.003342531060703676,
+      "psnr": 24.759245483353766,
+      "psnr_clamped": 24.759245483353766,
+      "ssim": 0.6082349320190907,
+      "pinv_psnr": 24.354248819076595,
+      "pinv_ssim": 0.5629958248396568,
+      "seconds": 2071.1410198835656,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.8802451199855111
+    },
+    {
+      "image_id": "296007",
+      "M": 1544,
+      "mse": 0.0010999799920450328,
+      "psnr": 29.586152143176502,
+      "psnr_clamped": 29.586152143176502,
+      "ssim": 0.7131659988584769,
+      "pinv_psnr": 28.874944397280977,
+      "pinv_ssim": 0.6719266814090393,
+      "seconds": 2073.7678034934215,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.9308405662329301
+    },
+    {
+      "image_id": "296059",
+      "M": 1544,
+      "mse": 0.0013174158907286314,
+      "psnr": 28.80277102383699,
+      "psnr_clamped": 28.80277102383699,
+      "ssim": 0.696405424016245,
+      "pinv_psnr": 26.862602887682456,
+      "pinv_ssim": 0.5993496080133592,
+      "seconds": 2086.853702002205,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.9261166740960399
+    },
+    {
+      "image_id": "299086",
+      "M": 1544,
+      "mse": 0.0012280499332450346,
+      "psnr": 29.107839741623604,
+      "psnr_clamped": 29.107839741623604,
+      "ssim": 0.7187943353517531,
+      "pinv_psnr": 28.416319524669767,
+      "pinv_ssim": 0.6752789251236339,
+      "seconds": 2081.8445175951347,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.817969372655083
+    },
+    {
+      "image_id": "300091",
+      "M": 1544,
+      "mse": 0.0019600129406343015,
+      "psnr": 27.07741061282546,
+      "psnr_clamped": 27.077911925245566,
+      "ssim": 0.6752812647191597,
+      "pinv_psnr": 25.672215732850006,
+      "pinv_ssim": 0.5867095026110896,
+      "seconds": 2085.8008189462125,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.9149702863492816
+    },
+    {
+      "image_id": "302008",
+      "M": 1544,
+      "mse": 0.0008307167695496032,
+      "psnr": 30.805470224114373,
+      "psnr_clamped": 30.805470224114373,
+      "ssim": 0.9060856641927231,
+      "pinv_psnr": 23.541089135125265,
+      "pinv_ssim": 0.5781494108213325,
+      "seconds": 2080.5925743370317,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.9560720227743155
+    },
+    {
+      "image_id": "304034",
+      "M": 1544,
+      "mse": 0.009903820053904125,
+      "psnr": 20.0419725910611,
+      "psnr_clamped": 20.04197330237703,
+      "ssim": 0.37308284416359927,
+      "pinv_psnr": 19.734863218095857,
+      "pinv_ssim": 0.3435315098748378,
+      "seconds": 2080.330528561026,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.735226514895516
+    },
+    {
+      "image_id": "304074",
+      "M": 1544,
+      "mse": 0.0056621934225095285,
+      "psnr": 22.470152990659752,
+      "psnr_clamped": 22.470180393750127,
+      "ssim": 0.40366973403433354,
+      "pinv_psnr": 21.75454893837059,
+      "pinv_ssim": 0.36069903559106975,
+      "seconds": 2078.9010537588038,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.8383187311820673
+    },
+    {
+      "image_id": "306005",
+      "M": 1544,
+      "mse": 0.003629323841491281,
+      "psnr": 24.401742783418022,
+      "psnr_clamped": 24.401742783418022,
+      "ssim": 0.6292615631117305,
+      "pinv_psnr": 23.03792121203282,
+      "pinv_ssim": 0.47791707649331144,
+      "seconds": 2075.420214759186,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.9397513482871515
+    },
+    {
+      "image_id": "3096",
+      "M": 1544,
+      "mse": 0.0001002658354151749,
+      "psnr": 39.98847023293067,
+      "psnr_clamped": 39.98866977456164,
+      "ssim": 0.9686588255240891,
+      "pinv_psnr": 33.696213573661105,
+      "pinv_ssim": 0.8656376041002614,
+      "seconds": 2074.2253352552652,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.9622763835490868
+    },
+    {
+      "image_id": "33039",
+      "M": 1544,
+      "mse": 0.021150804574099517,
+      "psnr": 16.746731074640863,
+      "psnr_clamped": 16.746743413262486,
+      "ssim": 0.2903310900632358,
+      "pinv_psnr": 16.454312434906228,
+      "pinv_ssim": 0.2651682542445087,
+      "seconds": 2065.7483994271606,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.5883258416757264
+    },
+    {
+      "image_id": "351093",
+      "M": 1544,
+      "mse": 0.009678091165695613,
+      "psnr": 20.14210291240407,
+      "psnr_clamped": 20.142884688086127,
+      "ssim": 0.5197297562603453,
+      "pinv_psnr": 19.28571835848803,
+      "pinv_ssim": 0.42909430892644085,
+      "seconds": 2061.7925829947926,
+      "overrides": [
+        "options.candidate_design.name=adasense_pca",
+        "config.sampling.num_scenarios=43"
+      ],
+      "captured_energy_ratio": 0.9075941457426248
+    }
+  ],
+  "scope": "Only completed image folders in this directory; no claim of dataset completeness."
+}

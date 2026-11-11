@@ -1,0 +1,28 @@
+# 采样器消融：本文 E32 选图 + DDRM 25 NFE（O=32 不变），O 与 F 均用 DDRM
+extends: final.yaml  # 继承公共配置，相对当前 YAML 路径
+sampling_ratio: 0.01  # 有效差分测量数占像素数的比例，预算向下取整
+run:  # 单个任务的运行参数
+  template: SET11_256  # 使用的原生尺寸模板
+  dataset_root: data/set11_proxunroll/native  # 原生 Y 通道数据目录，相对项目根目录
+  image_ids:  # 本任务显式图像清单
+  - Monarch  # 列表成员：图像编号或解析后的参数覆盖
+  - Parrots  # 列表成员：图像编号或解析后的参数覆盖
+  - barbara  # 列表成员：图像编号或解析后的参数覆盖
+  - boats  # 列表成员：图像编号或解析后的参数覆盖
+  - cameraman  # 列表成员：图像编号或解析后的参数覆盖
+  - foreman  # 列表成员：图像编号或解析后的参数覆盖
+  - house  # 列表成员：图像编号或解析后的参数覆盖
+  - lena256  # 列表成员：图像编号或解析后的参数覆盖
+  - peppers256  # 列表成员：图像编号或解析后的参数覆盖
+  split: test  # 数据划分，测试数据不得用于调参
+  device: cuda:0  # 单任务仅使用这张 GPU
+  output: outputs/ablation/sampler_ddrm  # 本实验独立结果目录
+  ablation: full  # 模板解析后应用的预设消融
+config:  # DDRM 采样器（AdaSense 原文设置），选图 O 与最终 F 均使用
+  sampling:  # 选图阶段采样
+    sampler: ddrm  # 无噪声 DDRM（AdaSense efficient_generalized_steps），替代默认 DiffPIR
+    ddrm_steps: 25  # 每链网络调用次数，AdaSense --timesteps 默认 25
+    ddrm_eta: 1.0  # AdaSense main.py 固定 eta=etaB=1.0
+    ddrm_schedule: ddpm_linear  # 1000 步线性 beta[1e-4,0.02]，均匀取 25 点；超出 sigma_max=20 的 5 级截断
+  final_sampling:  # 最终均值解码同样用 DDRM（K=32 链，与 full 的 F 链数相同）
+    sampler: ddrm  # 与选图同一采样器

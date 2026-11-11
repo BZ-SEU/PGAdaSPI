@@ -1,0 +1,33 @@
+{
+  "row_count": 655,
+  "exposures": 1310,
+  "physics_max_abs_error": 2.3315767719300773e-14,
+  "observations_do_not_affect_fixed_codes": true,
+  "full_rank": 655,
+  "unique_code_rows": 655,
+  "batch_hash": "317a9818df834ceaee92c27dfb0776d78aae9b8bf753ab87836d66d0cb7af4ae",
+  "condition": 136.291795770949,
+  "prefix_vs_independent_qr_max_abs_error": {
+    "64": 1.2212453270876722e-15,
+    "96": 1.1657341758564144e-15,
+    "256": 6.661338147750939e-16,
+    "655": 0.0
+  },
+  "prefix_invariant_to_future_y": true,
+  "streamed_pca_small_test_min_principal_cosine": 1.0000008344650269,
+  "streamed_pca_small_test_max_relative_eigen_residual": 1.2121116924390662e-05,
+  "fast_vs_original_monarch": {
+    "psnr": -1.391271691630891e-06,
+    "ssim": -6.091922910567149e-08,
+    "mse": 3.6029645881369143e-09,
+    "same_codes_and_F_seeds": true,
+    "pinv_mse_exactly_equal": true,
+    "note": "Final float32 network output differs at ~1.4e-6 dB across QR projection implementations; practical threshold 1e-4 dB, not bitwise identity."
+  },
+  "all_11_completion_checks": {
+    "completed": 11,
+    "same_fixed_codes_across_images_per_size": true,
+    "no_O_sampling": true,
+    "three_files_per_image": true
+  }
+}

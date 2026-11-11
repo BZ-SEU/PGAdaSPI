@@ -1,0 +1,208 @@
+{
+  "completed_images": 11,
+  "incomplete_directories": [],
+  "mean": {
+    "psnr": 23.555967065987826,
+    "psnr_clamped": 23.55598452795896,
+    "mse": 0.0064369587538372405,
+    "ssim": 0.6519760029714666,
+    "pinv_psnr": 23.483053883459405,
+    "pinv_ssim": 0.6446524561823855,
+    "seconds": 2314.835126554615
+  },
+  "information_capture": {
+    "definition": "eta = ||P_A(x-mu)||^2 / ||x-mu||^2; P_A is the actual effective-row space projector",
+    "association": "offline GT-only centered PInv quantity; not a final DiffPIR reconstruction metric and never used for selection",
+    "available_images": 11,
+    "missing_images": [],
+    "eta": {
+      "count": 11,
+      "mean": 0.8836349505456751,
+      "std": 0.09736552545817252,
+      "median": 0.8984764820945029,
+      "minimum": 0.6248649775142179,
+      "maximum": 0.9900861277325425
+    },
+    "per_image": {
+      "Monarch": 0.8301144262685463,
+      "Parrots": 0.9404782220245199,
+      "barbara": 0.8870407344413979,
+      "boats": 0.8984764820945029,
+      "cameraman": 0.9138167882078275,
+      "fingerprint": 0.6248649775142179,
+      "flinstones": 0.8534187263302818,
+      "foreman": 0.9900861277325425,
+      "house": 0.9674743081770499,
+      "lena256": 0.9176985532971285,
+      "peppers256": 0.8965151099144115
+    }
+  },
+  "per_image": [
+    {
+      "image_id": "Monarch",
+      "M": 655,
+      "mse": 0.007934785371371824,
+      "psnr": 21.004648160155618,
+      "psnr_clamped": 21.004648160155618,
+      "ssim": 0.653623523760421,
+      "pinv_psnr": 20.958208310794436,
+      "pinv_ssim": 0.64149392611436,
+      "seconds": 225.10169146000408,
+      "overrides": [
+        "config.sampling.num_scenarios=16"
+      ],
+      "captured_energy_ratio": 0.8301144262685463
+    },
+    {
+      "image_id": "Parrots",
+      "M": 655,
+      "mse": 0.003467080521061505,
+      "psnr": 24.60036071973079,
+      "psnr_clamped": 24.60054204608184,
+      "ssim": 0.7919789427859882,
+      "pinv_psnr": 24.44798351515558,
+      "pinv_ssim": 0.7768290888090513,
+      "seconds": 224.5491434270516,
+      "overrides": [
+        "config.sampling.num_scenarios=16"
+      ],
+      "captured_energy_ratio": 0.9404782220245199
+    },
+    {
+      "image_id": "barbara",
+      "M": 655,
+      "mse": 0.005285637607547781,
+      "psnr": 22.76902616164099,
+      "psnr_clamped": 22.76902616164099,
+      "ssim": 0.5777700292802322,
+      "pinv_psnr": 22.730422924941493,
+      "pinv_ssim": 0.5749956287052161,
+      "seconds": 223.73028326802887,
+      "overrides": [
+        "config.sampling.num_scenarios=16"
+      ],
+      "captured_energy_ratio": 0.8870407344413979
+    },
+    {
+      "image_id": "boats",
+      "M": 655,
+      "mse": 0.004099475471794593,
+      "psnr": 23.87271707738334,
+      "psnr_clamped": 23.87271707738334,
+      "ssim": 0.630350757648627,
+      "pinv_psnr": 23.875974166680383,
+      "pinv_ssim": 0.6268056398912738,
+      "seconds": 223.7050974399317,
+      "overrides": [
+        "config.sampling.num_scenarios=16"
+      ],
+      "captured_energy_ratio": 0.8984764820945029
+    },
+    {
+      "image_id": "cameraman",
+      "M": 655,
+      "mse": 0.005048047779062065,
+      "psnr": 22.96876543208295,
+      "psnr_clamped": 22.968767652449795,
+      "ssim": 0.7050373252870379,
+      "pinv_psnr": 22.900271669283597,
+      "pinv_ssim": 0.6929660625545034,
+      "seconds": 224.27074465702754,
+      "overrides": [
+        "config.sampling.num_scenarios=16"
+      ],
+      "captured_energy_ratio": 0.9138167882078275
+    },
+    {
+      "image_id": "fingerprint",
+      "M": 2621,
+      "mse": 0.020597169294299604,
+      "psnr": 16.8619246139484,
+      "psnr_clamped": 16.8619246139484,
+      "ssim": 0.2461435070256513,
+      "pinv_psnr": 16.85305323878389,
+      "pinv_ssim": 0.24491630842438153,
+      "seconds": 6181.265153554967,
+      "overrides": [
+        "config.sampling.num_scenarios=16"
+      ],
+      "captured_energy_ratio": 0.6248649775142179
+    },
+    {
+      "image_id": "flinstones",
+      "M": 2621,
+      "mse": 0.014548958068608044,
+      "psnr": 18.371681077953838,
+      "psnr_clamped": 18.371685749083785,
+      "ssim": 0.5109474120771338,
+      "pinv_psnr": 18.3493983921191,
+      "pinv_ssim": 0.5063904564520949,
+      "seconds": 17278.66124060296,
+      "overrides": [
+        "config.sampling.num_scenarios=16"
+      ],
+      "captured_energy_ratio": 0.8534187263302818
+    },
+    {
+      "image_id": "foreman",
+      "M": 655,
+      "mse": 0.0007011032719474875,
+      "psnr": 31.54218006093897,
+      "psnr_clamped": 31.54218006093897,
+      "ssim": 0.8511959152316381,
+      "pinv_psnr": 31.355288397948314,
+      "pinv_ssim": 0.8439195192422576,
+      "seconds": 222.42674884293228,
+      "overrides": [
+        "config.sampling.num_scenarios=16"
+      ],
+      "captured_energy_ratio": 0.9900861277325425
+    },
+    {
+      "image_id": "house",
+      "M": 655,
+      "mse": 0.0013348979571608968,
+      "psnr": 28.745519315546364,
+      "psnr_clamped": 28.745519315546364,
+      "ssim": 0.798138681115376,
+      "pinv_psnr": 28.56857141612517,
+      "pinv_ssim": 0.786009121616644,
+      "seconds": 219.41068917897064,
+      "overrides": [
+        "config.sampling.num_scenarios=16"
+      ],
+      "captured_energy_ratio": 0.9674743081770499
+    },
+    {
+      "image_id": "lena256",
+      "M": 655,
+      "mse": 0.0030924646465368237,
+      "psnr": 25.09695256582184,
+      "psnr_clamped": 25.09695256582184,
+      "ssim": 0.7240597301933598,
+      "pinv_psnr": 25.058987603668683,
+      "pinv_ssim": 0.7191704968627034,
+      "seconds": 219.78676998789888,
+      "overrides": [
+        "config.sampling.num_scenarios=16"
+      ],
+      "captured_energy_ratio": 0.9176985532971285
+    },
+    {
+      "image_id": "peppers256",
+      "M": 655,
+      "mse": 0.004696926302819017,
+      "psnr": 23.281862540662996,
+      "psnr_clamped": 23.28186640449761,
+      "ssim": 0.6824902082806672,
+      "pinv_psnr": 23.215433082552813,
+      "pinv_ssim": 0.6776807693337553,
+      "seconds": 220.27882968098857,
+      "overrides": [
+        "config.sampling.num_scenarios=16"
+      ],
+      "captured_energy_ratio": 0.8965151099144115
+    }
+  ],
+  "scope": "Only completed image folders in this directory; no claim of dataset completeness."
+}

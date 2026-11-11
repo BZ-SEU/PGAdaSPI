@@ -1,0 +1,27 @@
+{
+  "status": "blocked_missing_exact_evaluation_manifest_and_hq_images",
+  "dataset": "CelebA-HQ",
+  "paper": "https://arxiv.org/abs/2407.08256",
+  "paper_definition": "Section 4.1: 256 x 256 face images from CelebA-HQ validation dataset",
+  "code_dataset_path": "exp/datasets/celeba_hq_test (ImageFolder)",
+  "ordering": "ImageFolder class/path sorting, shuffle=False; optional subset_start:subset_end; defaults use entire folder",
+  "exact_image_ids": null,
+  "images_copied": 0,
+  "local_assets": [
+    "/mnt/polar/dataset/CelebA",
+    "/mnt/polar/dataset/PTSPI_dataset_CelebA_256"
+  ],
+  "local_assets_are_exact_match": false,
+  "upstream_archive_checked": true,
+  "matching_upstream_paths": [
+    "AdaSense-master/configs/celeba_hq.yml",
+    "AdaSense-master/datasets/celeba.py",
+    "AdaSense-master/datasets/raw_test.txt"
+  ],
+  "needed": "Authors exact CelebA-HQ evaluation file list and matching HQ files; if subset flags used, actual run arguments",
+  "source_hashes": {
+    "comparable_method/AdaSense-master/datasets/__init__.py": "2c066d5f871e6c9db1e40d8046841f2e335aaa016bfd216deef8072f103cbe41",
+    "comparable_method/AdaSense-master/runners/diffusion.py": "abbb617b292886207afd7fcfe5bff86cb79cd46fb4a6de9c3bbf010d99309185",
+    "comparable_method/AdaSense-master/configs/celeba_hq.yml": "1a2434e218743f11c59fcee60623b733d8152592be6af4bfad0bcda6e295faba"
+  }
+}

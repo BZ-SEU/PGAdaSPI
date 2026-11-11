@@ -1,0 +1,16 @@
+extends: abl_fixed.yaml  # 继承9张256测试图、相同预算及最终DiffPIR解码
+config:  # 仅增加训练集离线图案资产
+  offline_pca:  # 20,000张MIRFLICKR训练图的中心化PCA，按方差降序
+    path: assets/offline_pca_256.pt  # 全部655张固定8-bit图案，初始64张也来自PCA
+    sha256: d9aa8f9d4c173cbd4aba9e73ab4ad8c504f78ff4ec53f46fe514673ee9e582e9  # 防止图案资产被静默替换
+options:  # 不生成O集合，不执行在线图案优化
+  candidate_design:  # 图案来源
+    name: offline_pca  # 从第1张开始严格执行预先冻结的PCA图案顺序
+run:  # 本任务仅使用一张GPU
+  template: SET11_256  # 256×256，M64→655，B32，末批15
+  dataset_root: data/set11_proxunroll/native  # 原生Y通道，不缩放
+  image_ids: [Monarch, Parrots, barbara, boats, cameraman, foreman, house, lena256, peppers256]  # 9张同尺寸图
+  split: test  # 仅报告，不用于训练或选维纳参数
+  device: cuda:1  # 单卡运行，可由命令行覆盖
+  output: outputs/ablation/offline_pca_fixed  # 独立结果，不覆盖已有实验
+  ablation: full  # 保留上述offline_pca选择器，不应用fixed的Walsh覆盖

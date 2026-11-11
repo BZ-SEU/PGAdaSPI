@@ -1,0 +1,29 @@
+# Python and local tools
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.claude/
+.DS_Store
+
+# Local-only material
+/comparable_method/
+/AGENTS.md
+/CVPR-v8.pdf
+
+# Publish experiment results, not arbitrary runtime output or model checkpoints.
+/outputs/*
+!/outputs/ablation/
+!/outputs/generalization/
+!/outputs/paper_figures/
+/outputs/**/*.pt
+/outputs/**/*.npz
+/outputs/**/*.log
+/outputs/**/queue.pid
+/outputs/**/status.json
+
+# Keep small runtime assets in Git; distribute PCA assets separately.
+/assets/offline_pca_*.pt
+/assets/*.npz
+*.tar.gz

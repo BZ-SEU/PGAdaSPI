@@ -1,0 +1,3876 @@
+{
+  "figure": 7,
+  "figure_png": "/mnt/data/baojr/adaptive_SPI/outputs/paper_figures/fig7/fig7_computation_quality.png",
+  "source_root": "/mnt/data/baojr/adaptive_SPI/outputs/ablation",
+  "families": {
+    "T": [
+      {
+        "folder": "steps10",
+        "parameter": 10,
+        "psnr": 23.733061698230912,
+        "psnr_std": 4.222696252732716,
+        "ssim": 0.6539599039279274,
+        "nfe_selection_mean": 8352.0,
+        "nfe_selection_values": [
+          5472,
+          5472,
+          5472,
+          5472,
+          5472,
+          21312,
+          21312,
+          5472,
+          5472,
+          5472,
+          5472
+        ],
+        "T": 10,
+        "O": 32,
+        "batch_size": 32,
+        "images": [
+          {
+            "image_id": "Monarch",
+            "psnr": 21.18547276150482,
+            "ssim": 0.6609941352060651,
+            "nfe_selection": 5472,
+            "nfe_per_chain": 9,
+            "O": 32,
+            "T": 10,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "Parrots",
+            "psnr": 25.032738590488215,
+            "ssim": 0.7899565350072034,
+            "nfe_selection": 5472,
+            "nfe_per_chain": 9,
+            "O": 32,
+            "T": 10,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "barbara",
+            "psnr": 22.51200483648447,
+            "ssim": 0.5571080860727171,
+            "nfe_selection": 5472,
+            "nfe_per_chain": 9,
+            "O": 32,
+            "T": 10,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "boats",
+            "psnr": 23.989205833491965,
+            "ssim": 0.633675043804581,
+            "nfe_selection": 5472,
+            "nfe_per_chain": 9,
+            "O": 32,
+            "T": 10,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "cameraman",
+            "psnr": 23.473377557431114,
+            "ssim": 0.7088241590700102,
+            "nfe_selection": 5472,
+            "nfe_per_chain": 9,
+            "O": 32,
+            "T": 10,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "fingerprint",
+            "psnr": 16.869048497861733,
+            "ssim": 0.24782837978598057,
+            "nfe_selection": 21312,
+            "nfe_per_chain": 9,
+            "O": 32,
+            "T": 10,
+            "batch_size": 32,
+            "selection_batches": 74,
+            "M_initial": 256,
+            "M_final": 2621,
+            "image_shape": [
+              512,
+              512
+            ]
+          },
+          {
+            "image_id": "flinstones",
+            "psnr": 18.788239859430046,
+            "ssim": 0.5325757200882301,
+            "nfe_selection": 21312,
+            "nfe_per_chain": 9,
+            "O": 32,
+            "T": 10,
+            "batch_size": 32,
+            "selection_batches": 74,
+            "M_initial": 256,
+            "M_final": 2621,
+            "image_shape": [
+              512,
+              512
+            ]
+          },
+          {
+            "image_id": "foreman",
+            "psnr": 31.66772132980695,
+            "ssim": 0.8481658938569381,
+            "nfe_selection": 5472,
+            "nfe_per_chain": 9,
+            "O": 32,
+            "T": 10,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "house",
+            "psnr": 29.28220877942126,
+            "ssim": 0.8010489680068366,
+            "nfe_selection": 5472,
+            "nfe_per_chain": 9,
+            "O": 32,
+            "T": 10,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "lena256",
+            "psnr": 25.330248364134086,
+            "ssim": 0.7251151597663502,
+            "nfe_selection": 5472,
+            "nfe_per_chain": 9,
+            "O": 32,
+            "T": 10,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "peppers256",
+            "psnr": 22.933412270485363,
+            "ssim": 0.6882668625422889,
+            "nfe_selection": 5472,
+            "nfe_per_chain": 9,
+            "O": 32,
+            "T": 10,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          }
+        ]
+      },
+      {
+        "folder": "steps20",
+        "parameter": 20,
+        "psnr": 24.049596837941372,
+        "psnr_std": 4.284826649542329,
+        "ssim": 0.6673857353264411,
+        "nfe_selection_mean": 17632.0,
+        "nfe_selection_values": [
+          11552,
+          11552,
+          11552,
+          11552,
+          11552,
+          44992,
+          44992,
+          11552,
+          11552,
+          11552,
+          11552
+        ],
+        "T": 20,
+        "O": 32,
+        "batch_size": 32,
+        "images": [
+          {
+            "image_id": "Monarch",
+            "psnr": 21.276132722790166,
+            "ssim": 0.6695733678582944,
+            "nfe_selection": 11552,
+            "nfe_per_chain": 19,
+            "O": 32,
+            "T": 20,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "Parrots",
+            "psnr": 25.745171636852927,
+            "ssim": 0.8044580482926372,
+            "nfe_selection": 11552,
+            "nfe_per_chain": 19,
+            "O": 32,
+            "T": 20,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "barbara",
+            "psnr": 22.644567147210598,
+            "ssim": 0.5678747358300238,
+            "nfe_selection": 11552,
+            "nfe_per_chain": 19,
+            "O": 32,
+            "T": 20,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "boats",
+            "psnr": 24.061967443516075,
+            "ssim": 0.6412853032942928,
+            "nfe_selection": 11552,
+            "nfe_per_chain": 19,
+            "O": 32,
+            "T": 20,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "cameraman",
+            "psnr": 23.740061164659565,
+            "ssim": 0.7196904160941858,
+            "nfe_selection": 11552,
+            "nfe_per_chain": 19,
+            "O": 32,
+            "T": 20,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "fingerprint",
+            "psnr": 17.073795724018474,
+            "ssim": 0.2771928595503487,
+            "nfe_selection": 44992,
+            "nfe_per_chain": 19,
+            "O": 32,
+            "T": 20,
+            "batch_size": 32,
+            "selection_batches": 74,
+            "M_initial": 256,
+            "M_final": 2621,
+            "image_shape": [
+              512,
+              512
+            ]
+          },
+          {
+            "image_id": "flinstones",
+            "psnr": 19.036090490209702,
+            "ssim": 0.5492645727078347,
+            "nfe_selection": 44992,
+            "nfe_per_chain": 19,
+            "O": 32,
+            "T": 20,
+            "batch_size": 32,
+            "selection_batches": 74,
+            "M_initial": 256,
+            "M_final": 2621,
+            "image_shape": [
+              512,
+              512
+            ]
+          },
+          {
+            "image_id": "foreman",
+            "psnr": 32.067897126487246,
+            "ssim": 0.8570489378721756,
+            "nfe_selection": 11552,
+            "nfe_per_chain": 19,
+            "O": 32,
+            "T": 20,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "house",
+            "psnr": 29.54752473405291,
+            "ssim": 0.809143838645908,
+            "nfe_selection": 11552,
+            "nfe_per_chain": 19,
+            "O": 32,
+            "T": 20,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "lena256",
+            "psnr": 25.63993064267766,
+            "ssim": 0.7400689427517062,
+            "nfe_selection": 11552,
+            "nfe_per_chain": 19,
+            "O": 32,
+            "T": 20,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "peppers256",
+            "psnr": 23.712426384879794,
+            "ssim": 0.7056420656934462,
+            "nfe_selection": 11552,
+            "nfe_per_chain": 19,
+            "O": 32,
+            "T": 20,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          }
+        ]
+      },
+      {
+        "folder": "full",
+        "parameter": 50,
+        "psnr": 24.326732155086926,
+        "psnr_std": 4.391353193393487,
+        "ssim": 0.6778971406235451,
+        "nfe_selection_mean": 45472.0,
+        "nfe_selection_values": [
+          29792,
+          29792,
+          29792,
+          29792,
+          29792,
+          116032,
+          116032,
+          29792,
+          29792,
+          29792,
+          29792
+        ],
+        "T": 50,
+        "O": 32,
+        "batch_size": 32,
+        "images": [
+          {
+            "image_id": "Monarch",
+            "psnr": 21.391175811363766,
+            "ssim": 0.6714079701271802,
+            "nfe_selection": 29792,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "Parrots",
+            "psnr": 26.022148259007466,
+            "ssim": 0.8163876524142173,
+            "nfe_selection": 29792,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "barbara",
+            "psnr": 22.90164446013177,
+            "ssim": 0.5886778655558436,
+            "nfe_selection": 29792,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "boats",
+            "psnr": 24.346905347742588,
+            "ssim": 0.655302835445747,
+            "nfe_selection": 29792,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "cameraman",
+            "psnr": 23.992161555450494,
+            "ssim": 0.7302511595421918,
+            "nfe_selection": 29792,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "fingerprint",
+            "psnr": 17.184210072501493,
+            "ssim": 0.29126357530820624,
+            "nfe_selection": 116032,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 74,
+            "M_initial": 256,
+            "M_final": 2621,
+            "image_shape": [
+              512,
+              512
+            ]
+          },
+          {
+            "image_id": "flinstones",
+            "psnr": 19.232834330006224,
+            "ssim": 0.5651525732618498,
+            "nfe_selection": 116032,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 74,
+            "M_initial": 256,
+            "M_final": 2621,
+            "image_shape": [
+              512,
+              512
+            ]
+          },
+          {
+            "image_id": "foreman",
+            "psnr": 32.239427502746324,
+            "ssim": 0.8608803550987945,
+            "nfe_selection": 29792,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "house",
+            "psnr": 30.43548591084666,
+            "ssim": 0.8228568637455129,
+            "nfe_selection": 29792,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "lena256",
+            "psnr": 25.818489744923877,
+            "ssim": 0.746019461836731,
+            "nfe_selection": 29792,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "peppers256",
+            "psnr": 24.029570711235515,
+            "ssim": 0.7086682345227228,
+            "nfe_selection": 29792,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          }
+        ]
+      },
+      {
+        "folder": "steps100",
+        "parameter": 100,
+        "psnr": 24.41195964983265,
+        "psnr_std": 4.449366242918067,
+        "ssim": 0.6832657276348107,
+        "nfe_selection_mean": 91872.0,
+        "nfe_selection_values": [
+          60192,
+          60192,
+          60192,
+          60192,
+          60192,
+          234432,
+          234432,
+          60192,
+          60192,
+          60192,
+          60192
+        ],
+        "T": 100,
+        "O": 32,
+        "batch_size": 32,
+        "images": [
+          {
+            "image_id": "Monarch",
+            "psnr": 21.301929710875555,
+            "ssim": 0.667509533200508,
+            "nfe_selection": 60192,
+            "nfe_per_chain": 99,
+            "O": 32,
+            "T": 100,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "Parrots",
+            "psnr": 26.064628689232126,
+            "ssim": 0.8143821929151984,
+            "nfe_selection": 60192,
+            "nfe_per_chain": 99,
+            "O": 32,
+            "T": 100,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "barbara",
+            "psnr": 22.912205405087505,
+            "ssim": 0.5912012104633451,
+            "nfe_selection": 60192,
+            "nfe_per_chain": 99,
+            "O": 32,
+            "T": 100,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "boats",
+            "psnr": 24.193931820430485,
+            "ssim": 0.6473686839127626,
+            "nfe_selection": 60192,
+            "nfe_per_chain": 99,
+            "O": 32,
+            "T": 100,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "cameraman",
+            "psnr": 23.796375620108176,
+            "ssim": 0.7270539004210279,
+            "nfe_selection": 60192,
+            "nfe_per_chain": 99,
+            "O": 32,
+            "T": 100,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "fingerprint",
+            "psnr": 17.52613353374911,
+            "ssim": 0.3342292572699543,
+            "nfe_selection": 234432,
+            "nfe_per_chain": 99,
+            "O": 32,
+            "T": 100,
+            "batch_size": 32,
+            "selection_batches": 74,
+            "M_initial": 256,
+            "M_final": 2621,
+            "image_shape": [
+              512,
+              512
+            ]
+          },
+          {
+            "image_id": "flinstones",
+            "psnr": 19.36640725941929,
+            "ssim": 0.5779166603630036,
+            "nfe_selection": 234432,
+            "nfe_per_chain": 99,
+            "O": 32,
+            "T": 100,
+            "batch_size": 32,
+            "selection_batches": 74,
+            "M_initial": 256,
+            "M_final": 2621,
+            "image_shape": [
+              512,
+              512
+            ]
+          },
+          {
+            "image_id": "foreman",
+            "psnr": 32.677979642057124,
+            "ssim": 0.8692715365118342,
+            "nfe_selection": 60192,
+            "nfe_per_chain": 99,
+            "O": 32,
+            "T": 100,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "house",
+            "psnr": 30.689265088339432,
+            "ssim": 0.8255530882795691,
+            "nfe_selection": 60192,
+            "nfe_per_chain": 99,
+            "O": 32,
+            "T": 100,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "lena256",
+            "psnr": 25.893158046492786,
+            "ssim": 0.7511660896406606,
+            "nfe_selection": 60192,
+            "nfe_per_chain": 99,
+            "O": 32,
+            "T": 100,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "peppers256",
+            "psnr": 24.109541332367584,
+            "ssim": 0.7102708510050549,
+            "nfe_selection": 60192,
+            "nfe_per_chain": 99,
+            "O": 32,
+            "T": 100,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          }
+        ]
+      },
+      {
+        "folder": "steps200",
+        "parameter": 200,
+        "psnr": 24.497394696826237,
+        "psnr_std": 4.379866356187949,
+        "ssim": 0.6911346413807903,
+        "nfe_selection_mean": 184672.0,
+        "nfe_selection_values": [
+          120992,
+          120992,
+          120992,
+          120992,
+          120992,
+          471232,
+          471232,
+          120992,
+          120992,
+          120992,
+          120992
+        ],
+        "T": 200,
+        "O": 32,
+        "batch_size": 32,
+        "images": [
+          {
+            "image_id": "Monarch",
+            "psnr": 21.513071925150257,
+            "ssim": 0.6781766119581536,
+            "nfe_selection": 120992,
+            "nfe_per_chain": 199,
+            "O": 32,
+            "T": 200,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "Parrots",
+            "psnr": 26.113289138735727,
+            "ssim": 0.8189606994255478,
+            "nfe_selection": 120992,
+            "nfe_per_chain": 199,
+            "O": 32,
+            "T": 200,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "barbara",
+            "psnr": 22.94190820431613,
+            "ssim": 0.5920887668855949,
+            "nfe_selection": 120992,
+            "nfe_per_chain": 199,
+            "O": 32,
+            "T": 200,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "boats",
+            "psnr": 24.236293425366018,
+            "ssim": 0.6508310746557057,
+            "nfe_selection": 120992,
+            "nfe_per_chain": 199,
+            "O": 32,
+            "T": 200,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "cameraman",
+            "psnr": 23.840758580610803,
+            "ssim": 0.729297841037555,
+            "nfe_selection": 120992,
+            "nfe_per_chain": 199,
+            "O": 32,
+            "T": 200,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "fingerprint",
+            "psnr": 17.929362016301273,
+            "ssim": 0.3931635016232276,
+            "nfe_selection": 471232,
+            "nfe_per_chain": 199,
+            "O": 32,
+            "T": 200,
+            "batch_size": 32,
+            "selection_batches": 74,
+            "M_initial": 256,
+            "M_final": 2621,
+            "image_shape": [
+              512,
+              512
+            ]
+          },
+          {
+            "image_id": "flinstones",
+            "psnr": 19.4143338561091,
+            "ssim": 0.5823771117395163,
+            "nfe_selection": 471232,
+            "nfe_per_chain": 199,
+            "O": 32,
+            "T": 200,
+            "batch_size": 32,
+            "selection_batches": 74,
+            "M_initial": 256,
+            "M_final": 2621,
+            "image_shape": [
+              512,
+              512
+            ]
+          },
+          {
+            "image_id": "foreman",
+            "psnr": 32.5199952501639,
+            "ssim": 0.8675616182725664,
+            "nfe_selection": 120992,
+            "nfe_per_chain": 199,
+            "O": 32,
+            "T": 200,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "house",
+            "psnr": 30.961285165947853,
+            "ssim": 0.830006448237905,
+            "nfe_selection": 120992,
+            "nfe_per_chain": 199,
+            "O": 32,
+            "T": 200,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "lena256",
+            "psnr": 25.941074529463464,
+            "ssim": 0.7534045910615188,
+            "nfe_selection": 120992,
+            "nfe_per_chain": 199,
+            "O": 32,
+            "T": 200,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "peppers256",
+            "psnr": 24.059969572924132,
+            "ssim": 0.7066127902914027,
+            "nfe_selection": 120992,
+            "nfe_per_chain": 199,
+            "O": 32,
+            "T": 200,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          }
+        ]
+      }
+    ],
+    "O": [
+      {
+        "folder": "O8",
+        "parameter": 8,
+        "psnr": 23.135361385113132,
+        "psnr_std": 4.008112920248507,
+        "ssim": 0.6341362033508099,
+        "nfe_selection_mean": 11368.0,
+        "nfe_selection_values": [
+          7448,
+          7448,
+          7448,
+          7448,
+          7448,
+          29008,
+          29008,
+          7448,
+          7448,
+          7448,
+          7448
+        ],
+        "T": 50,
+        "O": 8,
+        "batch_size": 32,
+        "images": [
+          {
+            "image_id": "Monarch",
+            "psnr": 20.90193292847449,
+            "ssim": 0.6561531604548144,
+            "nfe_selection": 7448,
+            "nfe_per_chain": 49,
+            "O": 8,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "Parrots",
+            "psnr": 24.28675196124407,
+            "ssim": 0.7774797956570401,
+            "nfe_selection": 7448,
+            "nfe_per_chain": 49,
+            "O": 8,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "barbara",
+            "psnr": 22.528352603871088,
+            "ssim": 0.5577559134281864,
+            "nfe_selection": 7448,
+            "nfe_per_chain": 49,
+            "O": 8,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "boats",
+            "psnr": 23.60976247905853,
+            "ssim": 0.6130108433805143,
+            "nfe_selection": 7448,
+            "nfe_per_chain": 49,
+            "O": 8,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "cameraman",
+            "psnr": 22.41641470313725,
+            "ssim": 0.6847776258522922,
+            "nfe_selection": 7448,
+            "nfe_per_chain": 49,
+            "O": 8,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "fingerprint",
+            "psnr": 16.67902459254708,
+            "ssim": 0.22058277447133454,
+            "nfe_selection": 29008,
+            "nfe_per_chain": 49,
+            "O": 8,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 74,
+            "M_initial": 256,
+            "M_final": 2621,
+            "image_shape": [
+              512,
+              512
+            ]
+          },
+          {
+            "image_id": "flinstones",
+            "psnr": 17.75188215206917,
+            "ssim": 0.46543248364200845,
+            "nfe_selection": 29008,
+            "nfe_per_chain": 49,
+            "O": 8,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 74,
+            "M_initial": 256,
+            "M_final": 2621,
+            "image_shape": [
+              512,
+              512
+            ]
+          },
+          {
+            "image_id": "foreman",
+            "psnr": 30.634616326869374,
+            "ssim": 0.835612500604725,
+            "nfe_selection": 7448,
+            "nfe_per_chain": 49,
+            "O": 8,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "house",
+            "psnr": 28.017016923353253,
+            "ssim": 0.7868843869373789,
+            "nfe_selection": 7448,
+            "nfe_per_chain": 49,
+            "O": 8,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "lena256",
+            "psnr": 24.703488867449646,
+            "ssim": 0.7089350306260687,
+            "nfe_selection": 7448,
+            "nfe_per_chain": 49,
+            "O": 8,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "peppers256",
+            "psnr": 22.959731698170543,
+            "ssim": 0.6688737218045461,
+            "nfe_selection": 7448,
+            "nfe_per_chain": 49,
+            "O": 8,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          }
+        ]
+      },
+      {
+        "folder": "O16",
+        "parameter": 16,
+        "psnr": 23.55596706598783,
+        "psnr_std": 4.165480095826983,
+        "ssim": 0.6519760029714665,
+        "nfe_selection_mean": 22736.0,
+        "nfe_selection_values": [
+          14896,
+          14896,
+          14896,
+          14896,
+          14896,
+          58016,
+          58016,
+          14896,
+          14896,
+          14896,
+          14896
+        ],
+        "T": 50,
+        "O": 16,
+        "batch_size": 32,
+        "images": [
+          {
+            "image_id": "Monarch",
+            "psnr": 21.004648160155618,
+            "ssim": 0.653623523760421,
+            "nfe_selection": 14896,
+            "nfe_per_chain": 49,
+            "O": 16,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "Parrots",
+            "psnr": 24.60036071973079,
+            "ssim": 0.7919789427859882,
+            "nfe_selection": 14896,
+            "nfe_per_chain": 49,
+            "O": 16,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "barbara",
+            "psnr": 22.76902616164099,
+            "ssim": 0.5777700292802322,
+            "nfe_selection": 14896,
+            "nfe_per_chain": 49,
+            "O": 16,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "boats",
+            "psnr": 23.87271707738334,
+            "ssim": 0.630350757648627,
+            "nfe_selection": 14896,
+            "nfe_per_chain": 49,
+            "O": 16,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "cameraman",
+            "psnr": 22.96876543208295,
+            "ssim": 0.7050373252870379,
+            "nfe_selection": 14896,
+            "nfe_per_chain": 49,
+            "O": 16,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "fingerprint",
+            "psnr": 16.8619246139484,
+            "ssim": 0.2461435070256513,
+            "nfe_selection": 58016,
+            "nfe_per_chain": 49,
+            "O": 16,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 74,
+            "M_initial": 256,
+            "M_final": 2621,
+            "image_shape": [
+              512,
+              512
+            ]
+          },
+          {
+            "image_id": "flinstones",
+            "psnr": 18.371681077953838,
+            "ssim": 0.5109474120771338,
+            "nfe_selection": 58016,
+            "nfe_per_chain": 49,
+            "O": 16,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 74,
+            "M_initial": 256,
+            "M_final": 2621,
+            "image_shape": [
+              512,
+              512
+            ]
+          },
+          {
+            "image_id": "foreman",
+            "psnr": 31.54218006093897,
+            "ssim": 0.8511959152316381,
+            "nfe_selection": 14896,
+            "nfe_per_chain": 49,
+            "O": 16,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "house",
+            "psnr": 28.745519315546364,
+            "ssim": 0.798138681115376,
+            "nfe_selection": 14896,
+            "nfe_per_chain": 49,
+            "O": 16,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "lena256",
+            "psnr": 25.09695256582184,
+            "ssim": 0.7240597301933598,
+            "nfe_selection": 14896,
+            "nfe_per_chain": 49,
+            "O": 16,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "peppers256",
+            "psnr": 23.281862540662996,
+            "ssim": 0.6824902082806672,
+            "nfe_selection": 14896,
+            "nfe_per_chain": 49,
+            "O": 16,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          }
+        ]
+      },
+      {
+        "folder": "full",
+        "parameter": 32,
+        "psnr": 24.326732155086926,
+        "psnr_std": 4.391353193393487,
+        "ssim": 0.6778971406235451,
+        "nfe_selection_mean": 45472.0,
+        "nfe_selection_values": [
+          29792,
+          29792,
+          29792,
+          29792,
+          29792,
+          116032,
+          116032,
+          29792,
+          29792,
+          29792,
+          29792
+        ],
+        "T": 50,
+        "O": 32,
+        "batch_size": 32,
+        "images": [
+          {
+            "image_id": "Monarch",
+            "psnr": 21.391175811363766,
+            "ssim": 0.6714079701271802,
+            "nfe_selection": 29792,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "Parrots",
+            "psnr": 26.022148259007466,
+            "ssim": 0.8163876524142173,
+            "nfe_selection": 29792,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "barbara",
+            "psnr": 22.90164446013177,
+            "ssim": 0.5886778655558436,
+            "nfe_selection": 29792,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "boats",
+            "psnr": 24.346905347742588,
+            "ssim": 0.655302835445747,
+            "nfe_selection": 29792,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "cameraman",
+            "psnr": 23.992161555450494,
+            "ssim": 0.7302511595421918,
+            "nfe_selection": 29792,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "fingerprint",
+            "psnr": 17.184210072501493,
+            "ssim": 0.29126357530820624,
+            "nfe_selection": 116032,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 74,
+            "M_initial": 256,
+            "M_final": 2621,
+            "image_shape": [
+              512,
+              512
+            ]
+          },
+          {
+            "image_id": "flinstones",
+            "psnr": 19.232834330006224,
+            "ssim": 0.5651525732618498,
+            "nfe_selection": 116032,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 74,
+            "M_initial": 256,
+            "M_final": 2621,
+            "image_shape": [
+              512,
+              512
+            ]
+          },
+          {
+            "image_id": "foreman",
+            "psnr": 32.239427502746324,
+            "ssim": 0.8608803550987945,
+            "nfe_selection": 29792,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "house",
+            "psnr": 30.43548591084666,
+            "ssim": 0.8228568637455129,
+            "nfe_selection": 29792,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "lena256",
+            "psnr": 25.818489744923877,
+            "ssim": 0.746019461836731,
+            "nfe_selection": 29792,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "peppers256",
+            "psnr": 24.029570711235515,
+            "ssim": 0.7086682345227228,
+            "nfe_selection": 29792,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          }
+        ]
+      },
+      {
+        "folder": "O64",
+        "parameter": 64,
+        "psnr": 24.408324268979182,
+        "psnr_std": 4.422158764747616,
+        "ssim": 0.6819664255485551,
+        "nfe_selection_mean": 90944.0,
+        "nfe_selection_values": [
+          59584,
+          59584,
+          59584,
+          59584,
+          59584,
+          232064,
+          232064,
+          59584,
+          59584,
+          59584,
+          59584
+        ],
+        "T": 50,
+        "O": 64,
+        "batch_size": 32,
+        "images": [
+          {
+            "image_id": "Monarch",
+            "psnr": 21.526695992628877,
+            "ssim": 0.6765709291563718,
+            "nfe_selection": 59584,
+            "nfe_per_chain": 49,
+            "O": 64,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "Parrots",
+            "psnr": 26.120788961297944,
+            "ssim": 0.8167774965077591,
+            "nfe_selection": 59584,
+            "nfe_per_chain": 49,
+            "O": 64,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "barbara",
+            "psnr": 22.885155442143343,
+            "ssim": 0.5865609975992204,
+            "nfe_selection": 59584,
+            "nfe_per_chain": 49,
+            "O": 64,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "boats",
+            "psnr": 24.293369133184108,
+            "ssim": 0.6521677543379725,
+            "nfe_selection": 59584,
+            "nfe_per_chain": 49,
+            "O": 64,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "cameraman",
+            "psnr": 23.72991365460355,
+            "ssim": 0.7234736665095776,
+            "nfe_selection": 59584,
+            "nfe_per_chain": 49,
+            "O": 64,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "fingerprint",
+            "psnr": 17.414785384439053,
+            "ssim": 0.31940134598446207,
+            "nfe_selection": 232064,
+            "nfe_per_chain": 49,
+            "O": 64,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 74,
+            "M_initial": 256,
+            "M_final": 2621,
+            "image_shape": [
+              512,
+              512
+            ]
+          },
+          {
+            "image_id": "flinstones",
+            "psnr": 19.284636342354165,
+            "ssim": 0.5694476937357866,
+            "nfe_selection": 232064,
+            "nfe_per_chain": 49,
+            "O": 64,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 74,
+            "M_initial": 256,
+            "M_final": 2621,
+            "image_shape": [
+              512,
+              512
+            ]
+          },
+          {
+            "image_id": "foreman",
+            "psnr": 32.59039911729611,
+            "ssim": 0.8680355477825272,
+            "nfe_selection": 59584,
+            "nfe_per_chain": 49,
+            "O": 64,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "house",
+            "psnr": 30.510986832932666,
+            "ssim": 0.823659852811187,
+            "nfe_selection": 59584,
+            "nfe_per_chain": 49,
+            "O": 64,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "lena256",
+            "psnr": 25.87539488256013,
+            "ssim": 0.7482997792287717,
+            "nfe_selection": 59584,
+            "nfe_per_chain": 49,
+            "O": 64,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "peppers256",
+            "psnr": 24.259441215331027,
+            "ssim": 0.7172356173804709,
+            "nfe_selection": 59584,
+            "nfe_per_chain": 49,
+            "O": 64,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          }
+        ]
+      }
+    ],
+    "b": [
+      {
+        "folder": "B16",
+        "parameter": 16,
+        "psnr": 24.448295876242174,
+        "psnr_std": 4.4528824014918325,
+        "ssim": 0.6832074228891991,
+        "nfe_selection_mean": 89661.09090909091,
+        "nfe_selection_values": [
+          58016,
+          58016,
+          58016,
+          58016,
+          58016,
+          232064,
+          232064,
+          58016,
+          58016,
+          58016,
+          58016
+        ],
+        "T": 50,
+        "O": 32,
+        "batch_size": 16,
+        "images": [
+          {
+            "image_id": "Monarch",
+            "psnr": 21.582232236888675,
+            "ssim": 0.6803386009175426,
+            "nfe_selection": 58016,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 16,
+            "selection_batches": 37,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "Parrots",
+            "psnr": 26.219791433750302,
+            "ssim": 0.8189946974852981,
+            "nfe_selection": 58016,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 16,
+            "selection_batches": 37,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "barbara",
+            "psnr": 22.848810083754884,
+            "ssim": 0.5857789814817472,
+            "nfe_selection": 58016,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 16,
+            "selection_batches": 37,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "boats",
+            "psnr": 24.379041492021557,
+            "ssim": 0.6597505630926069,
+            "nfe_selection": 58016,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 16,
+            "selection_batches": 37,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "cameraman",
+            "psnr": 23.83199053377874,
+            "ssim": 0.7250859937896977,
+            "nfe_selection": 58016,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 16,
+            "selection_batches": 37,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "fingerprint",
+            "psnr": 17.390198900317774,
+            "ssim": 0.31511667870373916,
+            "nfe_selection": 232064,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 16,
+            "selection_batches": 148,
+            "M_initial": 256,
+            "M_final": 2621,
+            "image_shape": [
+              512,
+              512
+            ]
+          },
+          {
+            "image_id": "flinstones",
+            "psnr": 19.24904244976401,
+            "ssim": 0.5708414559401828,
+            "nfe_selection": 232064,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 16,
+            "selection_batches": 148,
+            "M_initial": 256,
+            "M_final": 2621,
+            "image_shape": [
+              512,
+              512
+            ]
+          },
+          {
+            "image_id": "foreman",
+            "psnr": 32.54427215395077,
+            "ssim": 0.8667255943748742,
+            "nfe_selection": 58016,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 16,
+            "selection_batches": 37,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "house",
+            "psnr": 30.737212888488962,
+            "ssim": 0.824679203811904,
+            "nfe_selection": 58016,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 16,
+            "selection_batches": 37,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "lena256",
+            "psnr": 25.867425662600088,
+            "ssim": 0.7496291540658951,
+            "nfe_selection": 58016,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 16,
+            "selection_batches": 37,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "peppers256",
+            "psnr": 24.281236803348154,
+            "ssim": 0.7183407281177023,
+            "nfe_selection": 58016,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 16,
+            "selection_batches": 37,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          }
+        ]
+      },
+      {
+        "folder": "full",
+        "parameter": 32,
+        "psnr": 24.326732155086926,
+        "psnr_std": 4.391353193393487,
+        "ssim": 0.6778971406235451,
+        "nfe_selection_mean": 45472.0,
+        "nfe_selection_values": [
+          29792,
+          29792,
+          29792,
+          29792,
+          29792,
+          116032,
+          116032,
+          29792,
+          29792,
+          29792,
+          29792
+        ],
+        "T": 50,
+        "O": 32,
+        "batch_size": 32,
+        "images": [
+          {
+            "image_id": "Monarch",
+            "psnr": 21.391175811363766,
+            "ssim": 0.6714079701271802,
+            "nfe_selection": 29792,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "Parrots",
+            "psnr": 26.022148259007466,
+            "ssim": 0.8163876524142173,
+            "nfe_selection": 29792,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "barbara",
+            "psnr": 22.90164446013177,
+            "ssim": 0.5886778655558436,
+            "nfe_selection": 29792,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "boats",
+            "psnr": 24.346905347742588,
+            "ssim": 0.655302835445747,
+            "nfe_selection": 29792,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "cameraman",
+            "psnr": 23.992161555450494,
+            "ssim": 0.7302511595421918,
+            "nfe_selection": 29792,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "fingerprint",
+            "psnr": 17.184210072501493,
+            "ssim": 0.29126357530820624,
+            "nfe_selection": 116032,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 74,
+            "M_initial": 256,
+            "M_final": 2621,
+            "image_shape": [
+              512,
+              512
+            ]
+          },
+          {
+            "image_id": "flinstones",
+            "psnr": 19.232834330006224,
+            "ssim": 0.5651525732618498,
+            "nfe_selection": 116032,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 74,
+            "M_initial": 256,
+            "M_final": 2621,
+            "image_shape": [
+              512,
+              512
+            ]
+          },
+          {
+            "image_id": "foreman",
+            "psnr": 32.239427502746324,
+            "ssim": 0.8608803550987945,
+            "nfe_selection": 29792,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "house",
+            "psnr": 30.43548591084666,
+            "ssim": 0.8228568637455129,
+            "nfe_selection": 29792,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "lena256",
+            "psnr": 25.818489744923877,
+            "ssim": 0.746019461836731,
+            "nfe_selection": 29792,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "peppers256",
+            "psnr": 24.029570711235515,
+            "ssim": 0.7086682345227228,
+            "nfe_selection": 29792,
+            "nfe_per_chain": 49,
+            "O": 32,
+            "T": 50,
+            "batch_size": 32,
+            "selection_batches": 19,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          }
+        ]
+      },
+      {
+        "folder": "B64",
+        "parameter": 64,
+        "psnr": 24.197352605161868,
+        "psnr_std": 4.400216787473233,
+        "ssim": 0.6723358879789476,
+        "nfe_selection_mean": 46754.90909090909,
+        "nfe_selection_values": [
+          31360,
+          31360,
+          31360,
+          31360,
+          31360,
+          116032,
+          116032,
+          31360,
+          31360,
+          31360,
+          31360
+        ],
+        "T": 50,
+        "O": 64,
+        "batch_size": 64,
+        "images": [
+          {
+            "image_id": "Monarch",
+            "psnr": 21.30047475088093,
+            "ssim": 0.6711939713284958,
+            "nfe_selection": 31360,
+            "nfe_per_chain": 49,
+            "O": 64,
+            "T": 50,
+            "batch_size": 64,
+            "selection_batches": 10,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "Parrots",
+            "psnr": 25.900228007560756,
+            "ssim": 0.812824986451443,
+            "nfe_selection": 31360,
+            "nfe_per_chain": 49,
+            "O": 64,
+            "T": 50,
+            "batch_size": 64,
+            "selection_batches": 10,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "barbara",
+            "psnr": 22.837201847402252,
+            "ssim": 0.5832033826785864,
+            "nfe_selection": 31360,
+            "nfe_per_chain": 49,
+            "O": 64,
+            "T": 50,
+            "batch_size": 64,
+            "selection_batches": 10,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "boats",
+            "psnr": 24.279714421289924,
+            "ssim": 0.6510175359388238,
+            "nfe_selection": 31360,
+            "nfe_per_chain": 49,
+            "O": 64,
+            "T": 50,
+            "batch_size": 64,
+            "selection_batches": 10,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "cameraman",
+            "psnr": 23.770169132892427,
+            "ssim": 0.7220116131675374,
+            "nfe_selection": 31360,
+            "nfe_per_chain": 49,
+            "O": 64,
+            "T": 50,
+            "batch_size": 64,
+            "selection_batches": 10,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "fingerprint",
+            "psnr": 16.94234475049036,
+            "ssim": 0.2605661854061392,
+            "nfe_selection": 116032,
+            "nfe_per_chain": 49,
+            "O": 64,
+            "T": 50,
+            "batch_size": 64,
+            "selection_batches": 37,
+            "M_initial": 256,
+            "M_final": 2621,
+            "image_shape": [
+              512,
+              512
+            ]
+          },
+          {
+            "image_id": "flinstones",
+            "psnr": 19.16129235070146,
+            "ssim": 0.5635703357577012,
+            "nfe_selection": 116032,
+            "nfe_per_chain": 49,
+            "O": 64,
+            "T": 50,
+            "batch_size": 64,
+            "selection_batches": 37,
+            "M_initial": 256,
+            "M_final": 2621,
+            "image_shape": [
+              512,
+              512
+            ]
+          },
+          {
+            "image_id": "foreman",
+            "psnr": 32.305238704813824,
+            "ssim": 0.8630737776553281,
+            "nfe_selection": 31360,
+            "nfe_per_chain": 49,
+            "O": 64,
+            "T": 50,
+            "batch_size": 64,
+            "selection_batches": 10,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "house",
+            "psnr": 30.066658022609825,
+            "ssim": 0.8180087627190518,
+            "nfe_selection": 31360,
+            "nfe_per_chain": 49,
+            "O": 64,
+            "T": 50,
+            "batch_size": 64,
+            "selection_batches": 10,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "lena256",
+            "psnr": 25.63112447742398,
+            "ssim": 0.7411145701803122,
+            "nfe_selection": 31360,
+            "nfe_per_chain": 49,
+            "O": 64,
+            "T": 50,
+            "batch_size": 64,
+            "selection_batches": 10,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          },
+          {
+            "image_id": "peppers256",
+            "psnr": 23.976432190714796,
+            "ssim": 0.709109646485005,
+            "nfe_selection": 31360,
+            "nfe_per_chain": 49,
+            "O": 64,
+            "T": 50,
+            "batch_size": 64,
+            "selection_batches": 10,
+            "M_initial": 64,
+            "M_final": 655,
+            "image_shape": [
+              256,
+              256
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "default": {
+    "folder": "full",
+    "parameter": 50,
+    "psnr": 24.326732155086926,
+    "psnr_std": 4.391353193393487,
+    "ssim": 0.6778971406235451,
+    "nfe_selection_mean": 45472.0,
+    "nfe_selection_values": [
+      29792,
+      29792,
+      29792,
+      29792,
+      29792,
+      116032,
+      116032,
+      29792,
+      29792,
+      29792,
+      29792
+    ],
+    "T": 50,
+    "O": 32,
+    "batch_size": 32,
+    "images": [
+      {
+        "image_id": "Monarch",
+        "psnr": 21.391175811363766,
+        "ssim": 0.6714079701271802,
+        "nfe_selection": 29792,
+        "nfe_per_chain": 49,
+        "O": 32,
+        "T": 50,
+        "batch_size": 32,
+        "selection_batches": 19,
+        "M_initial": 64,
+        "M_final": 655,
+        "image_shape": [
+          256,
+          256
+        ]
+      },
+      {
+        "image_id": "Parrots",
+        "psnr": 26.022148259007466,
+        "ssim": 0.8163876524142173,
+        "nfe_selection": 29792,
+        "nfe_per_chain": 49,
+        "O": 32,
+        "T": 50,
+        "batch_size": 32,
+        "selection_batches": 19,
+        "M_initial": 64,
+        "M_final": 655,
+        "image_shape": [
+          256,
+          256
+        ]
+      },
+      {
+        "image_id": "barbara",
+        "psnr": 22.90164446013177,
+        "ssim": 0.5886778655558436,
+        "nfe_selection": 29792,
+        "nfe_per_chain": 49,
+        "O": 32,
+        "T": 50,
+        "batch_size": 32,
+        "selection_batches": 19,
+        "M_initial": 64,
+        "M_final": 655,
+        "image_shape": [
+          256,
+          256
+        ]
+      },
+      {
+        "image_id": "boats",
+        "psnr": 24.346905347742588,
+        "ssim": 0.655302835445747,
+        "nfe_selection": 29792,
+        "nfe_per_chain": 49,
+        "O": 32,
+        "T": 50,
+        "batch_size": 32,
+        "selection_batches": 19,
+        "M_initial": 64,
+        "M_final": 655,
+        "image_shape": [
+          256,
+          256
+        ]
+      },
+      {
+        "image_id": "cameraman",
+        "psnr": 23.992161555450494,
+        "ssim": 0.7302511595421918,
+        "nfe_selection": 29792,
+        "nfe_per_chain": 49,
+        "O": 32,
+        "T": 50,
+        "batch_size": 32,
+        "selection_batches": 19,
+        "M_initial": 64,
+        "M_final": 655,
+        "image_shape": [
+          256,
+          256
+        ]
+      },
+      {
+        "image_id": "fingerprint",
+        "psnr": 17.184210072501493,
+        "ssim": 0.29126357530820624,
+        "nfe_selection": 116032,
+        "nfe_per_chain": 49,
+        "O": 32,
+        "T": 50,
+        "batch_size": 32,
+        "selection_batches": 74,
+        "M_initial": 256,
+        "M_final": 2621,
+        "image_shape": [
+          512,
+          512
+        ]
+      },
+      {
+        "image_id": "flinstones",
+        "psnr": 19.232834330006224,
+        "ssim": 0.5651525732618498,
+        "nfe_selection": 116032,
+        "nfe_per_chain": 49,
+        "O": 32,
+        "T": 50,
+        "batch_size": 32,
+        "selection_batches": 74,
+        "M_initial": 256,
+        "M_final": 2621,
+        "image_shape": [
+          512,
+          512
+        ]
+      },
+      {
+        "image_id": "foreman",
+        "psnr": 32.239427502746324,
+        "ssim": 0.8608803550987945,
+        "nfe_selection": 29792,
+        "nfe_per_chain": 49,
+        "O": 32,
+        "T": 50,
+        "batch_size": 32,
+        "selection_batches": 19,
+        "M_initial": 64,
+        "M_final": 655,
+        "image_shape": [
+          256,
+          256
+        ]
+      },
+      {
+        "image_id": "house",
+        "psnr": 30.43548591084666,
+        "ssim": 0.8228568637455129,
+        "nfe_selection": 29792,
+        "nfe_per_chain": 49,
+        "O": 32,
+        "T": 50,
+        "batch_size": 32,
+        "selection_batches": 19,
+        "M_initial": 64,
+        "M_final": 655,
+        "image_shape": [
+          256,
+          256
+        ]
+      },
+      {
+        "image_id": "lena256",
+        "psnr": 25.818489744923877,
+        "ssim": 0.746019461836731,
+        "nfe_selection": 29792,
+        "nfe_per_chain": 49,
+        "O": 32,
+        "T": 50,
+        "batch_size": 32,
+        "selection_batches": 19,
+        "M_initial": 64,
+        "M_final": 655,
+        "image_shape": [
+          256,
+          256
+        ]
+      },
+      {
+        "image_id": "peppers256",
+        "psnr": 24.029570711235515,
+        "ssim": 0.7086682345227228,
+        "nfe_selection": 29792,
+        "nfe_per_chain": 49,
+        "O": 32,
+        "T": 50,
+        "batch_size": 32,
+        "selection_batches": 19,
+        "M_initial": 64,
+        "M_final": 655,
+        "image_shape": [
+          256,
+          256
+        ]
+      }
+    ]
+  },
+  "n_images": 11,
+  "metric": "Final PSNR (unclipped, data_range=1; dB)",
+  "nfe_definition": "Mean per-image cumulative selection NFE across all adaptive batches: (DiffPIR steps - 1) × O scenarios × ceil((M_final-M_initial)/batch_size). Final F decoding NFE is excluded.",
+  "important_scope": "All values are equal-weight means over 9 native 256×256 and 2 native 512×512 Set11 images. T ablations change both O and F DiffPIR steps in the archived experiments; the x-axis nevertheless includes O selection NFE only.",
+  "source_provenance": {
+    "T": {
+      "steps10": [
+        {
+          "image_id": "Monarch",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps10/Monarch/Monarch.json",
+          "json_sha256": "cd0b868cff66529eebb9eca6bc9effe0367d5a506e2570c3d762380a4da2d699",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps10/Monarch/Monarch.pt",
+          "pt_sha256": "a96dacd0a17455ec21deb993fd631244c06e6497a2a16dbf4349acca1bda4153",
+          "run_identity": "793f52126adc7736f311d6b81a15e2dcb3c41fc1a7d269a915415963c2baba0c"
+        },
+        {
+          "image_id": "Parrots",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps10/Parrots/Parrots.json",
+          "json_sha256": "0600534b4e2bd3b94b16acf4022f556b332dff661ef8ad018f8b57908ef5637c",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps10/Parrots/Parrots.pt",
+          "pt_sha256": "df8495526767500909f94195af2ccbe3ae08fc3eff3a0b7af8d8506eceed03c9",
+          "run_identity": "2e0a0ccd9e76d11e1a6680d5e4c49f5795a6b805646ca685c064a39444e49ab1"
+        },
+        {
+          "image_id": "barbara",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps10/barbara/barbara.json",
+          "json_sha256": "2be7d84893be2b8b8ab21612a24ceb43406051c8d49c63ec50a45e9b1a8323e0",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps10/barbara/barbara.pt",
+          "pt_sha256": "7ce5b72098af890955d58b6c68d925cd1c62eb4c5c783bccab4cb9463dde0390",
+          "run_identity": "32162336a4959633cb2d511c50249d710568f000add725921a07ef8f8b799b70"
+        },
+        {
+          "image_id": "boats",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps10/boats/boats.json",
+          "json_sha256": "babdb4a059b3f6ee3590e4e3c93dfd5aa73404ea92e5d85ad37ff745be917858",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps10/boats/boats.pt",
+          "pt_sha256": "bb2546557a526749eb75b481a91250f5e7015f65d1e8a789f5c7df856e38401f",
+          "run_identity": "0801a2b0209b37665125ceebfd8af95bed9e9dd3100041db8810e2fd6d1a9841"
+        },
+        {
+          "image_id": "cameraman",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps10/cameraman/cameraman.json",
+          "json_sha256": "cc4e60aa346677775a7b19a9669828d322e28ac2c66bd53004e92a75acf07274",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps10/cameraman/cameraman.pt",
+          "pt_sha256": "b26935d26577d08123d7136e176fdee2937f6b840ff764ccd196ad3433d1807e",
+          "run_identity": "ff1eca7c8ae0c4ee3170d31688df0a42042ce72323b2b8f8dee29a08bd431412"
+        },
+        {
+          "image_id": "fingerprint",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps10/fingerprint/fingerprint.json",
+          "json_sha256": "0b2fc6d8b3debc84d979c1a4c1e74e3b85854368d97708c7a9bda29a5ce7c412",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps10/fingerprint/fingerprint.pt",
+          "pt_sha256": "436c49d29c786c9c3290b9def42d7c1848e01202ccab93e592f4660bfa58c7fd",
+          "run_identity": "880e9a83593ecd48686e3f234f6389dc79dd43558ca8332b287eaa2e66115784"
+        },
+        {
+          "image_id": "flinstones",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps10/flinstones/flinstones.json",
+          "json_sha256": "3678bd257dd6c60bacb885b4cf02f965ef44fef215fb0f3d92a270978098f652",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps10/flinstones/flinstones.pt",
+          "pt_sha256": "76291bb6ae20b5a88e20148e0d014f370a8b8658d747d9d04fc8047c1cfec4cc",
+          "run_identity": "8d7a2bdf709699ed8ea55234b446e3edaa6745d246ae476dc13168d2f324bd8b"
+        },
+        {
+          "image_id": "foreman",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps10/foreman/foreman.json",
+          "json_sha256": "4f007741e591dd3db7619b922592f6b1cfbdcc74db757df359cf9834d64f26cd",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps10/foreman/foreman.pt",
+          "pt_sha256": "9b51d6e8b11ca3afb3ba609ab160ef495f33bdd99103197cb44c3a37f9149dd0",
+          "run_identity": "b71dfc91af107638ded5d4fcc72e3c8c1f8e0e08f492f4723750339b89c888ae"
+        },
+        {
+          "image_id": "house",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps10/house/house.json",
+          "json_sha256": "ca4bddb822729f1af58e23b5a529cabbcccd501ae9da813c4a348824d10b246d",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps10/house/house.pt",
+          "pt_sha256": "83d6ff9f32c6b8b9bd51811431d5cb174a417fd681fb250036950bcfcce74530",
+          "run_identity": "5ca217630e276582f35017eb426aac1b9abc1b19cc418baead29a642d8dfa827"
+        },
+        {
+          "image_id": "lena256",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps10/lena256/lena256.json",
+          "json_sha256": "13fa3aebb40e783a1d0d81ef5322262ecd8c3001c0915927fabbcfe317a75ef3",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps10/lena256/lena256.pt",
+          "pt_sha256": "ddfd8da2f47b3f0ec9f644b998ebd2e5860447dfd0a3eeae04e7034d877c0fdf",
+          "run_identity": "2a3056adba4f03f2c47abfdd72dea37fd1f61c7bada8a9f2dcc600429db5a8f1"
+        },
+        {
+          "image_id": "peppers256",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps10/peppers256/peppers256.json",
+          "json_sha256": "058ece9073c277db8fbd5aca2d76e57041113f2508a6da0f46b74371148d38f9",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps10/peppers256/peppers256.pt",
+          "pt_sha256": "c5101b3e4c3c2ff7ddb6fb09b09311ec649c0e545a46327b80ae9b360e956db4",
+          "run_identity": "4465698a00851762d6661e5dcdb88d2b0f327af037cf411ffd2bd2af27f10b91"
+        }
+      ],
+      "steps20": [
+        {
+          "image_id": "Monarch",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps20/Monarch/Monarch.json",
+          "json_sha256": "f527a70db794d127cbad562ba1401b04aba05f2d533fa9c92d00a6658c871c4d",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps20/Monarch/Monarch.pt",
+          "pt_sha256": "2d37914b6d68a0132ec6914b28b92e1c29cef39187bea2364f9dcf7d73565066",
+          "run_identity": "d94895f1a10ff662b5e7220f02e44a25793201e322f55f93eb824b28c42714ff"
+        },
+        {
+          "image_id": "Parrots",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps20/Parrots/Parrots.json",
+          "json_sha256": "dc018b8d710af9b130dad21e9be8ccee5fc0072602efffa861bb793b9e202338",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps20/Parrots/Parrots.pt",
+          "pt_sha256": "db3a96d75bfc416b9a0cd59f3cad429183540877a72222f76336064b29bf8420",
+          "run_identity": "a6e5f5e8732ec1f59329e284b37c0b87ff7b46cda0c6380605749efa2ad959cd"
+        },
+        {
+          "image_id": "barbara",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps20/barbara/barbara.json",
+          "json_sha256": "2c6739ec2503124353fa2b1ba15da2b0bef923d686d025d10d6728c7e0165018",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps20/barbara/barbara.pt",
+          "pt_sha256": "da63f8a85143e130f3b254f5033d5777ed797486540fddfd10d7acc812583084",
+          "run_identity": "2164b6a9002e012a63cab71ff5ff8447570692e1d02cb5db0fe89a0bf326b3a0"
+        },
+        {
+          "image_id": "boats",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps20/boats/boats.json",
+          "json_sha256": "3369fd0fbfefe0e81fdf9f990e129dab7d527b0b4502ba1160b804e0bbf86b9b",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps20/boats/boats.pt",
+          "pt_sha256": "9162a2e0b6ba9cec1a2a0323c057804039380f02609eae58f51cb9c8cf72ad59",
+          "run_identity": "088b8cb3ead89598a5610e990f4011d0f2f22de002727fd51ce9f4531bdc3dc6"
+        },
+        {
+          "image_id": "cameraman",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps20/cameraman/cameraman.json",
+          "json_sha256": "e8ad51ebd052f4468ce0f9245c203ebb8fc15fce2939de54b2b1a82ecbcf8637",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps20/cameraman/cameraman.pt",
+          "pt_sha256": "703e2bc6add523028710151a6ca12ad386bf490bc448cb2df67b3655c530c856",
+          "run_identity": "b7333c45916e829b55c3a3eaaaefe529aff44d5c27a4053126646baf79b311c9"
+        },
+        {
+          "image_id": "fingerprint",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps20/fingerprint/fingerprint.json",
+          "json_sha256": "d05d0218fb7f0726fcb0af1edd4e0f1077578b78eb0925aad8570c7e9efd7433",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps20/fingerprint/fingerprint.pt",
+          "pt_sha256": "1ab68ba94e7cb6b6859c74002e27a27af0dd8d32e9811af63bb6e2a4caba368f",
+          "run_identity": "126e9301d46c8498176ada9822e0a5efb5ce54ad8f9ddec2fce83b8421f53826"
+        },
+        {
+          "image_id": "flinstones",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps20/flinstones/flinstones.json",
+          "json_sha256": "fe28b2a3c3326b8755e70ae3d9232c991d4284d13b8b6cc3f6dbd5d31cdbaaa5",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps20/flinstones/flinstones.pt",
+          "pt_sha256": "443bc9f7077f6e1bbd2697012ad990a0cdae082b8baa91b9adf0dcc4a006cd2f",
+          "run_identity": "cab0b7f13c9469f02df853809ce5a1a5e43418b9cb0f8324d96796c12fa16ff4"
+        },
+        {
+          "image_id": "foreman",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps20/foreman/foreman.json",
+          "json_sha256": "832a9a6cb10164d95d0bbe3c1985dc5abc1f4af9eba710acc1f7294c2f5f0beb",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps20/foreman/foreman.pt",
+          "pt_sha256": "3c08227c07a613281b643e93fc01e27c4045d98d267f6b6819563db9761cb323",
+          "run_identity": "b6231a9cc5ca9041109198cdf4848ce3ab0d1d03c1cf816a74008dfd1c11ca85"
+        },
+        {
+          "image_id": "house",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps20/house/house.json",
+          "json_sha256": "3828307a0faf76a9ab0d6bf3f39f417ba4c1ccb568973529238b03a59f56c86d",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps20/house/house.pt",
+          "pt_sha256": "a0bcc4298af565a2880bfb48ab61efd600da08b23b17d769b901760a4505d221",
+          "run_identity": "eab86fbc700d252bd5a1ef2c3e174176bec3774573440da8466eef1f7060ec11"
+        },
+        {
+          "image_id": "lena256",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps20/lena256/lena256.json",
+          "json_sha256": "0bda69becf9f4d5c515333810abf4c46dd79ec3bf7f768f3c7c0d00ed6d0ee44",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps20/lena256/lena256.pt",
+          "pt_sha256": "aa1ee50eba7b3947cb076144d1210548c8c25bc42a18e4549831095e17a0d164",
+          "run_identity": "e5d58ec161cd1249e7b5b442d337bede738553c4dd8f0fec5aa5f2e78cf5ab9a"
+        },
+        {
+          "image_id": "peppers256",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps20/peppers256/peppers256.json",
+          "json_sha256": "c0c0c93b9fdef728d8e6767eb703ee697b33c74dc751f39e7cff8dc5afe12a94",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps20/peppers256/peppers256.pt",
+          "pt_sha256": "18aae2e780399a79d69ae224faf5f70eeb323a437b3011fdff3dc1b6b4a97cb1",
+          "run_identity": "545f6456f1761bc9370e81341d5a6a333341cddce02e6adcd3ed8d7bdf8335a4"
+        }
+      ],
+      "full": [
+        {
+          "image_id": "Monarch",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/Monarch/Monarch.json",
+          "json_sha256": "314358366696693c45c535312759bd8ef13d1b98db7cf1cf4b4934fae40530a8",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/Monarch/Monarch.pt",
+          "pt_sha256": "54e759b45a08bada89938d992ec11fbafc88c5cf445de1bdbf758af70f25f3d1",
+          "run_identity": "e66c56f325607bbc4ef4013d2178ebe16c0e95535c6af4696f00cb258d6f7b5d"
+        },
+        {
+          "image_id": "Parrots",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/Parrots/Parrots.json",
+          "json_sha256": "a696c7c787c5be106b3a4e3cafdde52289fe6377a4299b853227daa8db636192",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/Parrots/Parrots.pt",
+          "pt_sha256": "684501f91cbae56f3b92f84754f12e4f92acdc6ab24d4497bc60c2824d851aef",
+          "run_identity": "b91c4bf85dfd407025fefb3b30766af0d4702ed9c855b7d8c8f054016f7b861d"
+        },
+        {
+          "image_id": "barbara",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/barbara/barbara.json",
+          "json_sha256": "2c23a8638e1e6ffde7fe2a1f86be7b742e7ddaa1cec1543f920ff7586163b956",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/barbara/barbara.pt",
+          "pt_sha256": "fbba57602ea0f143c56fd971cc31d1e282336b5d3ed3dce362eab4d4956d1547",
+          "run_identity": "e4e8721aa449d99a03037498e24eafbc5da60a80215daee1c9ef28e6ccda217e"
+        },
+        {
+          "image_id": "boats",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/boats/boats.json",
+          "json_sha256": "2b0534fe610fc46c65d646b8a88e1df6d28c38fc634f1903c0dcd8f868ed28e2",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/boats/boats.pt",
+          "pt_sha256": "c28128a7d87f9fd7924dbf424483dcd264d8adaa56c8a00479d76b3edff506b1",
+          "run_identity": "72534647e28ac676d1dbae3924140885fc8d023592af825b4be8084e129066f4"
+        },
+        {
+          "image_id": "cameraman",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/cameraman/cameraman.json",
+          "json_sha256": "c130df1aac3e79f8f390dc96d4994dae199ec2cc40aa4650e70117d8c4ef8a4c",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/cameraman/cameraman.pt",
+          "pt_sha256": "7a7daaa905d128717dda5621fcf91d256419204d0f8c257ded98c165b78f17c7",
+          "run_identity": "a69808530553a33f464d18eb0a349209db6e4cbc46fb9fd877028fbb01ad7e0b"
+        },
+        {
+          "image_id": "fingerprint",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/fingerprint/fingerprint.json",
+          "json_sha256": "f5cecb27424433a1ae37e3b4ea18b812cf72708a462138a6a488a95acb96ab23",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/fingerprint/fingerprint.pt",
+          "pt_sha256": "b419102f71174572bed93f673ab5de4870e83a09b30cf54c5dd38311d9842784",
+          "run_identity": "a7174e5d6773db811cac5dc83e69d26ff2d5e51ed9f0b4a9c458f1ed4587cb6e"
+        },
+        {
+          "image_id": "flinstones",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/flinstones/flinstones.json",
+          "json_sha256": "f1a1d81fbb843fe29a5f98755954df483bf0742a4b563915ce59aa7058d458b2",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/flinstones/flinstones.pt",
+          "pt_sha256": "caf5dea4da017fdc4ceb6eec7ab535fe7aef607b439cb2a084c9f956bbb24dd7",
+          "run_identity": "7e4b20c5bbaadaec57d5dd3cc611948b186149b167e11af02c1e4ab85143968d"
+        },
+        {
+          "image_id": "foreman",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/foreman/foreman.json",
+          "json_sha256": "9f713d2c37bc909b0266c06adf74ec2ed0309041eed4553ff452fa970f1310a2",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/foreman/foreman.pt",
+          "pt_sha256": "d5026f675b53200a4bd97d729ba50003516d35daa7f91eae72a964569d06d636",
+          "run_identity": "fef94cbd6edb52d688eb6189f8fb2e6bccb7ae60855d233ffaaf8857e50c6640"
+        },
+        {
+          "image_id": "house",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/house/house.json",
+          "json_sha256": "257c5cbb41dc114fd334f359fab89f2beb32cda56ddbdb8796159d1cf4391365",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/house/house.pt",
+          "pt_sha256": "1f426f69f68d03a6cf181464c63cc3bed8ab9f927a8e26ac68653961b4d7274d",
+          "run_identity": "b609baaab88a39b2060b01022fe92d954b7fa5c3f03a736e07579f9b36375ef4"
+        },
+        {
+          "image_id": "lena256",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/lena256/lena256.json",
+          "json_sha256": "4d34788c3dc0909b07b929f5af68087562e82e5a65de538a3aed0ac2ecf09ecf",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/lena256/lena256.pt",
+          "pt_sha256": "242414b58995b3c2da37ae1735aea1125e43066243cbe4ccfa8d2a5a58b0f1b5",
+          "run_identity": "b91987ad474a61d6e9576c1d2ba10f3b16e5b0ef94f6e64e4f8057598f17bfb8"
+        },
+        {
+          "image_id": "peppers256",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/peppers256/peppers256.json",
+          "json_sha256": "978e6aa05c0a1e68be72f85006b99f0bd04d2799e966ee62152030795d4b2c0b",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/peppers256/peppers256.pt",
+          "pt_sha256": "a7ff28f967be48c341d6af479ca70876e3d0ef7af67663dec0babc571d98ee67",
+          "run_identity": "cb19e2309bd1451b03ef2f29096a7f327d16e789a6b51ae9197cc8caf7d49f83"
+        }
+      ],
+      "steps100": [
+        {
+          "image_id": "Monarch",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps100/Monarch/Monarch.json",
+          "json_sha256": "1731991852c28898a348e01d5c65f8fde8f5de558cca8b3c6ead784b3495cad8",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps100/Monarch/Monarch.pt",
+          "pt_sha256": "6faad9ab588d81b5d3f70853bfc335be1c96db846a216b0f2d845eb0702abb4e",
+          "run_identity": "58be715e1cd5007a75ffb2c49b55aa1689e16ccc89ce8c4e9063364244d9aa75"
+        },
+        {
+          "image_id": "Parrots",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps100/Parrots/Parrots.json",
+          "json_sha256": "8ba211649dd73a1ed4d392f0977de5c1769ea23c3b0619ffd16b839bfbd081f6",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps100/Parrots/Parrots.pt",
+          "pt_sha256": "e99eeac6852ded3f7348496a5cb51dbd0002ab33af0400cee4a8857a6b441250",
+          "run_identity": "9ab1fd495b9c85906c8e2bf8d7a5e92c4494fa6438ba7e17ccb95f3aa7a18ccc"
+        },
+        {
+          "image_id": "barbara",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps100/barbara/barbara.json",
+          "json_sha256": "c8b183de5b46ee2ad19594e902e2c5b9a07496b70112ad65b5e1a93d158ae7f9",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps100/barbara/barbara.pt",
+          "pt_sha256": "f40b0a24027481a88d150135a20b92917781bcbc4b89748dc21953dafbfe10b9",
+          "run_identity": "33d428af613735da5c9cf75e9ab9fcb0b088e44f2b8c34afc8de2c6b7f660028"
+        },
+        {
+          "image_id": "boats",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps100/boats/boats.json",
+          "json_sha256": "27f8bee562aba141f19ace507ae8708fea02ddaad1b01da17d40cb9feba2a6d7",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps100/boats/boats.pt",
+          "pt_sha256": "45870a392f671c415caa385e527ac29c004904cd8a35976b28a603d5d7b7c94c",
+          "run_identity": "f4ec439231b710e34d398f7610384c99456bf9a8f7e43faf75a5db22b098da35"
+        },
+        {
+          "image_id": "cameraman",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps100/cameraman/cameraman.json",
+          "json_sha256": "812b07da25dbbe6ba92b214b952adf55ef5235a82820a749f81a6453c7d408a6",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps100/cameraman/cameraman.pt",
+          "pt_sha256": "56096e0fa8e5dd97a907a4baaed79cb453732de9081b7644a0ec29ade4c66d78",
+          "run_identity": "27a8006d2b6b6ebc18eaba519795a8307b645a0dde671e79c63216f3b6b24476"
+        },
+        {
+          "image_id": "fingerprint",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps100/fingerprint/fingerprint.json",
+          "json_sha256": "2bb66e416b1b0fd1cdcf1b89374c3f319e6533e8680c576c80f05e5b83ca8ca8",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps100/fingerprint/fingerprint.pt",
+          "pt_sha256": "0d09cda39966f597016d623cc77c54a9a6e54b48498bfe08dd430d62e2bd73b0",
+          "run_identity": "7be81b4703634d43a457bd20251f432c934f03934d08bfdc8bec9efb2177568c"
+        },
+        {
+          "image_id": "flinstones",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps100/flinstones/flinstones.json",
+          "json_sha256": "53122979085b251eb11e711d22132ecc22aec095d2f8670b6ad4a871baeca35a",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps100/flinstones/flinstones.pt",
+          "pt_sha256": "0e829ec20bea8e7177abbfb036ffe7a4ee5388d0132899a5649c4360d96702de",
+          "run_identity": "e36864ed0c97f8c95213ca98779912a0db601cd1b1bde4f09753f85aa58ad22d"
+        },
+        {
+          "image_id": "foreman",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps100/foreman/foreman.json",
+          "json_sha256": "c9bb3e495a1e1f8c6f2080061333ee1427b08448ae185c49f88c953621e17a5b",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps100/foreman/foreman.pt",
+          "pt_sha256": "72a7f0d5aeebcbbf1b36cc1d58393df4965e78feb854ad76d571f1a7defbb607",
+          "run_identity": "a0c2b5fdc0978c2e8340f0b155009a9478e1012ffb7942549bef2ffebf39c1d6"
+        },
+        {
+          "image_id": "house",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps100/house/house.json",
+          "json_sha256": "59415791f01af465346cc56df29b83bfc28d852fa688f6c31dac8d2180004e60",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps100/house/house.pt",
+          "pt_sha256": "7e0122a9d6673967ee047d7f1f083d71f4cc299adb054efd241eda8a4ed4fad2",
+          "run_identity": "252045d537e398bacfbc424f875e7b7043e2159c3751e0b03149c72cbc4c7220"
+        },
+        {
+          "image_id": "lena256",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps100/lena256/lena256.json",
+          "json_sha256": "51a07e4a84bb4c55cfd0ecb2770744599674f5b5f6667ac154da9207ba553ce2",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps100/lena256/lena256.pt",
+          "pt_sha256": "437857f19a2de4875b04457a625d89fc9b2050708be1a6eae09f5098a9d94901",
+          "run_identity": "b10015140d1c452aab4a76814538b05e44f527d250fce2c10bdd113ff70cf8e4"
+        },
+        {
+          "image_id": "peppers256",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps100/peppers256/peppers256.json",
+          "json_sha256": "3b69a53c0445ac8eed8900cec4dccf6b29e8b0fdaef4dd684edad26c2e0e8b15",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps100/peppers256/peppers256.pt",
+          "pt_sha256": "6a4f55b6044e4e725fe70543802cd5a0d924a8d8aac8f8d0442b35e41952466b",
+          "run_identity": "3386ca94c47670279e27605c5b665d6342eb908a2558bdd7dc163573d32c7d78"
+        }
+      ],
+      "steps200": [
+        {
+          "image_id": "Monarch",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps200/Monarch/Monarch.json",
+          "json_sha256": "50a7df9c9eeb1b62aaf50f766dc937ea0f65c0c5639d33f9bf3240c1b02226ca",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps200/Monarch/Monarch.pt",
+          "pt_sha256": "8069afbbdc9aaa9ae88d67279603f9bf529552460c30c410d501cf0e4eb5229e",
+          "run_identity": "186f581d79db8c7e237c297973c516243e72ac508f1135cef86a97e626de0e7b"
+        },
+        {
+          "image_id": "Parrots",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps200/Parrots/Parrots.json",
+          "json_sha256": "dd724ac77ec0198556652129779567d4d15f90983cce1c6b8947ccea681c4f3d",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps200/Parrots/Parrots.pt",
+          "pt_sha256": "81573638800f2462770a772f4ac06af20efa77f39601ee18f2d95f7fd18b5215",
+          "run_identity": "aea318e5089218933defce692c1ddb5cc1b969b5e046b1922edf3fafaae3cda5"
+        },
+        {
+          "image_id": "barbara",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps200/barbara/barbara.json",
+          "json_sha256": "07bbaf76534f0e5ad3aaffb18ca690f6c735824a44b849a792aecf80064c3639",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps200/barbara/barbara.pt",
+          "pt_sha256": "85371ab45be26217c9c0af5f8d463a30c06e44d8559f57eec2871b5938f3c376",
+          "run_identity": "d0747fd70c30f6e95dda47dc806ff225ab079174dccf2e236d035ac37934ab38"
+        },
+        {
+          "image_id": "boats",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps200/boats/boats.json",
+          "json_sha256": "f58ac1cbc611443d029fb1a88b3c65d632a145f852a9869553b9653d94eb8ad9",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps200/boats/boats.pt",
+          "pt_sha256": "e2ae187ad88315e5bf448fa5d6fc97da0c82de7e6559a59c34ae1d2a96321187",
+          "run_identity": "5fc72a1d8f5f0e6a5bab5d3386ec13ae823c8237c2cbcc153989d30dffa55341"
+        },
+        {
+          "image_id": "cameraman",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps200/cameraman/cameraman.json",
+          "json_sha256": "80c5a3cab41d394c325b97b5c1992cb75f93c16ce2839ab1eb8a0a9f29b577bc",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps200/cameraman/cameraman.pt",
+          "pt_sha256": "084873e0e74d7f9316cc5fa8a527665190534256ec19c24a6ce25e51da7fc3e6",
+          "run_identity": "5b59a671e12651fb74f510e8f2f611ad83ceb85961c60abf0d0bbd06b7b0c1f6"
+        },
+        {
+          "image_id": "fingerprint",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps200/fingerprint/fingerprint.json",
+          "json_sha256": "a59431b232741937f70c0a58b8d389a1c9f10aa7fc4725ea4c568fdfb4e8f84b",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps200/fingerprint/fingerprint.pt",
+          "pt_sha256": "e7388e03d0ea7e4df7a6c7b06fecacb61c80b537d549bdfac7145c101161b2d0",
+          "run_identity": "395ac5b470818df74e4d6cd35d8b2dc1cf61155ae34db8d01d5a5425414b73bc"
+        },
+        {
+          "image_id": "flinstones",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps200/flinstones/flinstones.json",
+          "json_sha256": "2f6eded217aff6fbb7355dd535c18f9f4323af84e2fbe43f3157ef7593a9fe5f",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps200/flinstones/flinstones.pt",
+          "pt_sha256": "f8edd3eea41ef1b4dca628f2f2091ce8c6759a8f488aecc9c3e619d28080a41f",
+          "run_identity": "aee581fdd6c215ed956a209f9b7a68256e200940dff13fa8b44c83865bcd46c6"
+        },
+        {
+          "image_id": "foreman",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps200/foreman/foreman.json",
+          "json_sha256": "b6548c0544b232391e7555c36d5ef81374f821682f0c5a677607e96773c02444",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps200/foreman/foreman.pt",
+          "pt_sha256": "bd48cff0aca90311f4f40bb3943e29b883d4ed664f0992c7a05facb95179e339",
+          "run_identity": "2e146a49589dcebce1f35f6d47d9d3f22cc5601eb161ba393d8cef31a7894c09"
+        },
+        {
+          "image_id": "house",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps200/house/house.json",
+          "json_sha256": "0b07bf0c10fd321c15c2a0ee54703f435f0b44911ccef975b1a7e6627d5f06a8",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps200/house/house.pt",
+          "pt_sha256": "9d85e864eea8113da8c9c20a0fdd2693845f9c137da7cd18ee15dd8625cad05b",
+          "run_identity": "67b9ef8f6c781fce24d97cbfe059d94fdc6ede0ebcabe544ae1afee5d5a6ce59"
+        },
+        {
+          "image_id": "lena256",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps200/lena256/lena256.json",
+          "json_sha256": "5815aa24d1a880cf4b365d39af36b34c2ec46ed32caced59182ea31d2d9393bd",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps200/lena256/lena256.pt",
+          "pt_sha256": "517504065f42cee99ab516d5d5f14ce3804003fe597226b129cdef9751d77db2",
+          "run_identity": "d536ac0153e3906552fc89dcc700f5ba9d0589324ca4356a30bda04eefe0a4c5"
+        },
+        {
+          "image_id": "peppers256",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps200/peppers256/peppers256.json",
+          "json_sha256": "0fd9e5933755b2c34b4c259ab4b7a520e8ce7e97f93a12555ded1cad3b4461b7",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/steps200/peppers256/peppers256.pt",
+          "pt_sha256": "c44a48432745dc0ac8932a45533362cea62ac943f503c66be19ac2130db0000f",
+          "run_identity": "ca2bfaa13fba66ce36d8d9173927705e779b0e5f7af44025ef5b7d1c02d310d8"
+        }
+      ]
+    },
+    "O": {
+      "O8": [
+        {
+          "image_id": "Monarch",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O8/Monarch/Monarch.json",
+          "json_sha256": "b6c263f38d6d28983c4ad4f1743c583db8997f634a30cbffb3bb6ca132d90107",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O8/Monarch/Monarch.pt",
+          "pt_sha256": "20c78748a425c60ffba40f3c580211dd982e441a1ee24875f31166efb7965ea1",
+          "run_identity": "8065a5d748e6c9ef6d73a93ba19bbc9b7634e5d4af7b28f7eda7054f7ad968d6"
+        },
+        {
+          "image_id": "Parrots",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O8/Parrots/Parrots.json",
+          "json_sha256": "e0c30479bc2a7ec983cd3a75e7a92a9eca24c5e091555ede703713b0d3bfa6bb",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O8/Parrots/Parrots.pt",
+          "pt_sha256": "07f0372c5ff6038f8209d7300d47f06789fb036f45741cf951c22979f11f2bbc",
+          "run_identity": "ce2c2f7974d6d66e09b8356c655e6cdab6aefd7f7047bd67e72d805fe56686ce"
+        },
+        {
+          "image_id": "barbara",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O8/barbara/barbara.json",
+          "json_sha256": "01c6e96aca6ce4a76a2be56d1c1ee7bcab49d340eaadd31a1d26c3c3712c162d",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O8/barbara/barbara.pt",
+          "pt_sha256": "2f76e2f808090b55c5ec1f599d301010216d4b20cce2e146c9d7e80b0cdc7710",
+          "run_identity": "be5836d8d17c9253f85d0b662ccda56847c548008ea8b72ec7db9073befe0489"
+        },
+        {
+          "image_id": "boats",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O8/boats/boats.json",
+          "json_sha256": "fbaf73bc7dd6cc00586241504f8d7de84b57979d28dbe9f1392e3d8b9145f48d",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O8/boats/boats.pt",
+          "pt_sha256": "ee4dabf2b847c69b5c4172f5a5f02072fba54ec594229d542f1a146a15d9c80e",
+          "run_identity": "227bfeba536eb55f2496e7172abb11cf657036c6901ed17e221663ff828835c7"
+        },
+        {
+          "image_id": "cameraman",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O8/cameraman/cameraman.json",
+          "json_sha256": "36324f42b719e7fe06a4667d6a5349c51e84245b0e7d47f1c4b970815b0511f7",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O8/cameraman/cameraman.pt",
+          "pt_sha256": "e372470f70890168734bc9f05d3ed5fb6a3a9b0baa1b093879f9f462dd158287",
+          "run_identity": "c1863ab0241873b4510a5d5cd3732491e714afc77c996a16a23611b98242e2b2"
+        },
+        {
+          "image_id": "fingerprint",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O8/fingerprint/fingerprint.json",
+          "json_sha256": "4c96e7116567fc2b702a721fd739720522085709507a2c7151c10723e1ed87cb",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O8/fingerprint/fingerprint.pt",
+          "pt_sha256": "f1d121af94b65bf04006fd9368413322eeb7575b922f64a7eb621630d59bd22d",
+          "run_identity": "5b91204746d053cd479f6c904f4f6e0e20fe3cd1ed69ac6af098bae640463e32"
+        },
+        {
+          "image_id": "flinstones",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O8/flinstones/flinstones.json",
+          "json_sha256": "651a7acc18512b9c4f3ef127cd23d5b0eb9b3bde65f5539fe5fc4152c5873422",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O8/flinstones/flinstones.pt",
+          "pt_sha256": "ad5eb58e385db7f9f06b9cba5f9371c2b82b2f8c9faae903cf4e802b53e4021e",
+          "run_identity": "31b8f6c3895e88e12ee766c94bfde5a4de82fefa8cb42b06acd0bbb8c6ef7af1"
+        },
+        {
+          "image_id": "foreman",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O8/foreman/foreman.json",
+          "json_sha256": "a6966bb44557bdc95a3574e50f5258eb1107a44bed4b49619f194f51bf9aa0be",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O8/foreman/foreman.pt",
+          "pt_sha256": "a04697eec8abda6a704d6d7cdc7b8ae7549c99a55198acd7a9b1eb11ff98669b",
+          "run_identity": "8327b515b353211dad48458cbce1ae2253eb14d13d7e775297a15dc96f3f8b74"
+        },
+        {
+          "image_id": "house",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O8/house/house.json",
+          "json_sha256": "5d3e81b77883ddb95591771b2a0ff5eed9a35dfbcf329401bbe24acc2acc066b",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O8/house/house.pt",
+          "pt_sha256": "121bf4a302bbf6bf1a8d3ff92e4c36484c662a244afb8b04b1f667977b9d99e0",
+          "run_identity": "fda0a271a64a502a857dda1af7a068625611598e611c9793084baa35dd5ad876"
+        },
+        {
+          "image_id": "lena256",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O8/lena256/lena256.json",
+          "json_sha256": "67a299d39da361e53d0989b213d01d0cb0089983f86276fca72ab43a0954701d",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O8/lena256/lena256.pt",
+          "pt_sha256": "08f96faa36eb4a58811bb1213bb28a78461bd20c51d0d18cb3a4403b273cb65f",
+          "run_identity": "6ed6097a7e710bc5c8679623ad6bc67a38b232d4f8c8251759634b9e548bdce6"
+        },
+        {
+          "image_id": "peppers256",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O8/peppers256/peppers256.json",
+          "json_sha256": "c532588dd3720b82dc40c34b5abb82e89c63b8ba69854899ca2097eef645f1a6",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O8/peppers256/peppers256.pt",
+          "pt_sha256": "7bdc24ee657e8ebbd230a199197df9b7886a65500c7a724e1d94dba75aca3a15",
+          "run_identity": "fa27e09eea5ccd3bcf6f5ffb3d9ef20104dad92969434ebb0eec88224687ee80"
+        }
+      ],
+      "O16": [
+        {
+          "image_id": "Monarch",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O16/Monarch/Monarch.json",
+          "json_sha256": "7e694891139510ef7ffeb20ec38d9471009b799e81bab42086847ab03efb1d76",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O16/Monarch/Monarch.pt",
+          "pt_sha256": "e159502239f0d89c5cf84f9a37076e6342918444cc52ed267bc43a0b93285206",
+          "run_identity": "4e9a2f31f81e6ecc84d2b04226a507b0991fa9fb3a7d6419c1e51995dafea20f"
+        },
+        {
+          "image_id": "Parrots",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O16/Parrots/Parrots.json",
+          "json_sha256": "9a67a23b4da14d7a958667d1520b9eaba77e83ff8ce59fa88ec9fba998e39bb4",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O16/Parrots/Parrots.pt",
+          "pt_sha256": "715ce44684e2b1af2ee2eea3b044ed6fef7360f87c9383b105e7888db6825234",
+          "run_identity": "15b48af35e9748b4c07310b035d5980674bb5468b30e1670a923c994ff907153"
+        },
+        {
+          "image_id": "barbara",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O16/barbara/barbara.json",
+          "json_sha256": "0bc485f7324ebb3433cc7fa717b782f13faf373289fe809625be5326637df8a2",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O16/barbara/barbara.pt",
+          "pt_sha256": "d55f2f4a563c5a4c0cf590869397db48941819cfa3c40e2f3fba337cc44293a4",
+          "run_identity": "e05fdf33dffb40854b46365221688f27e79322388eacf402376b699399e25bce"
+        },
+        {
+          "image_id": "boats",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O16/boats/boats.json",
+          "json_sha256": "c34d6aa5125c97a1732467a1a75d628b78d80eae492d598e7ae7c8a61d79eaa6",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O16/boats/boats.pt",
+          "pt_sha256": "62d15097d716ecac8c6b978402e550bddb1ab3e2fa375e60cf288e85161ac12d",
+          "run_identity": "07ce0b3d21eeffcf0585cb4d750a3502f0a0327f142f9a530b99af68f5018e50"
+        },
+        {
+          "image_id": "cameraman",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O16/cameraman/cameraman.json",
+          "json_sha256": "ce54c19fb8a70e218ca4731ea3601ce9de6936f5cc22ea0d67fffc7a321da47e",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O16/cameraman/cameraman.pt",
+          "pt_sha256": "e02210ad45946376368000eb3a5a39b9dfeebeafb0e3bc0b6bedf55c610a40fe",
+          "run_identity": "32eb894402e351426e0d8e9781fa34ebdc7d4c606eef0fe74ea9fb3434a4d5a3"
+        },
+        {
+          "image_id": "fingerprint",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O16/fingerprint/fingerprint.json",
+          "json_sha256": "f212b4186ef508e7dc6a8b85607131fc22d32aaf99390997a606892bc813e0a5",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O16/fingerprint/fingerprint.pt",
+          "pt_sha256": "41dabc25e877737ad83695c4637cb35a099cd2502b319dac984031701b0afe35",
+          "run_identity": "c7212e7830e3915ba4ca235b1a743e13b2b0bf02f0d9d6679b74e930f6d130a3"
+        },
+        {
+          "image_id": "flinstones",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O16/flinstones/flinstones.json",
+          "json_sha256": "2074e61e387451eb05b600e0a155f5846a8b50c4d44541e84d0e50d59e211091",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O16/flinstones/flinstones.pt",
+          "pt_sha256": "4f75126a6faf74c5e8ac236b9958121b5b313392d7745de9c3085fd1cd0e9fb1",
+          "run_identity": "46cb1d114d263e2970985f2e81b727d5f0dbeb51327a4715c2a610b3f4a18c71"
+        },
+        {
+          "image_id": "foreman",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O16/foreman/foreman.json",
+          "json_sha256": "5880ccc252e0397c870115db2fa191b8bc423a82ef3cfbf5d71657eccc870764",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O16/foreman/foreman.pt",
+          "pt_sha256": "cfcfe06676f0bf26cadd40773648f1a81a232a1d7c0c492ae45f279b8f250962",
+          "run_identity": "d44d9de79327c6ca512324f4affe963803f282310ae8be25634cdf2f111660ec"
+        },
+        {
+          "image_id": "house",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O16/house/house.json",
+          "json_sha256": "51c079b9852c1dc6f7184840c85f868f72ad7c2f4094176aaf4d78820b468068",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O16/house/house.pt",
+          "pt_sha256": "fbdd40208a8f22e33ad8e5e3ac2a3e0ecf756f829fbe787ff62e01e3de1ecd47",
+          "run_identity": "4ebc991bcb5b8efda3821ff6d2de78fb35c3bd93726b39197f4b73ebbcca5ea1"
+        },
+        {
+          "image_id": "lena256",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O16/lena256/lena256.json",
+          "json_sha256": "f976c57b202ff0c04a99e6aa9ed3a25475e24526211f5d30a3b9418fd6a5453b",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O16/lena256/lena256.pt",
+          "pt_sha256": "7df2c775a1d89a527beb647dcacfa5930a5cae41d6c11e47e88b507ac473a8a2",
+          "run_identity": "6335eaf7f276a0086c839a7066f4a2f199f0374c8f47b7c5c2087efd9db2ad84"
+        },
+        {
+          "image_id": "peppers256",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O16/peppers256/peppers256.json",
+          "json_sha256": "bdff7cfadbb61fb8c0ada27223414c8ee49bba121c264d67433c28d459c9a2c3",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O16/peppers256/peppers256.pt",
+          "pt_sha256": "59949dad840b39c0d220c8009427033d9fe536d1b74d2ac8cd43496109a6cedf",
+          "run_identity": "e853b6463100e3a951a5d3598a40877a175bc8153d7060df4a88fd6d1a67af8b"
+        }
+      ],
+      "full": [
+        {
+          "image_id": "Monarch",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/Monarch/Monarch.json",
+          "json_sha256": "314358366696693c45c535312759bd8ef13d1b98db7cf1cf4b4934fae40530a8",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/Monarch/Monarch.pt",
+          "pt_sha256": "54e759b45a08bada89938d992ec11fbafc88c5cf445de1bdbf758af70f25f3d1",
+          "run_identity": "e66c56f325607bbc4ef4013d2178ebe16c0e95535c6af4696f00cb258d6f7b5d"
+        },
+        {
+          "image_id": "Parrots",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/Parrots/Parrots.json",
+          "json_sha256": "a696c7c787c5be106b3a4e3cafdde52289fe6377a4299b853227daa8db636192",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/Parrots/Parrots.pt",
+          "pt_sha256": "684501f91cbae56f3b92f84754f12e4f92acdc6ab24d4497bc60c2824d851aef",
+          "run_identity": "b91c4bf85dfd407025fefb3b30766af0d4702ed9c855b7d8c8f054016f7b861d"
+        },
+        {
+          "image_id": "barbara",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/barbara/barbara.json",
+          "json_sha256": "2c23a8638e1e6ffde7fe2a1f86be7b742e7ddaa1cec1543f920ff7586163b956",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/barbara/barbara.pt",
+          "pt_sha256": "fbba57602ea0f143c56fd971cc31d1e282336b5d3ed3dce362eab4d4956d1547",
+          "run_identity": "e4e8721aa449d99a03037498e24eafbc5da60a80215daee1c9ef28e6ccda217e"
+        },
+        {
+          "image_id": "boats",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/boats/boats.json",
+          "json_sha256": "2b0534fe610fc46c65d646b8a88e1df6d28c38fc634f1903c0dcd8f868ed28e2",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/boats/boats.pt",
+          "pt_sha256": "c28128a7d87f9fd7924dbf424483dcd264d8adaa56c8a00479d76b3edff506b1",
+          "run_identity": "72534647e28ac676d1dbae3924140885fc8d023592af825b4be8084e129066f4"
+        },
+        {
+          "image_id": "cameraman",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/cameraman/cameraman.json",
+          "json_sha256": "c130df1aac3e79f8f390dc96d4994dae199ec2cc40aa4650e70117d8c4ef8a4c",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/cameraman/cameraman.pt",
+          "pt_sha256": "7a7daaa905d128717dda5621fcf91d256419204d0f8c257ded98c165b78f17c7",
+          "run_identity": "a69808530553a33f464d18eb0a349209db6e4cbc46fb9fd877028fbb01ad7e0b"
+        },
+        {
+          "image_id": "fingerprint",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/fingerprint/fingerprint.json",
+          "json_sha256": "f5cecb27424433a1ae37e3b4ea18b812cf72708a462138a6a488a95acb96ab23",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/fingerprint/fingerprint.pt",
+          "pt_sha256": "b419102f71174572bed93f673ab5de4870e83a09b30cf54c5dd38311d9842784",
+          "run_identity": "a7174e5d6773db811cac5dc83e69d26ff2d5e51ed9f0b4a9c458f1ed4587cb6e"
+        },
+        {
+          "image_id": "flinstones",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/flinstones/flinstones.json",
+          "json_sha256": "f1a1d81fbb843fe29a5f98755954df483bf0742a4b563915ce59aa7058d458b2",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/flinstones/flinstones.pt",
+          "pt_sha256": "caf5dea4da017fdc4ceb6eec7ab535fe7aef607b439cb2a084c9f956bbb24dd7",
+          "run_identity": "7e4b20c5bbaadaec57d5dd3cc611948b186149b167e11af02c1e4ab85143968d"
+        },
+        {
+          "image_id": "foreman",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/foreman/foreman.json",
+          "json_sha256": "9f713d2c37bc909b0266c06adf74ec2ed0309041eed4553ff452fa970f1310a2",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/foreman/foreman.pt",
+          "pt_sha256": "d5026f675b53200a4bd97d729ba50003516d35daa7f91eae72a964569d06d636",
+          "run_identity": "fef94cbd6edb52d688eb6189f8fb2e6bccb7ae60855d233ffaaf8857e50c6640"
+        },
+        {
+          "image_id": "house",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/house/house.json",
+          "json_sha256": "257c5cbb41dc114fd334f359fab89f2beb32cda56ddbdb8796159d1cf4391365",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/house/house.pt",
+          "pt_sha256": "1f426f69f68d03a6cf181464c63cc3bed8ab9f927a8e26ac68653961b4d7274d",
+          "run_identity": "b609baaab88a39b2060b01022fe92d954b7fa5c3f03a736e07579f9b36375ef4"
+        },
+        {
+          "image_id": "lena256",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/lena256/lena256.json",
+          "json_sha256": "4d34788c3dc0909b07b929f5af68087562e82e5a65de538a3aed0ac2ecf09ecf",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/lena256/lena256.pt",
+          "pt_sha256": "242414b58995b3c2da37ae1735aea1125e43066243cbe4ccfa8d2a5a58b0f1b5",
+          "run_identity": "b91987ad474a61d6e9576c1d2ba10f3b16e5b0ef94f6e64e4f8057598f17bfb8"
+        },
+        {
+          "image_id": "peppers256",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/peppers256/peppers256.json",
+          "json_sha256": "978e6aa05c0a1e68be72f85006b99f0bd04d2799e966ee62152030795d4b2c0b",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/peppers256/peppers256.pt",
+          "pt_sha256": "a7ff28f967be48c341d6af479ca70876e3d0ef7af67663dec0babc571d98ee67",
+          "run_identity": "cb19e2309bd1451b03ef2f29096a7f327d16e789a6b51ae9197cc8caf7d49f83"
+        }
+      ],
+      "O64": [
+        {
+          "image_id": "Monarch",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O64/Monarch/Monarch.json",
+          "json_sha256": "1106e172ff81aa33958b3f13740b0f4a2d4dfce14255be189cd60c4bf0fd453b",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O64/Monarch/Monarch.pt",
+          "pt_sha256": "630dcf67d1b2fe381bccbd0db8967dc9fd7719b2ae7345b22dfede087f8e999d",
+          "run_identity": "415b1c5a44404925f0a764f4ffde54a6d43ea4eafdce294d3716c425046c387e"
+        },
+        {
+          "image_id": "Parrots",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O64/Parrots/Parrots.json",
+          "json_sha256": "ae01d2781ce3eee4e95bff33ebdd18efb920ea11ae253c00b508ccc17fb92dee",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O64/Parrots/Parrots.pt",
+          "pt_sha256": "dfa3c90a771635fccc5eb6230a5e8fb71c3632c9a9e68431cc1cb6d317fc1dbc",
+          "run_identity": "e5af06a9a2216e3bbbe3804b8a55eab1324879e222836c2474f913bb3c1e0918"
+        },
+        {
+          "image_id": "barbara",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O64/barbara/barbara.json",
+          "json_sha256": "1c8962f8fde9468f17446bc1968a1df50d0fee4694a4fdb953feccd2166806e3",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O64/barbara/barbara.pt",
+          "pt_sha256": "333f327fc117a849e63e4bdcc096094ca99a4db6526d5128bee286db0e4ab2b5",
+          "run_identity": "beedae9f6185ff97e900084a9001b0235c808a0aa70ea453a03f2508e3f637fb"
+        },
+        {
+          "image_id": "boats",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O64/boats/boats.json",
+          "json_sha256": "dc19c97c22c3484e8fb8b7cc538426a910f84dccaffba00cb34fe9098da5c7f7",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O64/boats/boats.pt",
+          "pt_sha256": "76d48e42ca4c2ecc01669eb77581e2cd872a5c257c516040929d24fc8ed11c30",
+          "run_identity": "1eeb250a247472cccc3b3fb4bdb1db9e2155a5ed59820c1c41458b64e7705ded"
+        },
+        {
+          "image_id": "cameraman",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O64/cameraman/cameraman.json",
+          "json_sha256": "9c492aecfe56bd7f63e041e54cfff9bcc1f90f3470e0fbcc99a57e851d948dfa",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O64/cameraman/cameraman.pt",
+          "pt_sha256": "83ef0863ccbfc7135976ee8c8f8213fdf762fb534c482e82c54812805a5a591c",
+          "run_identity": "05fbf61599c1f62c87be3a693ca9cbad37474f85d31d7e2ce52038da640f5710"
+        },
+        {
+          "image_id": "fingerprint",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O64/fingerprint/fingerprint.json",
+          "json_sha256": "6c725b8d5c6668e16d70d1cab372ddb25ce3eb2229c62c9c1a64647d70212112",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O64/fingerprint/fingerprint.pt",
+          "pt_sha256": "cab78831ee4a06cc32fa73ee4811ef4f7fcf9cf6c7a2eb57f2b4a8b7cdb2ec7d",
+          "run_identity": "1aac316760f3cf58e428d0e0c7a7649ede2d251634790f52a265657efa7867d3"
+        },
+        {
+          "image_id": "flinstones",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O64/flinstones/flinstones.json",
+          "json_sha256": "260c3fc9d472abbb587ff487e035357701342d7f2a9b7fd98f686d2cfd4ba74c",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O64/flinstones/flinstones.pt",
+          "pt_sha256": "cb429df508c35d8d3ce9ffa6aba2ac2e176e9fb43338cfb2b6b0af04e2634d61",
+          "run_identity": "0c62cab4d9c3bd25ec34d3070e97b22e6cd2731a93d7b98e99ca5dfd7b763059"
+        },
+        {
+          "image_id": "foreman",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O64/foreman/foreman.json",
+          "json_sha256": "167ec68e2d25b0ccca165c587f8d1ebfdf561ccaa7d4cea10c45dcd0399a8ffc",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O64/foreman/foreman.pt",
+          "pt_sha256": "4e801bbffb03c13289ec4ce14d3b1deb3042cb481d82ac87926c0abe6988c8c9",
+          "run_identity": "4c4ffb1b59dcf3bbd208d1e82e997ce4ae362fa32b5e43dd5c2be3020b9213fc"
+        },
+        {
+          "image_id": "house",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O64/house/house.json",
+          "json_sha256": "1020f1cd956685556c3ff5dba53a85b22d991b01ca9cc3cff4dcedd7171c637e",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O64/house/house.pt",
+          "pt_sha256": "cfc5022f075a86cba14747c0dda4fff8d2c5d22bc2332a2088cdccb93db44c60",
+          "run_identity": "c28b850dab63b74d216286bd733de787c1d4569767281ef3ff945a1482cdf2a0"
+        },
+        {
+          "image_id": "lena256",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O64/lena256/lena256.json",
+          "json_sha256": "e9dc8e5258e25fc2e026b37db72306621a2458c83ba6a1d584149301f0af8b9c",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O64/lena256/lena256.pt",
+          "pt_sha256": "ed24d815c2ff8e7a326fefe7f12d85e82616dd5a7e7ba596ed8389579b98d1f2",
+          "run_identity": "b2d5da28da6bd2303441e46c6c3fc48d23c036c06fef66b03c09a59427bfeac5"
+        },
+        {
+          "image_id": "peppers256",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O64/peppers256/peppers256.json",
+          "json_sha256": "d91f41bd962b0329973034cca80c0a006329b65c0ab82fc70d61d4154e71e728",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/O64/peppers256/peppers256.pt",
+          "pt_sha256": "dc4ab51666225164303c5655f9abe824830ec2906dd332c10be134fcd521e945",
+          "run_identity": "dccf9127a6e4d1571b9d23c1afcd6c077d1c4ad3c9ee6509762c32b7f50be04b"
+        }
+      ]
+    },
+    "b": {
+      "B16": [
+        {
+          "image_id": "Monarch",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B16/Monarch/Monarch.json",
+          "json_sha256": "02c4f9862b28e893d4644fe0b9e1e4b8dc5744d9684011272d6151bd5e7feec5",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B16/Monarch/Monarch.pt",
+          "pt_sha256": "5899d6234c44ffa9052cfa1c6a10f0b5b3e37178029d178f53bcfdef6bc64c2e",
+          "run_identity": "92f2dd68244c990ee1aa7c4754afe7a09084f47fda22f18572a0c1b7060db3df"
+        },
+        {
+          "image_id": "Parrots",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B16/Parrots/Parrots.json",
+          "json_sha256": "d3dd9dec69b48024b4da654a27bd6bc7b07eecfb5879a7d79251dfef5174655f",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B16/Parrots/Parrots.pt",
+          "pt_sha256": "d4d3feb96ac11fe7b67b970a95126583ab139b4111d77c7bb75f22cb4f662ae3",
+          "run_identity": "55835c22144001f05f048574d489a190e5324e16990552924e399f04fb227256"
+        },
+        {
+          "image_id": "barbara",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B16/barbara/barbara.json",
+          "json_sha256": "13f3435022c28a213cff49138e6f67c7beac5d8e54199a83946d11ab5ead10fa",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B16/barbara/barbara.pt",
+          "pt_sha256": "7d90c94d6f09779e802cad2e7251ebe22a6eefebbd6f12011b0e6e2c28aefe00",
+          "run_identity": "2283352ee7a743579d0fc5c32e04bd28d9d2607461bc7321e0ef821e4fda2e86"
+        },
+        {
+          "image_id": "boats",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B16/boats/boats.json",
+          "json_sha256": "d124028a39086e78472cf9600bf0c7e10cfa5c0b212f3ea33687a0abc4e33736",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B16/boats/boats.pt",
+          "pt_sha256": "08d887b2a1382746b0fc24d63f7e24d7e767e32bc72340d1b7e4461cfe270efb",
+          "run_identity": "cef7156bc3486c596c2b01924890bb53f9a38ae3135cf26d858e5a457928e48a"
+        },
+        {
+          "image_id": "cameraman",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B16/cameraman/cameraman.json",
+          "json_sha256": "8b3dcb8cda1312d2a680de87ec6af729f927ec25051e259c285ba13611f980db",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B16/cameraman/cameraman.pt",
+          "pt_sha256": "c7bf13b95894235b1ac3559bcc700e564aefc6332f2ec0dd1c0405bbb26fa947",
+          "run_identity": "718037fce86cc5550ae78ac63d36eb87cf44c2cb9bee3721b91ef6f9be5158d1"
+        },
+        {
+          "image_id": "fingerprint",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B16/fingerprint/fingerprint.json",
+          "json_sha256": "49b73ced3807277b2f42d62503a80b977f77eecd521d0aad4b979f3cc88296eb",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B16/fingerprint/fingerprint.pt",
+          "pt_sha256": "bdec7da487cf3e307d2d767d566de303d535d5a6b14241a1d452572be6833871",
+          "run_identity": "b8720fd240e760a8658f7ade36e9cc85728be61cdf1c7fd10692fd57c117d194"
+        },
+        {
+          "image_id": "flinstones",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B16/flinstones/flinstones.json",
+          "json_sha256": "8f4939c898f2acff239a7d74ee935ea316bfdfe8ec29c1a8b253bcb399de92e6",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B16/flinstones/flinstones.pt",
+          "pt_sha256": "caf3486ec857dd939506b761d4bdd713fe82cbe9173d0526f0d651b381e5b710",
+          "run_identity": "e9ef731cb70f666e9e103ae4667e184b81c6ed0b62ac07d6956b5716c8f63d12"
+        },
+        {
+          "image_id": "foreman",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B16/foreman/foreman.json",
+          "json_sha256": "8570c5ad3a5ac829dfef3be5d98cfaba0f96f8ccbc956513b612ccf47d9a53e7",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B16/foreman/foreman.pt",
+          "pt_sha256": "ceb78d473fd3aa820e8b7188708d43d7679a99ae0c0d5788c0203c6d39afdde7",
+          "run_identity": "216b3592301dbd41fc4d4b9cf69b9a4e61db6b323cab68039c30487b5d4724d3"
+        },
+        {
+          "image_id": "house",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B16/house/house.json",
+          "json_sha256": "a165fb764dcfc313296906da4948a101b916f02f9c8cce5a5b43ae657c05c7fa",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B16/house/house.pt",
+          "pt_sha256": "09b207556837116268b271f3c4e1ba0db03e16187805f99a5087b01ceb88bff8",
+          "run_identity": "8df044dea37cad7f28e44a03649a099c11ca536e331d7a6f66fcccbaa7c9437b"
+        },
+        {
+          "image_id": "lena256",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B16/lena256/lena256.json",
+          "json_sha256": "8d2a95c3fcd91b3f4e612e6e4361d4ea4f86c26aad8793d3d63d227b12482f62",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B16/lena256/lena256.pt",
+          "pt_sha256": "55956c4928fa4966892c246aa10921daa2e398b415857563ce8e9b3d191bdf71",
+          "run_identity": "d274bd31bdb874f3b0e8f2a7b2de7b69ce616f81a6a523608cea1f7a9ca3dd26"
+        },
+        {
+          "image_id": "peppers256",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B16/peppers256/peppers256.json",
+          "json_sha256": "691c0b2a33120d1eada582b39feee1eaaf99e51a960ba9e2affc2489767c277f",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B16/peppers256/peppers256.pt",
+          "pt_sha256": "e1273ae1e3d9b805804e5bb5ebb7b0f68f853173cd6863accbe82085145ae7b2",
+          "run_identity": "22a701d379cd2d4f92c31f69b003fcf3e0ac1db7ace818e707115ae7615bf216"
+        }
+      ],
+      "full": [
+        {
+          "image_id": "Monarch",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/Monarch/Monarch.json",
+          "json_sha256": "314358366696693c45c535312759bd8ef13d1b98db7cf1cf4b4934fae40530a8",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/Monarch/Monarch.pt",
+          "pt_sha256": "54e759b45a08bada89938d992ec11fbafc88c5cf445de1bdbf758af70f25f3d1",
+          "run_identity": "e66c56f325607bbc4ef4013d2178ebe16c0e95535c6af4696f00cb258d6f7b5d"
+        },
+        {
+          "image_id": "Parrots",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/Parrots/Parrots.json",
+          "json_sha256": "a696c7c787c5be106b3a4e3cafdde52289fe6377a4299b853227daa8db636192",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/Parrots/Parrots.pt",
+          "pt_sha256": "684501f91cbae56f3b92f84754f12e4f92acdc6ab24d4497bc60c2824d851aef",
+          "run_identity": "b91c4bf85dfd407025fefb3b30766af0d4702ed9c855b7d8c8f054016f7b861d"
+        },
+        {
+          "image_id": "barbara",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/barbara/barbara.json",
+          "json_sha256": "2c23a8638e1e6ffde7fe2a1f86be7b742e7ddaa1cec1543f920ff7586163b956",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/barbara/barbara.pt",
+          "pt_sha256": "fbba57602ea0f143c56fd971cc31d1e282336b5d3ed3dce362eab4d4956d1547",
+          "run_identity": "e4e8721aa449d99a03037498e24eafbc5da60a80215daee1c9ef28e6ccda217e"
+        },
+        {
+          "image_id": "boats",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/boats/boats.json",
+          "json_sha256": "2b0534fe610fc46c65d646b8a88e1df6d28c38fc634f1903c0dcd8f868ed28e2",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/boats/boats.pt",
+          "pt_sha256": "c28128a7d87f9fd7924dbf424483dcd264d8adaa56c8a00479d76b3edff506b1",
+          "run_identity": "72534647e28ac676d1dbae3924140885fc8d023592af825b4be8084e129066f4"
+        },
+        {
+          "image_id": "cameraman",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/cameraman/cameraman.json",
+          "json_sha256": "c130df1aac3e79f8f390dc96d4994dae199ec2cc40aa4650e70117d8c4ef8a4c",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/cameraman/cameraman.pt",
+          "pt_sha256": "7a7daaa905d128717dda5621fcf91d256419204d0f8c257ded98c165b78f17c7",
+          "run_identity": "a69808530553a33f464d18eb0a349209db6e4cbc46fb9fd877028fbb01ad7e0b"
+        },
+        {
+          "image_id": "fingerprint",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/fingerprint/fingerprint.json",
+          "json_sha256": "f5cecb27424433a1ae37e3b4ea18b812cf72708a462138a6a488a95acb96ab23",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/fingerprint/fingerprint.pt",
+          "pt_sha256": "b419102f71174572bed93f673ab5de4870e83a09b30cf54c5dd38311d9842784",
+          "run_identity": "a7174e5d6773db811cac5dc83e69d26ff2d5e51ed9f0b4a9c458f1ed4587cb6e"
+        },
+        {
+          "image_id": "flinstones",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/flinstones/flinstones.json",
+          "json_sha256": "f1a1d81fbb843fe29a5f98755954df483bf0742a4b563915ce59aa7058d458b2",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/flinstones/flinstones.pt",
+          "pt_sha256": "caf5dea4da017fdc4ceb6eec7ab535fe7aef607b439cb2a084c9f956bbb24dd7",
+          "run_identity": "7e4b20c5bbaadaec57d5dd3cc611948b186149b167e11af02c1e4ab85143968d"
+        },
+        {
+          "image_id": "foreman",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/foreman/foreman.json",
+          "json_sha256": "9f713d2c37bc909b0266c06adf74ec2ed0309041eed4553ff452fa970f1310a2",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/foreman/foreman.pt",
+          "pt_sha256": "d5026f675b53200a4bd97d729ba50003516d35daa7f91eae72a964569d06d636",
+          "run_identity": "fef94cbd6edb52d688eb6189f8fb2e6bccb7ae60855d233ffaaf8857e50c6640"
+        },
+        {
+          "image_id": "house",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/house/house.json",
+          "json_sha256": "257c5cbb41dc114fd334f359fab89f2beb32cda56ddbdb8796159d1cf4391365",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/house/house.pt",
+          "pt_sha256": "1f426f69f68d03a6cf181464c63cc3bed8ab9f927a8e26ac68653961b4d7274d",
+          "run_identity": "b609baaab88a39b2060b01022fe92d954b7fa5c3f03a736e07579f9b36375ef4"
+        },
+        {
+          "image_id": "lena256",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/lena256/lena256.json",
+          "json_sha256": "4d34788c3dc0909b07b929f5af68087562e82e5a65de538a3aed0ac2ecf09ecf",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/lena256/lena256.pt",
+          "pt_sha256": "242414b58995b3c2da37ae1735aea1125e43066243cbe4ccfa8d2a5a58b0f1b5",
+          "run_identity": "b91987ad474a61d6e9576c1d2ba10f3b16e5b0ef94f6e64e4f8057598f17bfb8"
+        },
+        {
+          "image_id": "peppers256",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/peppers256/peppers256.json",
+          "json_sha256": "978e6aa05c0a1e68be72f85006b99f0bd04d2799e966ee62152030795d4b2c0b",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/full/peppers256/peppers256.pt",
+          "pt_sha256": "a7ff28f967be48c341d6af479ca70876e3d0ef7af67663dec0babc571d98ee67",
+          "run_identity": "cb19e2309bd1451b03ef2f29096a7f327d16e789a6b51ae9197cc8caf7d49f83"
+        }
+      ],
+      "B64": [
+        {
+          "image_id": "Monarch",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B64/Monarch/Monarch.json",
+          "json_sha256": "786f84f94e471574b5d859ad81695cc3a98c59496b7b0d349c98fcf8aae0fba4",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B64/Monarch/Monarch.pt",
+          "pt_sha256": "c02d7558222524d83931604e85afd7106d901cd50684f4a72837864d4679bc79",
+          "run_identity": "98460e978bca2c63841082e107581b08da565c6a6f99566cebd42a860ecce428"
+        },
+        {
+          "image_id": "Parrots",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B64/Parrots/Parrots.json",
+          "json_sha256": "1d7bbb27cd270ab9614099e7a9d342f997b58ef165170e369ba55b9c5702a701",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B64/Parrots/Parrots.pt",
+          "pt_sha256": "d66d7bf3406e4fa0a080b26dda91edcb378b6f01dc06b7b0923e5b4eb56294d5",
+          "run_identity": "16a5a9350678c657a3554b73003d4f2166eab85cc2513e1bfd7785cf88b31603"
+        },
+        {
+          "image_id": "barbara",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B64/barbara/barbara.json",
+          "json_sha256": "5480468e6e0941f8376d95a68197e819d61b0e9c8fa7ce84bcbc35d04d58e7d8",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B64/barbara/barbara.pt",
+          "pt_sha256": "2ffb04679f0b1dac5fee014dd4dd779c58c465c7f06171dd37e84e3e064f342f",
+          "run_identity": "ccaacb722b18b015312f42d660f010a1383e832184ea99cf13e147efd751341a"
+        },
+        {
+          "image_id": "boats",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B64/boats/boats.json",
+          "json_sha256": "f93933cfc142a88691ca7a36b7cf03274891e6c166bc61d2b8ce48f139daa24f",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B64/boats/boats.pt",
+          "pt_sha256": "a1f89bce93c3c4f5b0153f4d53098f88b81343178493d86793221a945dfa79a6",
+          "run_identity": "d7e64574aea9a470b1dafbd033456beca4f1ef2ce8d3387910438df26640b904"
+        },
+        {
+          "image_id": "cameraman",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B64/cameraman/cameraman.json",
+          "json_sha256": "63ee02633a7063391e1b8124533b97c4ba2b6b7f2c19644f3a30fdd1ddf5c919",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B64/cameraman/cameraman.pt",
+          "pt_sha256": "76db37d36407c86fa3e2225d689c948d7e78b6dce446bc2b302fb6e5f68ec5c9",
+          "run_identity": "73157742770d5bf38ed4f45505f37b97f2807b22bd6d0a60373e574567e0c82f"
+        },
+        {
+          "image_id": "fingerprint",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B64/fingerprint/fingerprint.json",
+          "json_sha256": "86e70150caa394afddfe35b42300eec21e65ae6492042bd789aed8b058827a57",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B64/fingerprint/fingerprint.pt",
+          "pt_sha256": "b30ea302a76cbf284724f6131599206c44d66f1eafa16dfc6ead7500ee3d3f2f",
+          "run_identity": "da07b6e9584a8fdbc43bea3cfa04663fd63397ec786629b0db5af5a9945a771c"
+        },
+        {
+          "image_id": "flinstones",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B64/flinstones/flinstones.json",
+          "json_sha256": "516a30915f0091372431edc643ba0263da59f5f4dbb2745107163d4a94a34f92",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B64/flinstones/flinstones.pt",
+          "pt_sha256": "148fe2f26a46e28ddbfa0810a0719cc082c3984a63fe1a9908a8c48b9da9d85c",
+          "run_identity": "4bd67fee3e12405893efaf1e167339e735b3f14ce8f8ee32ac056b1ac31d0236"
+        },
+        {
+          "image_id": "foreman",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B64/foreman/foreman.json",
+          "json_sha256": "cd788a54892a33a42355f493a4615286c96c9a62ee0d0e8883600cc3a40b86c0",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B64/foreman/foreman.pt",
+          "pt_sha256": "d322184578eb7bc1535f51686993cbda60d99ccc84e7c15c4acc69e4a3b4a05c",
+          "run_identity": "b8f293912a679a6b6dfc8c6f5471b764c9c1fdd8246d13d999f6dc74d88bb353"
+        },
+        {
+          "image_id": "house",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B64/house/house.json",
+          "json_sha256": "2ab115f9141189517e42acc851ec67edb403f783108c1590cb00a3cc09da9a65",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B64/house/house.pt",
+          "pt_sha256": "a01e2c092d90a5b6548fa58a712c6b15a94a1db3d46c34a08985395b238df847",
+          "run_identity": "f4a4f7326b43d72b7a6909ea41bd00127f5723d6dbb7c2ce4d8001fc60d3680d"
+        },
+        {
+          "image_id": "lena256",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B64/lena256/lena256.json",
+          "json_sha256": "45e1213399fff1520332fadc5bd4073c00a246a603764b944f29bdd61490d331",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B64/lena256/lena256.pt",
+          "pt_sha256": "ed4f91382062961d48d8b72fd7c305441ade33266153e401b3baf5d9d6a30732",
+          "run_identity": "66741fbe13115bd5e53091193075985c42fab6f96986cdf68f3252d0be917a78"
+        },
+        {
+          "image_id": "peppers256",
+          "json": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B64/peppers256/peppers256.json",
+          "json_sha256": "9bae532eeab859fb2035b10c73515706ac63ee7e14daf8aa346f539a6bf57206",
+          "pt": "/mnt/data/baojr/adaptive_SPI/outputs/ablation/B64/peppers256/peppers256.pt",
+          "pt_sha256": "cd215ff06faac41dff9e7e4123474d2942fe71d1d9edaea719746e0ca94652b8",
+          "run_identity": "0978ebc7150256207c52dcdbfdcf5534b9039ff263fcff5ed285750302a4a0f7"
+        }
+      ]
+    }
+  },
+  "redraw_command": "/home/baojr/.conda/envs/PIE2E/bin/python /mnt/data/baojr/adaptive_SPI/figures/fig7_computation_quality.py",
+  "data_sha256": "83edc5091d7192b4c4d3e64d05d8b3941763f9d919733c72e6e15c6ee911969b"
+}

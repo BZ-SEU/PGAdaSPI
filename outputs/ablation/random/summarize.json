@@ -1,0 +1,208 @@
+{
+  "completed_images": 11,
+  "incomplete_directories": [],
+  "mean": {
+    "psnr": 21.313619904502268,
+    "psnr_clamped": 21.31363096550523,
+    "mse": 0.009420627584629795,
+    "ssim": 0.552604621250642,
+    "pinv_psnr": 18.2668465454417,
+    "pinv_ssim": 0.3346778774322687,
+    "seconds": 500.22866078482053
+  },
+  "information_capture": {
+    "definition": "eta = ||P_A(x-mu)||^2 / ||x-mu||^2; P_A is the actual effective-row space projector",
+    "association": "offline GT-only centered PInv quantity; not a final DiffPIR reconstruction metric and never used for selection",
+    "available_images": 11,
+    "missing_images": [],
+    "eta": {
+      "count": 11,
+      "mean": 0.6969845146130681,
+      "std": 0.11835646175603622,
+      "median": 0.7400053582247895,
+      "minimum": 0.4680579046173556,
+      "maximum": 0.897814150308015
+    },
+    "per_image": {
+      "Monarch": 0.4680579046173556,
+      "Parrots": 0.78640072890927,
+      "barbara": 0.7420919900012948,
+      "boats": 0.6788214212205352,
+      "cameraman": 0.7464839976898764,
+      "fingerprint": 0.5744799199097617,
+      "flinstones": 0.7400053582247895,
+      "foreman": 0.897814150308015,
+      "house": 0.7814879257938968,
+      "lena256": 0.638633268776826,
+      "peppers256": 0.6125529952921283
+    }
+  },
+  "per_image": [
+    {
+      "image_id": "Monarch",
+      "M": 655,
+      "mse": 0.013188710049843098,
+      "psnr": 18.797976794825093,
+      "psnr_clamped": 18.797976794825093,
+      "ssim": 0.5187617569765277,
+      "pinv_psnr": 16.0011297259349,
+      "pinv_ssim": 0.2828891833310125,
+      "seconds": 47.797854766016826,
+      "overrides": [
+        "options.candidate_design.name=random"
+      ],
+      "captured_energy_ratio": 0.4680579046173556
+    },
+    {
+      "image_id": "Parrots",
+      "M": 655,
+      "mse": 0.005253208115416172,
+      "psnr": 22.795753934884452,
+      "psnr_clamped": 22.79575623164906,
+      "ssim": 0.7082847698646307,
+      "pinv_psnr": 18.89874480735339,
+      "pinv_ssim": 0.4042030957645266,
+      "seconds": 45.82336336909793,
+      "overrides": [
+        "options.candidate_design.name=random"
+      ],
+      "captured_energy_ratio": 0.78640072890927
+    },
+    {
+      "image_id": "barbara",
+      "M": 655,
+      "mse": 0.007246349111793704,
+      "psnr": 21.398807465265396,
+      "psnr_clamped": 21.398807465265396,
+      "ssim": 0.49339841114379707,
+      "pinv_psnr": 19.14499322021157,
+      "pinv_ssim": 0.3300634230951872,
+      "seconds": 46.12670745700598,
+      "overrides": [
+        "options.candidate_design.name=random"
+      ],
+      "captured_energy_ratio": 0.7420919900012948
+    },
+    {
+      "image_id": "boats",
+      "M": 655,
+      "mse": 0.006626024793254262,
+      "psnr": 21.78746943408274,
+      "psnr_clamped": 21.78746943408274,
+      "ssim": 0.5262008269454033,
+      "pinv_psnr": 18.87417502802692,
+      "pinv_ssim": 0.3322395143091216,
+      "seconds": 46.17355552292429,
+      "overrides": [
+        "options.candidate_design.name=random"
+      ],
+      "captured_energy_ratio": 0.6788214212205352
+    },
+    {
+      "image_id": "cameraman",
+      "M": 655,
+      "mse": 0.007086552057094754,
+      "psnr": 21.49565018244588,
+      "psnr_clamped": 21.49565018244588,
+      "ssim": 0.622663452601219,
+      "pinv_psnr": 18.21444463993597,
+      "pinv_ssim": 0.325124875260848,
+      "seconds": 46.07676523993723,
+      "overrides": [
+        "options.candidate_design.name=random"
+      ],
+      "captured_energy_ratio": 0.7464839976898764
+    },
+    {
+      "image_id": "fingerprint",
+      "M": 2621,
+      "mse": 0.02264409463345216,
+      "psnr": 16.45045038794501,
+      "psnr_clamped": 16.45045128443847,
+      "ssim": 0.19789230906761796,
+      "pinv_psnr": 16.305728764616298,
+      "pinv_ssim": 0.18689854899539624,
+      "seconds": 2468.493265977013,
+      "overrides": [
+        "options.candidate_design.name=random"
+      ],
+      "captured_energy_ratio": 0.5744799199097617
+    },
+    {
+      "image_id": "flinstones",
+      "M": 2621,
+      "mse": 0.019787406618590575,
+      "psnr": 17.036111216621975,
+      "psnr_clamped": 17.036229694396482,
+      "ssim": 0.39600407971475615,
+      "pinv_psnr": 15.860539325482446,
+      "pinv_ssim": 0.28198419301162686,
+      "seconds": 2617.413810522994,
+      "overrides": [
+        "options.candidate_design.name=random"
+      ],
+      "captured_energy_ratio": 0.7400053582247895
+    },
+    {
+      "image_id": "foreman",
+      "M": 655,
+      "mse": 0.0018624134007958774,
+      "psnr": 27.299239120995974,
+      "psnr_clamped": 27.299239120995974,
+      "ssim": 0.7699894704353805,
+      "pinv_psnr": 21.22381398339673,
+      "pinv_ssim": 0.4460484131393113,
+      "seconds": 46.1451625690097,
+      "overrides": [
+        "options.candidate_design.name=random"
+      ],
+      "captured_energy_ratio": 0.897814150308015
+    },
+    {
+      "image_id": "house",
+      "M": 655,
+      "mse": 0.0025206310410315807,
+      "psnr": 25.984907198018746,
+      "psnr_clamped": 25.984907198018746,
+      "ssim": 0.7291641571503026,
+      "pinv_psnr": 20.296082448578968,
+      "pinv_ssim": 0.3986326863866457,
+      "seconds": 46.11887642706279,
+      "overrides": [
+        "options.candidate_design.name=random"
+      ],
+      "captured_energy_ratio": 0.7814879257938968
+    },
+    {
+      "image_id": "lena256",
+      "M": 655,
+      "mse": 0.006860713481560136,
+      "psnr": 21.63630717384807,
+      "psnr_clamped": 21.63630717384807,
+      "ssim": 0.5622092706642793,
+      "pinv_psnr": 18.633580624309076,
+      "pinv_ssim": 0.35491409606945606,
+      "seconds": 46.147525415057316,
+      "overrides": [
+        "options.candidate_design.name=random"
+      ],
+      "captured_energy_ratio": 0.638633268776826
+    },
+    {
+      "image_id": "peppers256",
+      "M": 655,
+      "mse": 0.010550800128095436,
+      "psnr": 19.76714604059161,
+      "psnr_clamped": 19.76714604059161,
+      "ssim": 0.5540823291931483,
+      "pinv_psnr": 17.482079432012455,
+      "pinv_ssim": 0.33845862239182345,
+      "seconds": 46.19838136690669,
+      "overrides": [
+        "options.candidate_design.name=random"
+      ],
+      "captured_energy_ratio": 0.6125529952921283
+    }
+  ],
+  "scope": "Only completed image folders in this directory; no claim of dataset completeness."
+}

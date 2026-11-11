@@ -1,0 +1,144 @@
+method: propagation-full-pseudoinverse  # 物理传播与中心化伪逆选图方法
+config:  # 公共算法设置（模板覆盖尺寸与先验）
+  seed: 20260921  # 可复现随机种子
+  device: cuda:0  # 单任务仅使用这张 GPU
+  initial_measurements: 64  # 固定初始前缀的有效测量数
+  batch_size: 32  # 每批新增有效测量数，末批按剩余预算
+  pool_size: 4096  # 可测或可预约的图案编号数，必须覆盖最终预算
+  pattern_pool:  # 固定参考图案池
+    name: legacy_low_order  # 策略或图案池名称
+  dmd_bit_depth: 8  # 正式默认8-bit互补DMD；1-bit仅用于明确消融
+  measurement_convention: incoherent_propagated_uint8_difference_div_sqrt_d  # 实际互补曝光差分除以像素数平方根
+  sensor_noise:  # 仅模拟器端的传感器噪声；方法不感知，仍按精确 y 处理
+    model: dark_gaussian  # 每次曝光独立零均值暗电流涨落，暗电流偏置在互补差分中抵消
+    sigma_rel: 0.0  # 每次曝光噪声标准差 / 满幅读数 S_ref；0 为无噪声（默认，结果与原流程逐位一致）
+  sampling:  # 选图阶段采样设置（默认 DiffPIR；DAPS 键仅供采样器消融）
+    sampler: diffpir  # 默认无噪声 DiffPIR；消融可选 daps/ddrm/ddnm
+    diffpir_steps: 50  # DiffPIR 迭代数，每链 49 次网络调用（末步不调用网络）
+    diffpir_lambda: 1.0  # 官方 lambda_=1
+    diffpir_zeta: 1.0  # 官方 zeta=1.0
+    diffpir_eta: 0.0  # 官方 eta=0（DDIM），仅实现该更新
+    diffpir_sigma_y: 0.0  # 无噪声；实际取 max(0.001, sigma_y)
+    outer_steps: 45  # 仅 DAPS 消融：外层轮数
+    ode_steps: 5  # 仅 DAPS 消融：每轮 Heun 更新数（含最终到零的 Euler 步）
+    ode_solver: heun  # 仅 DAPS 消融：确定性内部 ODE 求解器
+    sigma_max: 20.0  # 模型域最大噪声标准差
+    sigma_min: 0.002  # 外层最小噪声标准差
+    inner_sigma_min: 0.002  # 内部到零前的最小正噪声节点
+    rho: 7.0  # EDM 噪声调度指数
+    gpu_batch_size: 4  # 同一 GPU 同时计算的链数
+    num_scenarios: 32  # 设计组 O 独立完整链数
+    projection_rtol: 1.0e-10  # 测量投影的相对秩容差
+    network_precision: float32  # 网络推理精度
+    solve_precision: float64  # 线性代数求解精度
+  optimization:  # 仅 Adam 消融使用，E32 不执行 Adam
+    control_grid: 128  # 每行残差控制网格边长
+    rms_bound: 2.0  # 相对初始化逐行 RMS 上限，2 等同完整幅值可行范围
+    adam_steps: 200  # 每个中心的 Adam 更新次数
+    learning_rate: 0.1  # Adam 学习率
+    scenario_chunk: 16  # 单次反传场景块大小，累积后才更新
+  final_decoder: daps_mean  # 最终图像解码方式（历史键名，指测量一致后验均值，采样器见 final_sampling），选图仍使用伪逆
+  final_sampling:  # 全部动作封存后的最终后验均值解码设置，未列键继承 sampling
+    chains: 32  # 最终均值的独立链数
+    diffpir_steps: 50  # 最终 DiffPIR 迭代数，单独声明以便 F 步数消融
+    outer_steps: 200  # 仅 DAPS 消融：外层轮数
+    gpu_batch_size: 16  # 同一 GPU 同时计算的链数
+options:  # 候选构造设置
+  candidate_design:  # 候选生成方法
+    name: eigen_v1  # 策略或图案池名称
+    rows: 32  # 最多设计的主方向行数
+    binary_threshold_mode: zero  # 1-bit消融：zero直接硬阈值；alignment仅用O方向/物理算子选阈值
+    alignment_quantiles: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9]  # alignment的固定无GT阈值候选分位数
+  initializations: 3  # Adam 消融的初始化中心数
+  pool_chunk: 128  # 池评分的行分块大小
+  spread_weight: 0.25  # 场景方差权重，均值偏差不缩放
+physics:  # 冻结的非相干强度传播模型（国际单位制）
+  wavelength: 6.35e-07  # 波长，单位米
+  image_pitch: 1.08e-05  # 物体像素间距，单位米
+  dmd_pitch: 1.08e-05  # DMD 像素间距，单位米
+  object_distance: 0.0225  # 物体至 DMD 距离，单位米
+  sensor_distance: 0.02  # DMD 至探测器距离，单位米
+  sensor_width: 0.0097  # 探测窗口宽度，单位米
+rank_rtol: 1.0e-10  # 完整伪逆秩检查容差，不截断不加阻尼
+prior: outputs/prior_daps_v2/final_65k.pt  # 选图去噪先验检查点
+mean: assets/mean.pt  # 训练集均值图
+prior_spectrum: assets/residual_spectrum.pt  # 仅 LMMSE 消融使用的训练残差谱
+manifest: assets/split.json  # 固定训练与开发数据划分
+templates:  # 原生尺寸模板（运行时选一个）
+  SET11_256:  # 256 方形模板
+    final_decoder: daps_mean  # 最终后验均值解码（默认 DiffPIR），选图仍使用伪逆
+    final_prior: outputs/prior_daps_v2/final_65k.pt  # 最终解码先验，与选图网络分别声明
+    final_sampling:  # 全部动作封存后的最终后验均值解码设置
+      gpu_batch_size: 16  # 同一 GPU 同时计算的链数
+    height: 256  # 画布高度，不缩放不补黑
+    width: 256  # 画布宽度，不缩放不补黑
+    orientation: native  # 原生方向或竖图顺时针旋转
+    mean: assets/mean.pt  # 训练集均值图
+    prior: outputs/prior_daps_v2/final_65k.pt  # 选图去噪先验检查点
+    pattern_pool:  # 固定参考图案池
+      name: legacy_low_order  # 策略或图案池名称
+    initial_measurements: 64  # 固定初始前缀的有效测量数
+    pool_size: 4096  # 可测或可预约的图案编号数，必须覆盖最终预算
+    shared_factor: false  # O/F/解码复用同一完整 QR
+    lightweight_eigen: false  # 无需全池评分的轻量 E32 路径
+  SET11_512:  # 512 方形模板
+    final_decoder: daps_mean  # 最终后验均值解码（默认 DiffPIR），选图仍使用伪逆
+    final_prior: outputs/prior_daps_v2/final_65k.pt  # 最终解码先验，与选图网络分别声明
+    final_sampling:  # 全部动作封存后的最终后验均值解码设置
+      gpu_batch_size: 4  # 同一 GPU 同时计算的链数
+    height: 512  # 画布高度，不缩放不补黑
+    width: 512  # 画布宽度，不缩放不补黑
+    orientation: native  # 原生方向或竖图顺时针旋转
+    mean: assets/mean_512.pt  # 训练集均值图
+    prior: outputs/prior_daps_v2/final_65k.pt  # 选图去噪先验检查点
+    initial_measurements: 256  # 固定初始前缀的有效测量数
+    pool_size: 4096  # 可测或可预约的图案编号数，必须覆盖最终预算
+    shared_factor: true  # O/F/解码复用同一完整 QR
+    lightweight_eigen: true  # 无需全池评分的轻量 E32 路径
+    batch_size: 32  # 每批新增有效测量数，末批按剩余预算
+    gpu_batch_size: 2  # 同一 GPU 同时计算的链数
+    pattern_pool:  # 固定参考图案池
+      name: legacy_low_order  # 策略或图案池名称
+  BSD68_481x321_mirflickr:  # MIRFLICKR 先验跨数据集模板
+    final_decoder: daps_mean  # 最终后验均值解码（默认 DiffPIR），选图仍使用伪逆
+    final_prior: outputs/prior_daps_v2/final_65k.pt  # 最终解码先验，与选图网络分别声明
+    final_sampling:  # 全部动作封存后的最终后验均值解码设置
+      gpu_batch_size: 8  # 同一 GPU 同时计算的链数
+    height: 321  # 画布高度，不缩放不补黑
+    width: 481  # 画布宽度，不缩放不补黑
+    orientation: landscape_clockwise90_for_portrait  # 原生方向或竖图顺时针旋转
+    mean: assets/mean_bsd68_481x321.pt  # 训练集均值图
+    prior: outputs/prior_daps_v2/final_65k.pt  # 选图去噪先验检查点
+    initial_measurements: 64  # 固定初始前缀的有效测量数
+    pool_size: 2048  # 可测或可预约的图案编号数，必须覆盖最终预算
+    shared_factor: false  # O/F/解码复用同一完整 QR
+    lightweight_eigen: false  # 无需全池评分的轻量 E32 路径
+    batch_size: 32  # 每批新增有效测量数，末批按剩余预算
+    gpu_batch_size: 4  # 同一 GPU 同时计算的链数
+    pattern_pool:  # 固定参考图案池
+      name: rectangular_cosine_v1  # 策略或图案池名称
+  BSD68_481x321_bsdv2:  # BSD 同域 v2 先验模板（BSD68 主结果）
+    final_decoder: daps_mean  # 最终后验均值解码（默认 DiffPIR），选图仍使用伪逆
+    final_prior: outputs/prior_daps_bsd68_v2/final_60k.pt  # 最终解码先验，与选图网络分别声明
+    final_sampling:  # 全部动作封存后的最终后验均值解码设置
+      gpu_batch_size: 8  # 同一 GPU 同时计算的链数
+    height: 321  # 画布高度，不缩放不补黑
+    width: 481  # 画布宽度，不缩放不补黑
+    orientation: landscape_clockwise90_for_portrait  # 原生方向或竖图顺时针旋转
+    mean: assets/mean_bsd68_481x321.pt  # 训练集均值图
+    prior: outputs/prior_daps_bsd68_v2/final_60k.pt  # 选图去噪先验检查点（v2 初始化，BSD500 train 微调 60k 步）
+    initial_measurements: 64  # 固定初始前缀的有效测量数
+    pool_size: 2048  # 可测或可预约的图案编号数，必须覆盖最终预算
+    shared_factor: false  # O/F/解码复用同一完整 QR
+    lightweight_eigen: false  # 无需全池评分的轻量 E32 路径
+    batch_size: 32  # 每批新增有效测量数，末批按剩余预算
+    gpu_batch_size: 4  # 同一 GPU 同时计算的链数
+    pattern_pool:  # 固定参考图案池
+      name: rectangular_cosine_v1  # 策略或图案池名称
+sampling_ratio: 0.01  # 有效差分测量数占像素数的比例，预算向下取整
+run:  # 单个任务的运行参数
+  template: SET11_256  # 使用的原生尺寸模板
+  split: dev  # 数据划分，测试数据不得用于调参
+  count: 1  # 按固定清单顺序运行的图像数量
+  device: cuda:0  # 单任务仅使用这张 GPU
+  output: outputs/final_dev_diffpir  # 本实验独立结果目录

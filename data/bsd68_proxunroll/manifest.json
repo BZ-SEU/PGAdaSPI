@@ -1,0 +1,1097 @@
+{
+  "schema": "bsd68-proxunroll-y-v1",
+  "dataset": "BSD68",
+  "count": 68,
+  "source_dir": "/mnt/polar/dataset/BSD68",
+  "preprocessing": "RGB JPEG decoded, Y=round(0.299R+0.587G+0.114B), rotate portrait clockwise 90 degrees to 481x321, no resize; PNG L uint8",
+  "images": [
+    {
+      "id": "101085",
+      "source_name": "101085.jpg",
+      "source_sha256": "dbefbd4ae3749913ee9fffcdb663bea87ab6634dc8b989422f741243bdbedc8a",
+      "source_size": [
+        481,
+        321
+      ],
+      "output_name": "101085.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": true,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "101087",
+      "source_name": "101087.jpg",
+      "source_sha256": "d755a74144410290cff5e214bb7cbf352a8cb920d45fac3d992b9772ad92a017",
+      "source_size": [
+        481,
+        321
+      ],
+      "output_name": "101087.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": true,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "102061",
+      "source_name": "102061.jpg",
+      "source_sha256": "35ce0a9baaebae00c19f6abccd1d7b3ecd8f1c62003e178610b2179c082f0a8e",
+      "source_size": [
+        481,
+        321
+      ],
+      "output_name": "102061.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": true,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "103070",
+      "source_name": "103070.jpg",
+      "source_sha256": "6d1d9e564b5459e969f65470ff03aa3104af779e93c93ca434ad546477e27261",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "103070.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "105025",
+      "source_name": "105025.jpg",
+      "source_sha256": "6678e84e923e5c1b085afe43ae2fc3735f7f424e02eaefe50a64405f76b9b51b",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "105025.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "106024",
+      "source_name": "106024.jpg",
+      "source_sha256": "ea31189313c34be7b7a48b7cd776c17f3afb5585de37a6e740a638320fa9847d",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "106024.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "108005",
+      "source_name": "108005.jpg",
+      "source_sha256": "e0210b50350e928e35f048fe4b8ea54e58200c58ae3bb5ff619b2074b38fac01",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "108005.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "108070",
+      "source_name": "108070.jpg",
+      "source_sha256": "6a5d0dd5e9e0a14f680b1c8225b151268c40a41935add1c91483575fd5db51cb",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "108070.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "108082",
+      "source_name": "108082.jpg",
+      "source_sha256": "389d781d17c9809aeec1f609a324725aa694aea668036bc17f79176a729f7071",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "108082.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "109053",
+      "source_name": "109053.jpg",
+      "source_sha256": "91819e7ece60560b5f37398dacd12fc1ac41d095f3454bee965645781599a968",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "109053.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "119082",
+      "source_name": "119082.jpg",
+      "source_sha256": "8cf5ce02395627b797b3da7a3845bcb0da14d66942d422a1c898372b67536d4c",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "119082.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "12084",
+      "source_name": "12084.jpg",
+      "source_sha256": "937a95df6a3ded078400451ac163cac6ec20f0ca912c741ae7427d6fca84175d",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "12084.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "123074",
+      "source_name": "123074.jpg",
+      "source_sha256": "f47e336f7f3c4da54d5d95b6217e4381ea62a8ff12d061f39da48539794aa82a",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "123074.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "126007",
+      "source_name": "126007.jpg",
+      "source_sha256": "4a61a754b422680d24a148430cab10c3bb548aeee3f51ae8dc39cd783ef854ad",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "126007.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "130026",
+      "source_name": "130026.jpg",
+      "source_sha256": "ab2865a5f0e54ad3a1b2f911b701560b1537e9c4ced6064d9759d33be0906761",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "130026.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "134035",
+      "source_name": "134035.jpg",
+      "source_sha256": "fe71f4eed285623dc41b1be0d767f7223fe496a979ac16b264c47649655e1e7c",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "134035.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "14037",
+      "source_name": "14037.jpg",
+      "source_sha256": "5cbff02cd015ece351725d5f89a880d6a70f71f383b412c81071c66546ce5076",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "14037.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "143090",
+      "source_name": "143090.jpg",
+      "source_sha256": "b080362885015372c4d808000009820d044e21de1ea39f89b02307bfc73a0beb",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "143090.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "145086",
+      "source_name": "145086.jpg",
+      "source_sha256": "ea31167eece902040a4dfc2e50e1a6112a6888c19566aa93ba698ec754f6e815",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "145086.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "147091",
+      "source_name": "147091.jpg",
+      "source_sha256": "208f65955ad60894070a3b768ea7f241c87a3919cfc00ecae9ecf2c51220c791",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "147091.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "148026",
+      "source_name": "148026.jpg",
+      "source_sha256": "270c2f11ddb596713ebdcbec5c69031a6df97f18cc9d8c5b26cf96a3ef74102c",
+      "source_size": [
+        481,
+        321
+      ],
+      "output_name": "148026.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": true,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "148089",
+      "source_name": "148089.jpg",
+      "source_sha256": "d48e9934d24f6c96fcefa9db9b821a4803529786f50a088c78420454f597006f",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "148089.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "157055",
+      "source_name": "157055.jpg",
+      "source_sha256": "65d2f1fa2847bf9b0207318e880b0dedae82793f5c3ab59b01ff72b2de686062",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "157055.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "159008",
+      "source_name": "159008.jpg",
+      "source_sha256": "ce52eb682bc3686ba6907fa7fde3ea8a7f87b105aecfe43b93992ef3c9bad6f2",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "159008.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "160068",
+      "source_name": "160068.jpg",
+      "source_sha256": "c757c98def260243a45eb6092d9be75efe77810451d2954e17acc495bb876d6a",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "160068.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "16077",
+      "source_name": "16077.jpg",
+      "source_sha256": "19d4d8a03773c9b65f4e4cfed7b0f5674ebe07a9cc4800de554f0c30556c85ec",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "16077.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "163085",
+      "source_name": "163085.jpg",
+      "source_sha256": "3886bc975ea9321e3a26536a95a441aeef14af3a5c3313872af23a0d76d55ac6",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "163085.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "167062",
+      "source_name": "167062.jpg",
+      "source_sha256": "120d3b4c9eab16d6dad58004a6ce647a7007ca25a6b98e248a35ed5e70c6d5bf",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "167062.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "167083",
+      "source_name": "167083.jpg",
+      "source_sha256": "0f09dd34a9d48f8650d1912cb4c4d1e90d33dd559223a27985cf6d6eda75ebe1",
+      "source_size": [
+        481,
+        321
+      ],
+      "output_name": "167083.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": true,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "170057",
+      "source_name": "170057.jpg",
+      "source_sha256": "a485834fbbc26a08067e0ffef314c2129541d548f9f8dbc0923086c9569ba6c7",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "170057.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "175032",
+      "source_name": "175032.jpg",
+      "source_sha256": "8e7b3faa193f7e6f36ab9b092dd7062b7d01e70ff59fe60123b7eabc951c8740",
+      "source_size": [
+        481,
+        321
+      ],
+      "output_name": "175032.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": true,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "175043",
+      "source_name": "175043.jpg",
+      "source_sha256": "be578b68f530951b117c8bd04c5a79d2061da1d9a6c4c20d10ebc30c509eca89",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "175043.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "182053",
+      "source_name": "182053.jpg",
+      "source_sha256": "61ce1ee72993d333bde9191794d63650f21f40cbfb4c630992c3d5e5680b9b65",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "182053.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "189080",
+      "source_name": "189080.jpg",
+      "source_sha256": "c8db7afe744b586a8fd7ebb535fd73dd764e3c3335c34be4a59b162cea941100",
+      "source_size": [
+        481,
+        321
+      ],
+      "output_name": "189080.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": true,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "19021",
+      "source_name": "19021.jpg",
+      "source_sha256": "e896602e24ac9c4f043fb67ecbe05d9b98c28a3ecd31c0e4ddc057ec1cca782e",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "19021.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "196073",
+      "source_name": "196073.jpg",
+      "source_sha256": "56367543b34bf798dbe0a721f59cdeffdb67c176e8c75347b5974631b379bbe8",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "196073.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "197017",
+      "source_name": "197017.jpg",
+      "source_sha256": "59e30cd9332aa9331665ccd9c32b4f5738d64747584d989de33ff5220d91733b",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "197017.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "208001",
+      "source_name": "208001.jpg",
+      "source_sha256": "3056ff21b07978dfd9c7043a10b7eb024f5bce1612b15650b6dc8cb52b069800",
+      "source_size": [
+        481,
+        321
+      ],
+      "output_name": "208001.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": true,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "210088",
+      "source_name": "210088.jpg",
+      "source_sha256": "a9f75c4315a16c10abadff1fc7f4b409b173ba6326e95e821ef5a41c02639f30",
+      "source_size": [
+        481,
+        321
+      ],
+      "output_name": "210088.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": true,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "21077",
+      "source_name": "21077.jpg",
+      "source_sha256": "775c0d915b6a5261790eb99fc62afdec4664f9e3cbc2e2d5e724cc69afee3413",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "21077.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "216081",
+      "source_name": "216081.jpg",
+      "source_sha256": "0a20b477293947433784dd7e0acb42e05364ef2294d49c5480a574a87aafac04",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "216081.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "219090",
+      "source_name": "219090.jpg",
+      "source_sha256": "1f3f81c986fdca765d654d0ad05c6f7d68a0412ee4178bdfa0491558c03d6202",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "219090.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "220075",
+      "source_name": "220075.jpg",
+      "source_sha256": "0fcc3e2e5b34f47858dc58587897d6b849558a38a8b9454ebb54a78236b2d0af",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "220075.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "223061",
+      "source_name": "223061.jpg",
+      "source_sha256": "0246cf68cc5dba8185e0da2d5df04b90bee7b3f2ed85ab106913b929d115c139",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "223061.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "227092",
+      "source_name": "227092.jpg",
+      "source_sha256": "00c00ab0b495598981ff87740e0085d91d8ac4ae39d327ef9b1de774426161cf",
+      "source_size": [
+        481,
+        321
+      ],
+      "output_name": "227092.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": true,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "229036",
+      "source_name": "229036.jpg",
+      "source_sha256": "3ed19e58c2c7c2b67d8624ce7a1b1a929daec59e5fc7b4217f966f00853fa9b7",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "229036.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "236037",
+      "source_name": "236037.jpg",
+      "source_sha256": "b2698ff2e33f683f2666fdc786ad46eab070922df51c9026767744722ea06851",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "236037.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "24077",
+      "source_name": "24077.jpg",
+      "source_sha256": "d1a4b952de4b1b130f82675757f40fbe22fd71c4e4eb454ffa0b1d9f89bdec63",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "24077.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "241004",
+      "source_name": "241004.jpg",
+      "source_sha256": "510b533e488a6aff986d3b7560a368ffed4a3fa6fefb7aa010376ef4e06e79b3",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "241004.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "241048",
+      "source_name": "241048.jpg",
+      "source_sha256": "70c5e137c0b102852ae93c5ddf0e315e06297ed009dfe309d54c4cab02074457",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "241048.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "253027",
+      "source_name": "253027.jpg",
+      "source_sha256": "a2936a80c928a0efb8db070a2e46bd6ef4a2f22d33b59db6eb91ca6676faed52",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "253027.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "253055",
+      "source_name": "253055.jpg",
+      "source_sha256": "9e7248e4683233f8c8e61e5c4d342ef199d85ae0329116e46ca155de869d296b",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "253055.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "260058",
+      "source_name": "260058.jpg",
+      "source_sha256": "3ce26289f3f2dadd74052a81f4da2120ee825e8fdcf6014798cfb8a15343bad7",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "260058.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "271035",
+      "source_name": "271035.jpg",
+      "source_sha256": "d01d3266ddb456a47fb382c73862b8d48927e3f000be9587a0aba9aea66bc881",
+      "source_size": [
+        481,
+        321
+      ],
+      "output_name": "271035.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": true,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "285079",
+      "source_name": "285079.jpg",
+      "source_sha256": "62c16ed71f166b59340fac19748abca19c613b668296733854fbd8911f5bad4e",
+      "source_size": [
+        481,
+        321
+      ],
+      "output_name": "285079.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": true,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "291000",
+      "source_name": "291000.jpg",
+      "source_sha256": "1e3b80ec6631fa47a7357cb67d8e6235ca843839eff7f06e4c283ea7befcfb05",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "291000.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "295087",
+      "source_name": "295087.jpg",
+      "source_sha256": "6f5023c2d062b4078c174f703899cc36a29895608531e7d2d6e2d32997d39d4f",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "295087.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "296007",
+      "source_name": "296007.jpg",
+      "source_sha256": "d271c849ec0aca6a92845c0dff6f18c74e507dc93fc0703be0cb006058ca6458",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "296007.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "296059",
+      "source_name": "296059.jpg",
+      "source_sha256": "9601b534d81275e5e5844198567015105e5feb418e45a0cfa58545e2d472b955",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "296059.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "299086",
+      "source_name": "299086.jpg",
+      "source_sha256": "817939c0da8ad228271a1a1cd87f5a31fe93c741617fb478bb95d9ba3a34d2c2",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "299086.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "300091",
+      "source_name": "300091.jpg",
+      "source_sha256": "543e73769b6040f38f9214b777e255f48697e72b8ad61fb001c84e852e2530d1",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "300091.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "302008",
+      "source_name": "302008.jpg",
+      "source_sha256": "f8935ab579adfe9d1a71282a025bc25a81ec4e7b6b0468fa1d1ec913f6643fe4",
+      "source_size": [
+        481,
+        321
+      ],
+      "output_name": "302008.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": true,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "304034",
+      "source_name": "304034.jpg",
+      "source_sha256": "4d529bb81d75bf03f52d969c90cc145a152ea76e878c5833d537df28a62eb7dc",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "304034.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "304074",
+      "source_name": "304074.jpg",
+      "source_sha256": "5f9d7dbb32bc871450ce1384e5fbca5df7cfd5edbafb4464aed140194d41329e",
+      "source_size": [
+        481,
+        321
+      ],
+      "output_name": "304074.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": true,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "306005",
+      "source_name": "306005.jpg",
+      "source_sha256": "27d7bee0b32e7a458c982d2009e81ef06111bd5716204ea6522cd4a95cdefea0",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "306005.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "3096",
+      "source_name": "3096.jpg",
+      "source_sha256": "c66477f036b84d478e322c9cc2bd257969d29579549bcf7f35087f2e40d19ff5",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "3096.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "33039",
+      "source_name": "33039.jpg",
+      "source_sha256": "9a54f363c4abc7be52b638724d06ce8cce372e6ebd9e5f48833d73fa1ea2a9ee",
+      "source_size": [
+        481,
+        321
+      ],
+      "output_name": "33039.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": true,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    },
+    {
+      "id": "351093",
+      "source_name": "351093.jpg",
+      "source_sha256": "bd51e0dd49e656705534c8c7d55a7c98314330b06b366e9866e7a9965e128ce0",
+      "source_size": [
+        321,
+        481
+      ],
+      "output_name": "351093.png",
+      "output_size": [
+        321,
+        481
+      ],
+      "rotated_clockwise_90": false,
+      "conversion": "RGB JPEG -> PIL ITU-R BT.601 full-range L/Y, uint8 rounded; no resize"
+    }
+  ]
+}

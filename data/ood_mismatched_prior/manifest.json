@@ -1,0 +1,971 @@
+{
+  "seed": 20261106,
+  "selection": "CelebA official val/test; DTD split1 val/test, one image per uniformly sampled class; no performance selection",
+  "preprocessing": "RGB center square crop, PIL LANCZOS resize 256, round(16 + [65.481,128.553,24.966] dot RGB /255), uint8 Y; runner divides by255",
+  "limitations": [
+    "CelebA is upsampled",
+    "No cross-dataset near-duplicate audit performed"
+  ],
+  "records": [
+    {
+      "domain": "celeba",
+      "phase": "check",
+      "image_id": "164354",
+      "category": null,
+      "source": "/mnt/polar/dataset/CelebA/img_align_celeba/img_align_celeba/164354.jpg",
+      "source_sha256": "4847d9c48946b3e4099665789d076e96872fe591bdf23b5aeed6ed7c702b6c8e",
+      "original_wh": [
+        178,
+        218
+      ],
+      "crop_box": [
+        0,
+        20,
+        178,
+        198
+      ],
+      "path": "data/ood_mismatched_prior/celeba/check/164354.png",
+      "sha256": "20da67b0c6c0490f9fa52c620c4fcb17fd5f6fa4fcfe6c03d5b766ae79b2728f"
+    },
+    {
+      "domain": "celeba",
+      "phase": "check",
+      "image_id": "165665",
+      "category": null,
+      "source": "/mnt/polar/dataset/CelebA/img_align_celeba/img_align_celeba/165665.jpg",
+      "source_sha256": "0f4131cdddd58994de0edf4f1f45eaafe7d569e2b93990785a8b54dacfc4bd4e",
+      "original_wh": [
+        178,
+        218
+      ],
+      "crop_box": [
+        0,
+        20,
+        178,
+        198
+      ],
+      "path": "data/ood_mismatched_prior/celeba/check/165665.png",
+      "sha256": "c033306a9f303d78c5941992dc551344fbae1e67c2f07536510d41a0b9ffa7a3"
+    },
+    {
+      "domain": "celeba",
+      "phase": "check",
+      "image_id": "167148",
+      "category": null,
+      "source": "/mnt/polar/dataset/CelebA/img_align_celeba/img_align_celeba/167148.jpg",
+      "source_sha256": "f83f75e012ef69a46a531f8760159e5ba24d7c3e49e4ee169564892087506e39",
+      "original_wh": [
+        178,
+        218
+      ],
+      "crop_box": [
+        0,
+        20,
+        178,
+        198
+      ],
+      "path": "data/ood_mismatched_prior/celeba/check/167148.png",
+      "sha256": "f114f5c2c7953cca01fad48b14a71d38f2ba062900dca8757bf0185a34d87ebd"
+    },
+    {
+      "domain": "celeba",
+      "phase": "check",
+      "image_id": "170474",
+      "category": null,
+      "source": "/mnt/polar/dataset/CelebA/img_align_celeba/img_align_celeba/170474.jpg",
+      "source_sha256": "841acfae087b4502663acc46d85f6bb9cb9df7c05ae2c11cafbf92c9f3fcb0e8",
+      "original_wh": [
+        178,
+        218
+      ],
+      "crop_box": [
+        0,
+        20,
+        178,
+        198
+      ],
+      "path": "data/ood_mismatched_prior/celeba/check/170474.png",
+      "sha256": "9ddfd1433c297647867bba2cabda83496740b4684b992c7de3b0197385eb7631"
+    },
+    {
+      "domain": "celeba",
+      "phase": "test",
+      "image_id": "182888",
+      "category": null,
+      "source": "/mnt/polar/dataset/CelebA/img_align_celeba/img_align_celeba/182888.jpg",
+      "source_sha256": "9199c43ffcec59f700940694367d1c93ddd2213aba3cf18391bb061762e26af3",
+      "original_wh": [
+        178,
+        218
+      ],
+      "crop_box": [
+        0,
+        20,
+        178,
+        198
+      ],
+      "path": "data/ood_mismatched_prior/celeba/test/182888.png",
+      "sha256": "cb6eb0e783ac1408c5e5fe8fb1c0d81c80f85c2aad9a84d71621e981a1be38df"
+    },
+    {
+      "domain": "celeba",
+      "phase": "test",
+      "image_id": "193289",
+      "category": null,
+      "source": "/mnt/polar/dataset/CelebA/img_align_celeba/img_align_celeba/193289.jpg",
+      "source_sha256": "edc3c938d5e2f22cc65fa668e111ae210de36528cc79162dc571369adce5842e",
+      "original_wh": [
+        178,
+        218
+      ],
+      "crop_box": [
+        0,
+        20,
+        178,
+        198
+      ],
+      "path": "data/ood_mismatched_prior/celeba/test/193289.png",
+      "sha256": "23a9167993e39e64d15fc73e0d31476d0dcf19245aa6f1ed8467c8346c70c408"
+    },
+    {
+      "domain": "celeba",
+      "phase": "test",
+      "image_id": "195936",
+      "category": null,
+      "source": "/mnt/polar/dataset/CelebA/img_align_celeba/img_align_celeba/195936.jpg",
+      "source_sha256": "50f34f04c7e7921db3b186a09760b45d65e44f1cfdebebe9841b6be601e62648",
+      "original_wh": [
+        178,
+        218
+      ],
+      "crop_box": [
+        0,
+        20,
+        178,
+        198
+      ],
+      "path": "data/ood_mismatched_prior/celeba/test/195936.png",
+      "sha256": "009ba87cb43cffb3d818f6bdf2b9b1800079511c37b552760f7a6f4c286caced"
+    },
+    {
+      "domain": "celeba",
+      "phase": "test",
+      "image_id": "191765",
+      "category": null,
+      "source": "/mnt/polar/dataset/CelebA/img_align_celeba/img_align_celeba/191765.jpg",
+      "source_sha256": "ef21046f1aa4da39cef965af0e4bbdb5361dc6d30f2a6fb85cfa4bc3a88d259b",
+      "original_wh": [
+        178,
+        218
+      ],
+      "crop_box": [
+        0,
+        20,
+        178,
+        198
+      ],
+      "path": "data/ood_mismatched_prior/celeba/test/191765.png",
+      "sha256": "959924ddb1a30c25bc16e6b1f30e612341344652402d3bc4726b058da3f0cafc"
+    },
+    {
+      "domain": "celeba",
+      "phase": "test",
+      "image_id": "183018",
+      "category": null,
+      "source": "/mnt/polar/dataset/CelebA/img_align_celeba/img_align_celeba/183018.jpg",
+      "source_sha256": "787189e01ee691892bfd16e719869c918a56387f8a67a5618210f95ec8d9524d",
+      "original_wh": [
+        178,
+        218
+      ],
+      "crop_box": [
+        0,
+        20,
+        178,
+        198
+      ],
+      "path": "data/ood_mismatched_prior/celeba/test/183018.png",
+      "sha256": "ac00a1c8d05591ee88eba835d8f10096a37eb25e1d02ac48d0bfe87e3d3eb57d"
+    },
+    {
+      "domain": "celeba",
+      "phase": "test",
+      "image_id": "183454",
+      "category": null,
+      "source": "/mnt/polar/dataset/CelebA/img_align_celeba/img_align_celeba/183454.jpg",
+      "source_sha256": "8cbd0b1165f98660ab3ab6bdab03c346869e2a9b80cf5b7971c2502e0c4c85cd",
+      "original_wh": [
+        178,
+        218
+      ],
+      "crop_box": [
+        0,
+        20,
+        178,
+        198
+      ],
+      "path": "data/ood_mismatched_prior/celeba/test/183454.png",
+      "sha256": "3832cf56a0847ef67585acf82ea3e2357efd930f664818c271357a3449277400"
+    },
+    {
+      "domain": "celeba",
+      "phase": "test",
+      "image_id": "186346",
+      "category": null,
+      "source": "/mnt/polar/dataset/CelebA/img_align_celeba/img_align_celeba/186346.jpg",
+      "source_sha256": "00ec6ce0f4a7623e496b39f06b6fa213cd086ad0f69198df42a8d415d12a737d",
+      "original_wh": [
+        178,
+        218
+      ],
+      "crop_box": [
+        0,
+        20,
+        178,
+        198
+      ],
+      "path": "data/ood_mismatched_prior/celeba/test/186346.png",
+      "sha256": "147b2a7f27eec2fa17f7e5cc56c0c2b2e15b9bdbcdba7fe44b132ddcf9392133"
+    },
+    {
+      "domain": "celeba",
+      "phase": "test",
+      "image_id": "189685",
+      "category": null,
+      "source": "/mnt/polar/dataset/CelebA/img_align_celeba/img_align_celeba/189685.jpg",
+      "source_sha256": "656e12f7fa94aec6e68266cd3644d6c748e07f5e19467d919c11435d2a925243",
+      "original_wh": [
+        178,
+        218
+      ],
+      "crop_box": [
+        0,
+        20,
+        178,
+        198
+      ],
+      "path": "data/ood_mismatched_prior/celeba/test/189685.png",
+      "sha256": "d99bae51cdd5c5d96ace26292b3f255bc0bacbc6fb9abc32c67f2886ed9ba8b8"
+    },
+    {
+      "domain": "celeba",
+      "phase": "test",
+      "image_id": "191571",
+      "category": null,
+      "source": "/mnt/polar/dataset/CelebA/img_align_celeba/img_align_celeba/191571.jpg",
+      "source_sha256": "feb0bc2c458da12886e815f94e7bd7c87727237be0341bcdb306dd6554812f8a",
+      "original_wh": [
+        178,
+        218
+      ],
+      "crop_box": [
+        0,
+        20,
+        178,
+        198
+      ],
+      "path": "data/ood_mismatched_prior/celeba/test/191571.png",
+      "sha256": "3bc39e107dcad6db9bb106178ea579dd66d21dc234146a713f174680bb84acfb"
+    },
+    {
+      "domain": "celeba",
+      "phase": "test",
+      "image_id": "187136",
+      "category": null,
+      "source": "/mnt/polar/dataset/CelebA/img_align_celeba/img_align_celeba/187136.jpg",
+      "source_sha256": "163c4b0975475517adb17e21e533b1a3c87da6bd2e0c0a30388d468afeda3a55",
+      "original_wh": [
+        178,
+        218
+      ],
+      "crop_box": [
+        0,
+        20,
+        178,
+        198
+      ],
+      "path": "data/ood_mismatched_prior/celeba/test/187136.png",
+      "sha256": "86a8599b25b10fa4f1a73d60c2e4cdf699ea70abcf2dcc8c3d3a415ca91eb634"
+    },
+    {
+      "domain": "celeba",
+      "phase": "test",
+      "image_id": "188250",
+      "category": null,
+      "source": "/mnt/polar/dataset/CelebA/img_align_celeba/img_align_celeba/188250.jpg",
+      "source_sha256": "8ce6906858a623839dfb70ab04f8416d5654a7daeb44bcbacb0a91841c99a6ac",
+      "original_wh": [
+        178,
+        218
+      ],
+      "crop_box": [
+        0,
+        20,
+        178,
+        198
+      ],
+      "path": "data/ood_mismatched_prior/celeba/test/188250.png",
+      "sha256": "a9294d775c7eb221bc998c2408fcb7d975bdd643470ab23cf2a6119407decc80"
+    },
+    {
+      "domain": "celeba",
+      "phase": "test",
+      "image_id": "192768",
+      "category": null,
+      "source": "/mnt/polar/dataset/CelebA/img_align_celeba/img_align_celeba/192768.jpg",
+      "source_sha256": "5587c61297448315147614a0493958185411f2c659e6775c8c4e8baf150e28aa",
+      "original_wh": [
+        178,
+        218
+      ],
+      "crop_box": [
+        0,
+        20,
+        178,
+        198
+      ],
+      "path": "data/ood_mismatched_prior/celeba/test/192768.png",
+      "sha256": "58c3f74541803d0375e1ea3a3269eac17b04a85c5e1cd06377e05e93e2b78e6e"
+    },
+    {
+      "domain": "celeba",
+      "phase": "test",
+      "image_id": "201597",
+      "category": null,
+      "source": "/mnt/polar/dataset/CelebA/img_align_celeba/img_align_celeba/201597.jpg",
+      "source_sha256": "ddfcebed97e247d5e9e74dde24a1e172df540fae104c856b089e99d9c842dbc0",
+      "original_wh": [
+        178,
+        218
+      ],
+      "crop_box": [
+        0,
+        20,
+        178,
+        198
+      ],
+      "path": "data/ood_mismatched_prior/celeba/test/201597.png",
+      "sha256": "4711c6eafa1645e8cc6fe6831c16a4ac75076c43b903ebedda8de024754d16c4"
+    },
+    {
+      "domain": "celeba",
+      "phase": "test",
+      "image_id": "187008",
+      "category": null,
+      "source": "/mnt/polar/dataset/CelebA/img_align_celeba/img_align_celeba/187008.jpg",
+      "source_sha256": "c27072672331332c96eee9848ff7323bb07d04b6d67091b919d26473dd1bd20a",
+      "original_wh": [
+        178,
+        218
+      ],
+      "crop_box": [
+        0,
+        20,
+        178,
+        198
+      ],
+      "path": "data/ood_mismatched_prior/celeba/test/187008.png",
+      "sha256": "9279e71cdee176b6f6028d9427e662ea781326a4f3b45783c4a949ca260bf415"
+    },
+    {
+      "domain": "celeba",
+      "phase": "test",
+      "image_id": "193745",
+      "category": null,
+      "source": "/mnt/polar/dataset/CelebA/img_align_celeba/img_align_celeba/193745.jpg",
+      "source_sha256": "e9d71fe73ae3d0fa24a26c1c6ad061dcb0c914a3e8a7cbd031f60798968bb227",
+      "original_wh": [
+        178,
+        218
+      ],
+      "crop_box": [
+        0,
+        20,
+        178,
+        198
+      ],
+      "path": "data/ood_mismatched_prior/celeba/test/193745.png",
+      "sha256": "1de40ba4edc281be0c6bc6146720a5adc4f2f70d35b77fbf2dfd179aecd7369c"
+    },
+    {
+      "domain": "celeba",
+      "phase": "test",
+      "image_id": "182721",
+      "category": null,
+      "source": "/mnt/polar/dataset/CelebA/img_align_celeba/img_align_celeba/182721.jpg",
+      "source_sha256": "59261c58d784bd885f6ee1dbdcb3ee3e9a55008597e1c9b98cb2d768cabe6f59",
+      "original_wh": [
+        178,
+        218
+      ],
+      "crop_box": [
+        0,
+        20,
+        178,
+        198
+      ],
+      "path": "data/ood_mismatched_prior/celeba/test/182721.png",
+      "sha256": "63dd86342a9ca2b9f2ffe8a940be95a8d02cd093f05e5941ec4ed5240fb0f295"
+    },
+    {
+      "domain": "celeba",
+      "phase": "test",
+      "image_id": "190573",
+      "category": null,
+      "source": "/mnt/polar/dataset/CelebA/img_align_celeba/img_align_celeba/190573.jpg",
+      "source_sha256": "46cdb4c3e4bb562da016a7c6e128d675feef08b275766c5941a81e0b0433b35b",
+      "original_wh": [
+        178,
+        218
+      ],
+      "crop_box": [
+        0,
+        20,
+        178,
+        198
+      ],
+      "path": "data/ood_mismatched_prior/celeba/test/190573.png",
+      "sha256": "2c1090e8587cf7c74249cb989231e007673cf5e8587474d0e2975b74da15042e"
+    },
+    {
+      "domain": "celeba",
+      "phase": "test",
+      "image_id": "199224",
+      "category": null,
+      "source": "/mnt/polar/dataset/CelebA/img_align_celeba/img_align_celeba/199224.jpg",
+      "source_sha256": "514350706e788c5c9736a031afea8566a8d06be753bdd67232b50973f2d78f3e",
+      "original_wh": [
+        178,
+        218
+      ],
+      "crop_box": [
+        0,
+        20,
+        178,
+        198
+      ],
+      "path": "data/ood_mismatched_prior/celeba/test/199224.png",
+      "sha256": "51b7350cc1642964eaf51e8b88e61ea83775c522383d4e019161de03201686a6"
+    },
+    {
+      "domain": "celeba",
+      "phase": "test",
+      "image_id": "182814",
+      "category": null,
+      "source": "/mnt/polar/dataset/CelebA/img_align_celeba/img_align_celeba/182814.jpg",
+      "source_sha256": "13753f7d1b9a192ce79738b879f52429a151cb6cbb56c46e052b3c263038cbff",
+      "original_wh": [
+        178,
+        218
+      ],
+      "crop_box": [
+        0,
+        20,
+        178,
+        198
+      ],
+      "path": "data/ood_mismatched_prior/celeba/test/182814.png",
+      "sha256": "7f1e6dc97fd92c5acb705720bb7fba801a5d68f4fdb211c295fd0555774c1266"
+    },
+    {
+      "domain": "celeba",
+      "phase": "test",
+      "image_id": "185180",
+      "category": null,
+      "source": "/mnt/polar/dataset/CelebA/img_align_celeba/img_align_celeba/185180.jpg",
+      "source_sha256": "7f46473385974bdeecb5866266d3029bceef34e05c080ff40bfecd74852b787f",
+      "original_wh": [
+        178,
+        218
+      ],
+      "crop_box": [
+        0,
+        20,
+        178,
+        198
+      ],
+      "path": "data/ood_mismatched_prior/celeba/test/185180.png",
+      "sha256": "da8a094cf64edfa698c428c93788c80897bd36293693883323049ec27de320f3"
+    },
+    {
+      "domain": "dtd",
+      "phase": "check",
+      "image_id": "sprinkled_0113",
+      "category": "sprinkled",
+      "source": "/mnt/polar/dataset/DTD/images/sprinkled/sprinkled_0113.jpg",
+      "source_sha256": "274a876298bba7c24163a19e98bc8ba9cea6389bf31e7cef04bcbc1b7097813d",
+      "original_wh": [
+        610,
+        539
+      ],
+      "crop_box": [
+        35,
+        0,
+        574,
+        539
+      ],
+      "path": "data/ood_mismatched_prior/dtd/check/sprinkled_0113.png",
+      "sha256": "720f4ccc28132d16281e883c63e0111432df3ad711bdb3c3218bc046cb535c12"
+    },
+    {
+      "domain": "dtd",
+      "phase": "check",
+      "image_id": "potholed_0096",
+      "category": "potholed",
+      "source": "/mnt/polar/dataset/DTD/images/potholed/potholed_0096.jpg",
+      "source_sha256": "89daf4828688a93ff18d482d59d2862dfd088d8c75ace3f150fe44c358f970c6",
+      "original_wh": [
+        639,
+        462
+      ],
+      "crop_box": [
+        88,
+        0,
+        550,
+        462
+      ],
+      "path": "data/ood_mismatched_prior/dtd/check/potholed_0096.png",
+      "sha256": "5f7fbb93e22823907773c67efb51a54efe7a3c9e744aae0195ad4b8ef812096c"
+    },
+    {
+      "domain": "dtd",
+      "phase": "check",
+      "image_id": "zigzagged_0056",
+      "category": "zigzagged",
+      "source": "/mnt/polar/dataset/DTD/images/zigzagged/zigzagged_0056.jpg",
+      "source_sha256": "2770ceea59d516d1600673fece9ece9936dc5b81e307fe9f82b876743fce4a6a",
+      "original_wh": [
+        630,
+        350
+      ],
+      "crop_box": [
+        140,
+        0,
+        490,
+        350
+      ],
+      "path": "data/ood_mismatched_prior/dtd/check/zigzagged_0056.png",
+      "sha256": "4b52536eb7deecc22848e00dae17567f9d88fb3f2631f257a915c9a351b0c755"
+    },
+    {
+      "domain": "dtd",
+      "phase": "check",
+      "image_id": "polka-dotted_0097",
+      "category": "polka-dotted",
+      "source": "/mnt/polar/dataset/DTD/images/polka-dotted/polka-dotted_0097.jpg",
+      "source_sha256": "db9a0b6fefcbd101f6a62ad34e23caa6310c94c83ddde69e55ca17d766f6142b",
+      "original_wh": [
+        353,
+        473
+      ],
+      "crop_box": [
+        0,
+        60,
+        353,
+        413
+      ],
+      "path": "data/ood_mismatched_prior/dtd/check/polka-dotted_0097.png",
+      "sha256": "25b8c00c4c50df984d01ad4f60caffe1e44ce140421e669c24d3bce5f2b369ea"
+    },
+    {
+      "domain": "dtd",
+      "phase": "test",
+      "image_id": "marbled_0126",
+      "category": "marbled",
+      "source": "/mnt/polar/dataset/DTD/images/marbled/marbled_0126.jpg",
+      "source_sha256": "d87bc44f74ec1ded29573213bd7470ff49af2fd792228fa1ddf3f605d09a7753",
+      "original_wh": [
+        640,
+        635
+      ],
+      "crop_box": [
+        2,
+        0,
+        637,
+        635
+      ],
+      "path": "data/ood_mismatched_prior/dtd/test/marbled_0126.png",
+      "sha256": "fca50533c257425b4de4ba18bb29e2a962d1904229e8462498da15c1a998326a"
+    },
+    {
+      "domain": "dtd",
+      "phase": "test",
+      "image_id": "wrinkled_0015",
+      "category": "wrinkled",
+      "source": "/mnt/polar/dataset/DTD/images/wrinkled/wrinkled_0015.jpg",
+      "source_sha256": "d196fb68dcd652eac99c1edc4b783143e5b42640d5ec41e1c27b20ae358a441d",
+      "original_wh": [
+        640,
+        427
+      ],
+      "crop_box": [
+        106,
+        0,
+        533,
+        427
+      ],
+      "path": "data/ood_mismatched_prior/dtd/test/wrinkled_0015.png",
+      "sha256": "a37f96a0609f41c90b17cf93659124f53dda69a209ba6e9d2c8237390cd560fd"
+    },
+    {
+      "domain": "dtd",
+      "phase": "test",
+      "image_id": "paisley_0111",
+      "category": "paisley",
+      "source": "/mnt/polar/dataset/DTD/images/paisley/paisley_0111.jpg",
+      "source_sha256": "1fbda357cc4435e6515f71a0d1081c7f79164f656cb5af41849390b9d6bf0e3e",
+      "original_wh": [
+        311,
+        317
+      ],
+      "crop_box": [
+        0,
+        3,
+        311,
+        314
+      ],
+      "path": "data/ood_mismatched_prior/dtd/test/paisley_0111.png",
+      "sha256": "d368f318d00a3d6bb8ee842cd830886eb1e042ac67ac909e7f167bf4c6abbff4"
+    },
+    {
+      "domain": "dtd",
+      "phase": "test",
+      "image_id": "smeared_0144",
+      "category": "smeared",
+      "source": "/mnt/polar/dataset/DTD/images/smeared/smeared_0144.jpg",
+      "source_sha256": "ed907eb3000f38d11975b0c9b3bf898de463ade2a52784ebe499086dbade501c",
+      "original_wh": [
+        445,
+        355
+      ],
+      "crop_box": [
+        45,
+        0,
+        400,
+        355
+      ],
+      "path": "data/ood_mismatched_prior/dtd/test/smeared_0144.png",
+      "sha256": "1aec21ebfd69c88de78eefb8d9b33d158035ef86060027f1c03774cc64692a8f"
+    },
+    {
+      "domain": "dtd",
+      "phase": "test",
+      "image_id": "perforated_0171",
+      "category": "perforated",
+      "source": "/mnt/polar/dataset/DTD/images/perforated/perforated_0171.jpg",
+      "source_sha256": "a7abe2c1644aaf60655a0db2e86a4a6d501d9199d5dc53a6b9b5d8e4a069d15f",
+      "original_wh": [
+        310,
+        307
+      ],
+      "crop_box": [
+        1,
+        0,
+        308,
+        307
+      ],
+      "path": "data/ood_mismatched_prior/dtd/test/perforated_0171.png",
+      "sha256": "430a268e2c3f68f362ae6978610d445e8c6c346c799e9b8036f72a4a6714ff80"
+    },
+    {
+      "domain": "dtd",
+      "phase": "test",
+      "image_id": "bumpy_0103",
+      "category": "bumpy",
+      "source": "/mnt/polar/dataset/DTD/images/bumpy/bumpy_0103.jpg",
+      "source_sha256": "24e8b7b7e3b99a789396b003c070fb0fde8841c1cc03bb46e7518c1c452e9732",
+      "original_wh": [
+        392,
+        310
+      ],
+      "crop_box": [
+        41,
+        0,
+        351,
+        310
+      ],
+      "path": "data/ood_mismatched_prior/dtd/test/bumpy_0103.png",
+      "sha256": "1f7666e74769498af7e559147882ec31d0bd460b1c5bb7225706ce92f9a31e08"
+    },
+    {
+      "domain": "dtd",
+      "phase": "test",
+      "image_id": "dotted_0113",
+      "category": "dotted",
+      "source": "/mnt/polar/dataset/DTD/images/dotted/dotted_0113.jpg",
+      "source_sha256": "d808e477254bd5466d2ca162fd04984173638f59b8988dc4a24996c3314497f2",
+      "original_wh": [
+        594,
+        511
+      ],
+      "crop_box": [
+        41,
+        0,
+        552,
+        511
+      ],
+      "path": "data/ood_mismatched_prior/dtd/test/dotted_0113.png",
+      "sha256": "2ae93b5a83ee210ddba7a9a558044f4b6c95bf0347ddec85b05e1e72c3119662"
+    },
+    {
+      "domain": "dtd",
+      "phase": "test",
+      "image_id": "woven_0058",
+      "category": "woven",
+      "source": "/mnt/polar/dataset/DTD/images/woven/woven_0058.jpg",
+      "source_sha256": "2811c35f49c89ded9f3bf40de1c7686e0c312dae4bf74cef9543e4cd649907fb",
+      "original_wh": [
+        640,
+        426
+      ],
+      "crop_box": [
+        107,
+        0,
+        533,
+        426
+      ],
+      "path": "data/ood_mismatched_prior/dtd/test/woven_0058.png",
+      "sha256": "0dc135f8af90dd9775bdbc3e9ce8d484c8f009758a14306c5ac033ef0f852418"
+    },
+    {
+      "domain": "dtd",
+      "phase": "test",
+      "image_id": "chequered_0179",
+      "category": "chequered",
+      "source": "/mnt/polar/dataset/DTD/images/chequered/chequered_0179.jpg",
+      "source_sha256": "bcf3ae91331428db190e64e21a1f5cfd223bee4c493c6e9295cb78fcb33e4192",
+      "original_wh": [
+        400,
+        300
+      ],
+      "crop_box": [
+        50,
+        0,
+        350,
+        300
+      ],
+      "path": "data/ood_mismatched_prior/dtd/test/chequered_0179.png",
+      "sha256": "039de0a2ab9b0699e4b242c95edc4c87bbfef21f63e89fd47c0fa3e866d090a6"
+    },
+    {
+      "domain": "dtd",
+      "phase": "test",
+      "image_id": "sprinkled_0123",
+      "category": "sprinkled",
+      "source": "/mnt/polar/dataset/DTD/images/sprinkled/sprinkled_0123.jpg",
+      "source_sha256": "fcc61f8b18176037921d0eb00fb52d26e227224f2427e79b972325ffae05189c",
+      "original_wh": [
+        527,
+        510
+      ],
+      "crop_box": [
+        8,
+        0,
+        518,
+        510
+      ],
+      "path": "data/ood_mismatched_prior/dtd/test/sprinkled_0123.png",
+      "sha256": "0c8c44cde9a1eefb306fc587d169094af00a7b704152e633d9a91a616fc91906"
+    },
+    {
+      "domain": "dtd",
+      "phase": "test",
+      "image_id": "honeycombed_0075",
+      "category": "honeycombed",
+      "source": "/mnt/polar/dataset/DTD/images/honeycombed/honeycombed_0075.jpg",
+      "source_sha256": "0de281236725b13d282f6ead27cba9b8af66716e585261428a73b938ed3b72b2",
+      "original_wh": [
+        400,
+        400
+      ],
+      "crop_box": [
+        0,
+        0,
+        400,
+        400
+      ],
+      "path": "data/ood_mismatched_prior/dtd/test/honeycombed_0075.png",
+      "sha256": "b948418bdce05b46256008f7e34a1ed68f8b0d7e10974dd3748b697cb4dbd34f"
+    },
+    {
+      "domain": "dtd",
+      "phase": "test",
+      "image_id": "fibrous_0201",
+      "category": "fibrous",
+      "source": "/mnt/polar/dataset/DTD/images/fibrous/fibrous_0201.jpg",
+      "source_sha256": "696a920fae94158a1354e3ceac37639774ba8f82f4c48b5e16ee144d70955192",
+      "original_wh": [
+        400,
+        300
+      ],
+      "crop_box": [
+        50,
+        0,
+        350,
+        300
+      ],
+      "path": "data/ood_mismatched_prior/dtd/test/fibrous_0201.png",
+      "sha256": "21b9304528fc2a4ed0af3a735ab6982ee133dc71fd878128375ce16159a72031"
+    },
+    {
+      "domain": "dtd",
+      "phase": "test",
+      "image_id": "meshed_0140",
+      "category": "meshed",
+      "source": "/mnt/polar/dataset/DTD/images/meshed/meshed_0140.jpg",
+      "source_sha256": "b1348272d70d8c1007cc4af6defc00b47ff76744cf92c66ad4d878f9702b0cb0",
+      "original_wh": [
+        387,
+        383
+      ],
+      "crop_box": [
+        2,
+        0,
+        385,
+        383
+      ],
+      "path": "data/ood_mismatched_prior/dtd/test/meshed_0140.png",
+      "sha256": "ba57104448724bd01594e77f1dc39d0b3b8b2cd940b8ae84c5170e4332190a20"
+    },
+    {
+      "domain": "dtd",
+      "phase": "test",
+      "image_id": "veined_0125",
+      "category": "veined",
+      "source": "/mnt/polar/dataset/DTD/images/veined/veined_0125.jpg",
+      "source_sha256": "69dd607257aa5e7a8478e5abf7b02788d136a3cbf4c04b00a4cf76e770ddeeb6",
+      "original_wh": [
+        300,
+        400
+      ],
+      "crop_box": [
+        0,
+        50,
+        300,
+        350
+      ],
+      "path": "data/ood_mismatched_prior/dtd/test/veined_0125.png",
+      "sha256": "70679a87d60e40eb761674f58efdd50ea48b681dc3b73da3beeab9f12fff333d"
+    },
+    {
+      "domain": "dtd",
+      "phase": "test",
+      "image_id": "freckled_0171",
+      "category": "freckled",
+      "source": "/mnt/polar/dataset/DTD/images/freckled/freckled_0171.jpg",
+      "source_sha256": "75b15b94161a134444ac668b89f15bf5386830b76c19089ab2a18602e9810655",
+      "original_wh": [
+        350,
+        323
+      ],
+      "crop_box": [
+        13,
+        0,
+        336,
+        323
+      ],
+      "path": "data/ood_mismatched_prior/dtd/test/freckled_0171.png",
+      "sha256": "ac86411b38c463a11f42b000197995f283598a404e43c8c8b6b42d92c6fa4808"
+    },
+    {
+      "domain": "dtd",
+      "phase": "test",
+      "image_id": "pitted_0002",
+      "category": "pitted",
+      "source": "/mnt/polar/dataset/DTD/images/pitted/pitted_0002.jpg",
+      "source_sha256": "33ff61aa8124824bf0ae90274cd458a3c0bd6668b38dacf631d55ed722569fa8",
+      "original_wh": [
+        640,
+        480
+      ],
+      "crop_box": [
+        80,
+        0,
+        560,
+        480
+      ],
+      "path": "data/ood_mismatched_prior/dtd/test/pitted_0002.png",
+      "sha256": "8b9322a03816a8cd59bbe1f4bb475aee37e7518d1d4772cda34a01a55553699f"
+    },
+    {
+      "domain": "dtd",
+      "phase": "test",
+      "image_id": "cracked_0139",
+      "category": "cracked",
+      "source": "/mnt/polar/dataset/DTD/images/cracked/cracked_0139.jpg",
+      "source_sha256": "a6be4553916f9f49d9225ffd92fc0022d8aaa1ae48a77557cfa4bc72eeffdc79",
+      "original_wh": [
+        640,
+        593
+      ],
+      "crop_box": [
+        23,
+        0,
+        616,
+        593
+      ],
+      "path": "data/ood_mismatched_prior/dtd/test/cracked_0139.png",
+      "sha256": "f8970fdee595f80a1dbedd7945b39914097b588fb20c7fca0fcf844da7176b54"
+    },
+    {
+      "domain": "dtd",
+      "phase": "test",
+      "image_id": "studded_0022",
+      "category": "studded",
+      "source": "/mnt/polar/dataset/DTD/images/studded/studded_0022.jpg",
+      "source_sha256": "5c42981db35a408dae8047022b2a1374adbc5b6f9bd3898aa7ffbb7ceff2dcb7",
+      "original_wh": [
+        426,
+        453
+      ],
+      "crop_box": [
+        0,
+        13,
+        426,
+        439
+      ],
+      "path": "data/ood_mismatched_prior/dtd/test/studded_0022.png",
+      "sha256": "fe9d7c565ead2621339b7f20bd4110a67768643153633848fb9747b05d3522f2"
+    },
+    {
+      "domain": "dtd",
+      "phase": "test",
+      "image_id": "matted_0058",
+      "category": "matted",
+      "source": "/mnt/polar/dataset/DTD/images/matted/matted_0058.jpg",
+      "source_sha256": "5a3e595edc4c930192d5ce993cc6d5d87eb6e61435794a3204258f5aaf2b9c4c",
+      "original_wh": [
+        496,
+        496
+      ],
+      "crop_box": [
+        0,
+        0,
+        496,
+        496
+      ],
+      "path": "data/ood_mismatched_prior/dtd/test/matted_0058.png",
+      "sha256": "e082f0af8b51968214c79b9cfdce0344ca91b0681a25ba6024a671e396fd9ce5"
+    },
+    {
+      "domain": "dtd",
+      "phase": "test",
+      "image_id": "blotchy_0105",
+      "category": "blotchy",
+      "source": "/mnt/polar/dataset/DTD/images/blotchy/blotchy_0105.jpg",
+      "source_sha256": "55b0827055a577df206bf181a69a491203783e1344031c3e765cd907e3e844fe",
+      "original_wh": [
+        400,
+        313
+      ],
+      "crop_box": [
+        43,
+        0,
+        356,
+        313
+      ],
+      "path": "data/ood_mismatched_prior/dtd/test/blotchy_0105.png",
+      "sha256": "0208d482373070318bf745297bdd25cdb93ad013d4b11afb9f7b6acbf62bef35"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "celeba_check": {
+    "images": 4,
+    "means": {
+      "bias_spread": {
+        "psnr": 29.948195827361666,
+        "mse": 0.00116830232822542,
+        "ssim": 0.8214728581099062,
+        "pinv_psnr": 29.895736181470717,
+        "eta655": 0.9766761387363121,
+        "seconds": 622.5445292317308
+      },
+      "spread_only": {
+        "psnr": 30.017751419326466,
+        "mse": 0.001137119199742132,
+        "ssim": 0.8230454976613684,
+        "pinv_psnr": 25.0692712789294,
+        "eta655": 0.9361349732114915,
+        "seconds": 489.5059800532181
+      }
+    },
+    "delta_psnr": -0.06955559196480099,
+    "delta_psnr_ci95": [
+      -0.2289240314633174,
+      0.07242654564999995
+    ],
+    "wins": 1,
+    "losses": 3,
+    "ties": 0
+  },
+  "celeba_test": {
+    "images": 20,
+    "means": {
+      "bias_spread": {
+        "psnr": 30.64503886035187,
+        "mse": 0.0009843044530656792,
+        "ssim": 0.8243710043762646,
+        "pinv_psnr": 30.562605955867998,
+        "eta655": 0.9787967741414214,
+        "seconds": 332.25511251699646
+      },
+      "spread_only": {
+        "psnr": 30.581624217002833,
+        "mse": 0.0009992839213982347,
+        "ssim": 0.8231790432998718,
+        "pinv_psnr": 24.863204446505254,
+        "eta655": 0.9328754643822365,
+        "seconds": 359.452952416311
+      }
+    },
+    "delta_psnr": 0.06341464334903399,
+    "delta_psnr_ci95": [
+      0.022969226213890477,
+      0.10032142071559937
+    ],
+    "wins": 16,
+    "losses": 4,
+    "ties": 0
+  },
+  "dtd_check": {
+    "images": 4,
+    "means": {
+      "bias_spread": {
+        "psnr": 23.43708967992759,
+        "mse": 0.007125457405522968,
+        "ssim": 0.44852860824926155,
+        "pinv_psnr": 23.410036555727853,
+        "eta655": 0.9053432259159505,
+        "seconds": 330.4849628295051
+      },
+      "spread_only": {
+        "psnr": 23.407089857524213,
+        "mse": 0.007114479989839495,
+        "ssim": 0.4481641317062195,
+        "pinv_psnr": 22.036672652468727,
+        "eta655": 0.8750198804070692,
+        "seconds": 360.2081801808672
+      }
+    },
+    "delta_psnr": 0.029999822403374843,
+    "delta_psnr_ci95": [
+      -0.013795383683286033,
+      0.10071053857754375
+    ],
+    "wins": 2,
+    "losses": 2,
+    "ties": 0
+  },
+  "dtd_test": {
+    "images": 20,
+    "means": {
+      "bias_spread": {
+        "psnr": 25.04871247456147,
+        "mse": 0.006775040461074869,
+        "ssim": 0.5071504943265965,
+        "pinv_psnr": 24.97315602070405,
+        "eta655": 0.8155323205881333,
+        "seconds": 330.49031280425845
+      },
+      "spread_only": {
+        "psnr": 24.964037435402457,
+        "mse": 0.006787668275570015,
+        "ssim": 0.5054631432609157,
+        "pinv_psnr": 22.81644490638375,
+        "eta655": 0.7747133035363539,
+        "seconds": 361.2900038998341
+      }
+    },
+    "delta_psnr": 0.08467503915901356,
+    "delta_psnr_ci95": [
+      -0.007399981699509928,
+      0.21046477152376167
+    ],
+    "wins": 12,
+    "losses": 8,
+    "ties": 0
+  },
+  "evaluation_notes": [
+    "Check and test reported separately; bootstrap unit=image, 20000 draws.",
+    "Eta655 recomputed from stored total centered energy and final PInv MSE; original JSON capture is M640. Raw outputs unchanged.",
+    "O32 vs O33 is method comparison, not exact matched-sample causal ablation."
+  ],
+  "verified_results": 96,
+  "total_compute_hours": 9.68909506720258,
+  "queue_wall_hours": 9.768198259539075,
+  "finished_beijing": "2026-11-07T07:15:25.691686+08:00"
+}
